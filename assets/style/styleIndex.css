@@ -5,16 +5,105 @@
     height: 100vh;
     position: relative;
     background-color: black;
+    overflow-x: hidden;
 }
 
 .contenaireAnimation {
-    width: 1920px;
-    height: 1080px;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.imgAnimation1,
+.imgAnimation2,
+.imgAnimation3,
+.imgAnimation4,
+.imgAnimation5,
+.imgAnimation6,
+.imgAnimation7,
+.imgAnimation8,
+.imgAnimation9,
+.imgAnimation10,
+.imgAnimation11,
+.imgAnimation12,
+.imgAnimation13,
+.imgAnimation14 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgAnimation1 {
+    background-image: url(../img/4plan1.png);
+    left: 0;
+}
+
+.imgAnimation2 {
+    background-image: url(../img/4plan2.png);
+    right: 0;
+}
+
+.imgAnimation3 {
+    background-image: url(../img/4plan3.png);
+    left: 0;
+}
+
+.imgAnimation4 {
+    background-image: url(../img/4plan4.png);
+    right: 0;
+}
+
+.imgAnimation5 {
+    background-image: url(../img/4plan5.png);
+    left: 0;
+}
+
+.imgAnimation6 {
+    background-image: url(../img/4plan6.png);
+    right: 0;
+}
+
+.imgAnimation7 {
+    background-image: url(../img/3planguauche.png);
+    left: 0;
+}
+
+.imgAnimation8 {
+    background-image: url(../img/3plandroit.png);
+    right: 0;
+}
+
+.imgAnimation9 {
+    background-image: url(../img/2planguauche.png);
+    left: 0;
+}
+
+.imgAnimation10 {
+    background-image: url(../img/2plandroit.png);
+    right: 0;
+}
+
+.imgAnimation11 {
+    background-image: url(../img/1planguauche.png);
+    left: 0;
+}
+
+.imgAnimation12 {
+    background-image: url(../img/1plandroit.png);
+    right: 0;
+}
+
+.imgAnimation13 {
+    background-color: rgb(0, 0, 0, 0.3);
 }
 
 .title {
@@ -30,8 +119,18 @@
 
 .presentationTitle {
     width: 90%;
+    height: 150px;
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 300;
+}
+
+.presentationTitletow {
+    width: 90%;
+    position: absolute;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -41,13 +140,18 @@
     text-shadow: black -4px 4px 5px;
     font-size: 9vw;
     font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-shadow: 0px 0px 2px black, 0 0 3px black, 0 0 4px black;
+    visibility: hidden;
+    opacity: 0;
 }
 
-.presentationTitle h2 {
+.presentationTitletow h2 {
     color: white;
     font-size: 6vw;
-    font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
     margin-top: 5px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    font-weight: 100;
 }
 
 .titleNext {
@@ -74,6 +178,7 @@
     font-size: 15px;
     font-weight: bold;
     margin: auto;
+    font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
 }
 
 .next {
@@ -109,6 +214,20 @@
 }
 
 
+/*----------services---------------------*/
+
+#services {
+    background-color: yellow;
+    width: 100vw;
+    height: 100vh;
+}
+
+#services h2 {
+    background-color: yellow;
+    height: 100vh;
+}
+
+
 /*----------contact---------------------*/
 
 #contact {
@@ -135,7 +254,7 @@
     .presentationTitle h1 {
         font-size: 8vw;
     }
-    .presentationTitle h2 {
+    .presentationTitletow h2 {
         font-size: 5vw;
         margin-top: 10px;
     }
@@ -163,8 +282,8 @@
     .presentationTitle h1 {
         font-size: 7vw;
     }
-    .presentationTitle h2 {
-        font-size: 4vw;
+    .presentationTitletow h2 {
+        font-size: 4.5vw;
     }
 }
 
@@ -173,10 +292,11 @@
         width: 70%;
     }
     .presentationTitle h1 {
-        font-size: 5vw;
+        font-size: 5.5vw;
+        margin-bottom: 50px;
     }
-    .presentationTitle h2 {
-        font-size: 3vw;
+    .presentationTitletow h2 {
+        font-size: 3.5vw;
     }
     .titleNext {
         width: 90%;
@@ -188,7 +308,7 @@
     }
     .contactButun {
         width: 250px;
-        height: 60px;
+        height: 50px;
         margin-left: 70px;
     }
     .contactButun a {
@@ -209,7 +329,7 @@
         font-size: 3vw;
         margin-bottom: 50px;
     }
-    .presentationTitle h2 {
+    .presentationTitletow h2 {
         font-size: 2vw;
     }
 }
@@ -221,7 +341,7 @@
     .presentationTitle h1 {
         font-size: 3vw;
     }
-    .presentationTitle h2 {
+    .presentationTitletow h2 {
         font-size: 1.9vw;
     }
 }

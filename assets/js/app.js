@@ -51,3 +51,47 @@ function displayNav() {
 }
 
 btn.addEventListener('click', displayNav);
+menuLigneOne.addEventListener('click', displayNav);
+menuLigneTwo.addEventListener('click', displayNav);
+menuLigneThree.addEventListener('click', displayNav);
+menuLigneFour.addEventListener('click', displayNav);
+
+
+//------------------section presentation -----------
+const imgPresentationOne = document.querySelector('.imgAnimation11')
+const imgPresentationtow = document.querySelector('.imgAnimation12')
+const imgPresentationthree = document.querySelector('.imgAnimation9')
+const imgPresentationfour = document.querySelector('.imgAnimation10')
+const imgPresentationFive = document.querySelector('.imgAnimation7')
+const imgPresentationsix = document.querySelector('.imgAnimation8')
+const imgPresentationSeven = document.querySelector('.imgAnimation6')
+const imgPresentationeight = document.querySelector('.imgAnimation5')
+const imgPresentationnine = document.querySelector('.imgAnimation4')
+const imgPresentationTen = document.querySelector('.imgAnimation3')
+const imgPresentationEleven = document.querySelector('.imgAnimation2')
+const imgPresentationTwelve = document.querySelector('.imgAnimation1')
+const imgPresentationThirteen = document.querySelector('.imgAnimation13')
+const titrePresentation = document.querySelector('.presentationTitle h1')
+
+
+function intiAnimationPresretation() {
+    const animTimeligne = gsap.timeline();
+
+    animTimeligne
+        .fromTo(titrePresentation, { autoAlpha: 0, x: '-50vw' }, { autoAlpha: 1, x: '0vw' })
+        .to(imgPresentationOne, { autoAlpha: 0, x: '-100vw' })
+        .to(imgPresentationtow, { autoAlpha: 0, x: '100vw' })
+        .to(imgPresentationthree, { autoAlpha: 0, x: '-100vw' })
+        .to(imgPresentationfour, { autoAlpha: 0, x: '100vw' })
+        .to(imgPresentationFive, { autoAlpha: 0, x: '-100vw' })
+        .to(imgPresentationsix, { autoAlpha: 0, x: '100vw' })
+        .to(imgPresentationSeven, { autoAlpha: 0, x: '-100vw' })
+        .to(imgPresentationeight, { autoAlpha: 0, x: '100vw' })
+        .to(imgPresentationnine, { autoAlpha: 0, x: '-100vw' })
+        .to(imgPresentationTen, { autoAlpha: 0, x: '100vw' })
+        .to(imgPresentationEleven, { autoAlpha: 0, x: '-100vw' })
+        .to(imgPresentationTwelve, { autoAlpha: 0, x: '100vw' })
+        .to(imgPresentationThirteen, { autoAlpha: 0, duration: 0.5 })
+
+}
+window.addEventListener('load', intiAnimationPresretation)

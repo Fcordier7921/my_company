@@ -1,0 +1,227 @@
+/* ------------Presentation section -------- */
+
+#presentationSection {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+.contenaireAnimation {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.title {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+}
+
+.presentationTitle {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.presentationTitle h1 {
+    color: #BFA76A;
+    text-shadow: black -4px 4px 5px;
+    font-size: 9vw;
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+}
+
+.presentationTitle h2 {
+    color: white;
+    font-size: 6vw;
+    font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+
+.titleNext {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contactButun {
+    width: 150px;
+    height: 50px;
+    background-color: #BFA76A;
+    box-shadow: -4px 4px 5px black;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.contactButun a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.next {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #fff;
+    place-self: center end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next a img {
+    width: 20px;
+    height: 25px;
+}
+
+
+/*----------about---------------------*/
+
+#about {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+}
+
+#about h2 {
+    background-color: red;
+    height: 100vh;
+}
+
+
+/*----------contact---------------------*/
+
+#contact {
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+}
+
+#contact h2 {
+    background-color: blue;
+    height: 100vh;
+}
+
+@media screen and (min-width: 350px) {
+    .presentationTitle h1 {
+        font-size: 9vw;
+    }
+    .titleNext {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .presentationTitle h1 {
+        font-size: 8vw;
+    }
+    .presentationTitle h2 {
+        font-size: 5vw;
+        margin-top: 10px;
+    }
+    .contactButun {
+        width: 200px;
+        height: 50px;
+    }
+    .contactButun a {
+        font-size: 20px;
+    }
+    .next {
+        width: 60px;
+        height: 60px;
+    }
+    .next a img {
+        width: 25px;
+        height: 35px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .presentationTitle {
+        width: 70%;
+    }
+    .presentationTitle h1 {
+        font-size: 7vw;
+    }
+    .presentationTitle h2 {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .presentationTitle {
+        width: 70%;
+    }
+    .presentationTitle h1 {
+        font-size: 5vw;
+    }
+    .presentationTitle h2 {
+        font-size: 3vw;
+    }
+    .titleNext {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .contactButun {
+        width: 250px;
+        height: 60px;
+        margin-left: 70px;
+    }
+    .contactButun a {
+        font-size: 25px;
+    }
+    .next {
+        width: 60px;
+        height: 60px;
+    }
+    .next a img {
+        width: 25px;
+        height: 35px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .presentationTitle h1 {
+        font-size: 3vw;
+        margin-bottom: 50px;
+    }
+    .presentationTitle h2 {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .presentationTitle {
+        width: 60%;
+    }
+    .presentationTitle h1 {
+        font-size: 3vw;
+    }
+    .presentationTitle h2 {
+        font-size: 1.9vw;
+    }
+}

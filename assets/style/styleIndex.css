@@ -15,6 +15,7 @@
     top: 0;
     left: 0;
     z-index: 2;
+    overflow: hidden;
 }
 
 .imgAnimation1,
@@ -48,12 +49,12 @@
 }
 
 .imgAnimation2 {
-    background-image: url(../img/4plan2.png);
+    background-image: url(../img/4plan3.png);
     right: 0;
 }
 
 .imgAnimation3 {
-    background-image: url(../img/4plan3.png);
+    background-image: url(../img/4plan5.png);
     left: 0;
 }
 
@@ -63,13 +64,13 @@
 }
 
 .imgAnimation5 {
-    background-image: url(../img/4plan5.png);
+    background-image: url(../img/4plan2.png);
     left: 0;
 }
 
 .imgAnimation6 {
     background-image: url(../img/4plan6.png);
-    right: 0;
+    left: 0;
 }
 
 .imgAnimation7 {

@@ -1,5 +1,5 @@
 //-------------variable for @media -------
-let mediaQueriesGsap = gsap.matchMedia();
+// let mediaQueriesGsap = gsap.matchMedia();
 
 //------------------navigation menu -----------
 
@@ -73,25 +73,60 @@ const imgPresentationTwelve = document.querySelector('.imgAnimation1')
 const imgPresentationThirteen = document.querySelector('.imgAnimation13')
 const titrePresentation = document.querySelector('.presentationTitle h1')
 
-
+//-----------Animating brushwood----------   
 function intiAnimationPresretation() {
-    const animTimeligne = gsap.timeline();
+    const animTimeligne = gsap.timeline({
+        defaults: {
+            ease: "power1.out",
+            duration: 0.5
+        }
+    });
 
     animTimeligne
         .fromTo(titrePresentation, { autoAlpha: 0, x: '-50vw' }, { autoAlpha: 1, x: '0vw' })
-        .to(imgPresentationOne, { autoAlpha: 0, x: '-100vw' })
-        .to(imgPresentationtow, { autoAlpha: 0, x: '100vw' })
-        .to(imgPresentationthree, { autoAlpha: 0, x: '-100vw' })
-        .to(imgPresentationfour, { autoAlpha: 0, x: '100vw' })
-        .to(imgPresentationFive, { autoAlpha: 0, x: '-100vw' })
-        .to(imgPresentationsix, { autoAlpha: 0, x: '100vw' })
-        .to(imgPresentationSeven, { autoAlpha: 0, x: '-100vw' })
-        .to(imgPresentationeight, { autoAlpha: 0, x: '100vw' })
-        .to(imgPresentationnine, { autoAlpha: 0, x: '-100vw' })
-        .to(imgPresentationTen, { autoAlpha: 0, x: '100vw' })
-        .to(imgPresentationEleven, { autoAlpha: 0, x: '-100vw' })
-        .to(imgPresentationTwelve, { autoAlpha: 0, x: '100vw' })
-        .to(imgPresentationThirteen, { autoAlpha: 0, duration: 0.5 })
+        .to(imgPresentationOne, { duration: 3, autoAlpha: 0, x: '-100vw' }, '+=1')
+        .to(imgPresentationtow, { duration: 3, autoAlpha: 0, x: '100vw' }, '<')
+        //zoom start
+        .to(imgPresentationthree, { duration: 0.70, y: 0, x: -200, width: '110%' }, '<')
+        .to(imgPresentationfour, { duration: 0.70, y: 0, x: 300, width: '110%' }, '<')
+        .to(imgPresentationFive, { duration: 0.70, y: 0, x: -250, width: '110%' }, '<')
+        .to(imgPresentationsix, { duration: 0.70, y: 0, x: 250, width: '110%' }, '<')
+        //zoom end
+        .to(imgPresentationthree, { duration: 2.5, autoAlpha: 0, x: '-100vw' }, '<0.2')
+        .to(imgPresentationfour, { duration: 2.5, autoAlpha: 0, x: '100vw' }, '<')
+        //zoom start
+        .to(imgPresentationFive, { y: 0, x: -550, width: '120%' }, '<')
+        .to(imgPresentationsix, { y: 0, x: 550, width: '120%' }, '<')
+        .to(imgPresentationSeven, { y: 0, x: -100, width: '70%' }, '<')
+        .to(imgPresentationeight, { y: 0, x: 0, width: '70%' }, '<')
+        .to(imgPresentationnine, { y: 0, x: 150, width: '70%' }, '<')
+        .to(imgPresentationTen, { y: 0, x: 100, width: '70%' }, '<')
+        .to(imgPresentationEleven, { y: 0, x: 0, width: '70%' }, '<')
+        .to(imgPresentationTwelve, { y: 0, x: 0, width: '70%' }, '<')
+        //zoom end
+        .to(imgPresentationFive, { duration: 2.5, autoAlpha: 0, x: '-100vw' }, '<0.2')
+        .to(imgPresentationsix, { duration: 2.5, autoAlpha: 0, x: '100vw' }, '<')
+        //zoom start
+        .to(imgPresentationSeven, { y: -350, x: -370, width: '70%', height: '150%' }, '<')
+        .to(imgPresentationeight, { y: -250, x: 300, width: '70%', height: '150%' }, '<')
+        .to(imgPresentationnine, { y: -310, x: -250, width: '70%', height: '150%' }, '<')
+        .to(imgPresentationTen, { y: -310, x: 150, width: '70%', height: '150%' }, '<')
+        .to(imgPresentationEleven, { y: -250, x: 0, width: '70%', height: '150%' }, '<')
+        .to(imgPresentationTwelve, { y: -250, x: -150, width: '70%', height: '150%' }, '<')
+        //zoom end
+        .to(imgPresentationSeven, { autoAlpha: 0, x: '-100vw' }, '<0.2')
+        .to(imgPresentationeight, { autoAlpha: 0, x: '100vw' }, '<')
+        .to(imgPresentationnine, { autoAlpha: 0, x: '-100vw' }, '<0.2')
+        .to(imgPresentationTen, { autoAlpha: 0, x: '100vw' }, '<')
+        .to(imgPresentationTwelve, { autoAlpha: 0, x: '100vw' }, '<0.2')
+        .to(imgPresentationEleven, { autoAlpha: 0, x: '-100vw' }, '<')
+
+
+    .to(imgPresentationThirteen, { duration: 0.5, autoAlpha: 0, duration: 0.5 })
+
+
+
+
 
 }
 window.addEventListener('load', intiAnimationPresretation)

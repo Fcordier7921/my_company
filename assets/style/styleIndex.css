@@ -44,66 +44,71 @@
 }
 
 .imgAnimation1 {
-    background-image: url(../img/4plan1.png);
+    background-image: url(../img/plan4_1.png);
     left: 0;
 }
 
 .imgAnimation2 {
-    background-image: url(../img/4plan3.png);
+    background-image: url(../img/plan4_2.png);
     right: 0;
 }
 
 .imgAnimation3 {
-    background-image: url(../img/4plan5.png);
+    background-image: url(../img/plan4_3.png);
     left: 0;
 }
 
 .imgAnimation4 {
-    background-image: url(../img/4plan4.png);
+    background-image: url(../img/plan4_4.png);
     right: 0;
 }
 
 .imgAnimation5 {
-    background-image: url(../img/4plan2.png);
+    background-image: url(../img/plan4_5.png);
     left: 0;
 }
 
 .imgAnimation6 {
-    background-image: url(../img/4plan6.png);
+    background-image: url(../img/plan4_6.png);
     left: 0;
 }
 
 .imgAnimation7 {
-    background-image: url(../img/3planguauche.png);
+    background-image: url(../img/plan4_7.png);
     left: 0;
 }
 
 .imgAnimation8 {
-    background-image: url(../img/3plandroit.png);
+    background-image: url(../img/3planguauche.png);
     right: 0;
 }
 
 .imgAnimation9 {
-    background-image: url(../img/2planguauche.png);
+    background-image: url(../img/3plandroit.png);
     left: 0;
 }
 
 .imgAnimation10 {
-    background-image: url(../img/2plandroit.png);
+    background-image: url(../img/2planguauche.png);
     right: 0;
 }
 
 .imgAnimation11 {
-    background-image: url(../img/1planguauche.png);
+    background-image: url(../img/2plandroit.png);
     left: 0;
 }
 
 .imgAnimation12 {
-    background-image: url(../img/1plandroit.png);
+    background-image: url(../img/1planguauche.png);
     right: 0;
 }
 
 .imgAnimation13 {
+    background-image: url(../img/1plandroit.png);
+    right: 0;
+}
+
+.imgAnimation14 {
     background-color: rgb(0, 0, 0, 0.3);
 }
 

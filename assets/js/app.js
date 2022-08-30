@@ -58,6 +58,7 @@ menuLigneFour.addEventListener('click', displayNav);
 
 
 //------------------section presentation -----------
+const backgrondPresentation = document.querySelector('.contenaireAnimation')
 const imgPresentationOne = document.querySelector('.imgAnimation1')
 const imgPresentationtow = document.querySelector('.imgAnimation2')
 const imgPresentationthree = document.querySelector('.imgAnimation3')
@@ -73,6 +74,9 @@ const imgPresentationTwelve = document.querySelector('.imgAnimation12')
 const imgPresentationThirteen = document.querySelector('.imgAnimation13')
 const imgPresentationfourteen = document.querySelector('.imgAnimation14')
 const titrePresentation = document.querySelector('.presentationTitle h1')
+const titreTowPresentation = document.querySelector('.presentationTitletow h2')
+const buttonPresentation = document.querySelector('.title .titleNext .contactButun')
+const nextPresentation = document.querySelector('.title .titleNext .next')
 
 //-----------Animating brushwood----------   
 function intiAnimationPresretation() {
@@ -111,13 +115,64 @@ function intiAnimationPresretation() {
         .to(imgPresentationOne, { autoAlpha: 0, x: '100vw' }, '<')
         .to(imgPresentationthree, { autoAlpha: 0, x: '100vw' }, '<')
         .to(imgPresentationtow, { autoAlpha: 0, x: '-100vw' }, '<-0.05')
+        .to(titreTowPresentation, { duration: 0.5, autoAlpha: 1 }, '<')
+        .to(buttonPresentation, { duration: 0.5, autoAlpha: 1 }, '<')
+        .to(nextPresentation, { duration: 0.5, autoAlpha: 1 }, '<')
+        //phase 4
+        .to(buttonPresentation, { duration: 0.5, zIndex: 700 }, '<')
+        .to(nextPresentation, { duration: 0.5, zIndex: 700 }, '<')
+        .to(backgrondPresentation, { duration: 2, backgroundColor: 'rgba(0, 0, 0, 0)' }, '<')
+        .to(imgPresentationfourteen, { duration: 0.5, autoAlpha: 0 }, '<1.5')
 
+    let dateCookiePresentztion = new Date(Date.now() + 86400000);
+    dateCookiePresentztion = dateCookiePresentztion.toUTCString();
 
-    .to(imgPresentationfourteen, { duration: 0.5, autoAlpha: 0, duration: 0.5 })
-
-
+    document.cookie = 'WelcomeEntertainment=ok; path=/index.html; secure; expires=' + dateCookiePresentztion
 
 
 
 }
-window.addEventListener('load', intiAnimationPresretation)
+
+
+const cookieValue = document.cookie.split('; ')[0];
+if (cookieValue != "WelcomeEntertainment=ok") {
+    window.addEventListener('load', intiAnimationPresretation)
+} else {
+    backgrondPresentation.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+    imgPresentationOne.style.opacity = 0;
+    imgPresentationtow.style.opacity = 0;
+    imgPresentationthree.style.opacity = 0;
+    imgPresentationfour.style.opacity = 0;
+    imgPresentationFive.style.opacity = 0;
+    imgPresentationsix.style.opacity = 0;
+    imgPresentationSeven.style.opacity = 0;
+    imgPresentationeight.style.opacity = 0;
+    imgPresentationnine.style.opacity = 0;
+    imgPresentationTen.style.opacity = 0;
+    imgPresentationEleven.style.opacity = 0;
+    imgPresentationTwelve.style.opacity = 0;
+    imgPresentationThirteen.style.opacity = 0;
+    imgPresentationfourteen.style.opacity = 0;
+
+    const animTimeligneElse = gsap.timeline({
+        defaults: {
+            ease: "sine.inOut",
+            duration: 2
+        }
+    });
+    animTimeligneElse
+        .fromTo(titrePresentation, { autoAlpha: 0, x: '-50vw' }, { autoAlpha: 1, x: '0vw', ease: "power1.out" })
+        .to(titreTowPresentation, { duration: 0.5, autoAlpha: 1 }, '<')
+        .to(buttonPresentation, { duration: 0.5, autoAlpha: 1 }, '<')
+        .to(nextPresentation, { duration: 0.5, autoAlpha: 1 }, '<')
+        .to(buttonPresentation, { duration: 0.5, zIndex: 700 }, '<')
+        .to(nextPresentation, { duration: 0.5, zIndex: 700 }, '<')
+        .to(backgrondPresentation, { duration: 2, backgroundColor: 'rgba(0, 0, 0, 0)' }, '<')
+        .to(imgPresentationfourteen, { duration: 0.5, autoAlpha: 0 }, '<1.5')
+
+
+
+    titrePresentation.style.opacity = 1;
+    titreTowPresentation.style.opacity = 1;
+    buttonPresentation.style.opacity = 1;
+}

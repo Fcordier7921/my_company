@@ -4,11 +4,15 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-color: black;
+    background-image: url(../img/fontweiwe.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow-x: hidden;
 }
 
 .contenaireAnimation {
+    background-color: black;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -153,6 +157,8 @@
 }
 
 .presentationTitletow h2 {
+    opacity: 0;
+    visibility: hidden;
     color: white;
     font-size: 6vw;
     margin-top: 5px;
@@ -169,6 +175,8 @@
 }
 
 .contactButun {
+    opacity: 0;
+    visibility: hidden;
     width: 150px;
     height: 50px;
     background-color: #BFA76A;
@@ -188,6 +196,8 @@
 }
 
 .next {
+    opacity: 0;
+    visibility: hidden;
     width: 40px;
     height: 40px;
     margin-top: 20px;
@@ -209,14 +219,113 @@
 /*----------about---------------------*/
 
 #about {
-    background-color: red;
     width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
 }
 
-#about h2 {
-    background-color: red;
-    height: 100vh;
+.quotes {
+    width: 100%;
+    font-family: 'Gloria Hallelujah Regular', 'Times New Roman', Times, serif;
+    color: #BFA76A;
+}
+
+.quotes p:nth-child(1) {
+    font-size: 25px;
+    text-align: center;
+}
+
+.quotes p:nth-child(2) {
+    font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 17px;
+    text-align: end;
+    margin: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.bodyAbout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bodyAbout .titleAbout {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.bodyAbout .titleAbout h3 {
+    font-size: 12vw;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bodyAbout .titleAbout h2 {
+    font-size: 19vw;
+    text-align: center;
+}
+
+.bodyAbout .textImgAbout {
+    width: 100%;
+    padding: 0 20px 0 20px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bodyAbout .textImgAbout .findOutMore {
+    justify-self: end;
+    height: 50px;
+    margin: 40px 10px;
+    border: 2px solid #BFA76A;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.bodyAbout .textImgAbout .findOutMore a {
+    width: 100%;
+    text-decoration: none;
+    color: #BFA76A;
+}
+
+.bodyAbout .textImgAbout .imgAbout {
+    width: 100%;
+    height: 75vw;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.imgAboutOne,
+.imgAboutTwo {
+    width: 61vw;
+    height: 40vw;
+    background-color: #BFA76A;
+    position: relative;
+}
+
+.textImgAbout .imgAbout .imgAboutOne img,
+.textImgAbout .imgAbout .imgAboutTwo img {
+    width: 58vw;
+    height: 37vw;
+}
+
+.textImgAbout .imgAbout .imgAboutOne img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.imgAboutTwo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 
@@ -247,7 +356,33 @@
     height: 100vh;
 }
 
+
+/*----------media querise--------------------------------*/
+
+
+/*-------height management--------------*/
+
+@media screen and (max-height: 450px) {
+    #presentationSection {
+        height: 700px;
+    }
+    .title {
+        width: 100%;
+        height: 100%;
+    }
+    .presentationTitle {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+}
+
+
+/*-------width management--------------*/
+
 @media screen and (min-width: 350px) {
+    /* ------------Presentation section -------- */
     .presentationTitle h1 {
         font-size: 9vw;
     }
@@ -257,6 +392,7 @@
 }
 
 @media screen and (min-width: 450px) {
+    /* ------------Presentation section -------- */
     .presentationTitle h1 {
         font-size: 8vw;
     }
@@ -282,11 +418,12 @@
 }
 
 @media screen and (min-width: 600px) {
+    /* ------------Presentation section -------- */
     .presentationTitle {
-        width: 70%;
+        width: 90%;
     }
     .presentationTitle h1 {
-        font-size: 7vw;
+        font-size: 6vw;
     }
     .presentationTitletow h2 {
         font-size: 4.5vw;
@@ -294,6 +431,7 @@
 }
 
 @media screen and (min-width: 800px) {
+    /* ------------Presentation section -------- */
     .presentationTitle {
         width: 70%;
     }
@@ -315,7 +453,7 @@
     .contactButun {
         width: 250px;
         height: 50px;
-        margin-left: 70px;
+        margin-left: 50px;
     }
     .contactButun a {
         font-size: 25px;
@@ -331,6 +469,7 @@
 }
 
 @media screen and (min-width: 1000px) {
+    /* ------------Presentation section -------- */
     .presentationTitle h1 {
         font-size: 3vw;
         margin-bottom: 50px;
@@ -341,6 +480,7 @@
 }
 
 @media screen and (min-width: 1500px) {
+    /* ------------Presentation section -------- */
     .presentationTitle {
         width: 60%;
     }

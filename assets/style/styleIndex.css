@@ -257,6 +257,7 @@
 .bodyAbout .titleAbout {
     width: 100%;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .bodyAbout .titleAbout h3 {
@@ -279,20 +280,49 @@
     flex-direction: column;
 }
 
-.bodyAbout .textImgAbout .findOutMore {
+.findOutMore {
     justify-self: end;
+    max-width: 250px;
     height: 50px;
     margin: 40px 10px;
     border: 2px solid #BFA76A;
     display: flex;
     align-items: center;
     text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
 }
 
-.bodyAbout .textImgAbout .findOutMore a {
+.findOutMore::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 120%;
+    width: 130%;
+    height: 100%;
+    background: #BFA76A;
+    transition: all .5s;
+    z-index: -1;
+    transform: skewx(-50deg);
+}
+
+.findOutMore:hover::before {
+    right: -17%;
+    color: black;
+}
+
+.findOutMore a {
     width: 100%;
+    height: 100%;
+    margin-top: 7%;
     text-decoration: none;
     color: #BFA76A;
+    transition: all .5s;
+}
+
+.findOutMore a:hover {
+    color: black;
 }
 
 .bodyAbout .textImgAbout .imgAbout {
@@ -305,7 +335,9 @@
 .imgAboutOne,
 .imgAboutTwo {
     width: 61vw;
+    max-width: 250px;
     height: 40vw;
+    max-height: 176px;
     background-color: #BFA76A;
     position: relative;
 }
@@ -313,7 +345,9 @@
 .textImgAbout .imgAbout .imgAboutOne img,
 .textImgAbout .imgAbout .imgAboutTwo img {
     width: 58vw;
+    max-width: 240px;
     height: 37vw;
+    max-height: 169px;
 }
 
 .textImgAbout .imgAbout .imgAboutOne img {
@@ -329,17 +363,192 @@
 }
 
 
+/*----------separator--------------------*/
+
+.tr {
+    width: 100vw;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/liane.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 /*----------services---------------------*/
 
 #services {
-    background-color: yellow;
     width: 100vw;
-    height: 100vh;
+    overflow: hidden;
 }
 
-#services h2 {
-    background-color: yellow;
-    height: 100vh;
+.titleService {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.titleService h3 {
+    font-size: 10vw;
+    text-align: center;
+}
+
+.titleService h2 {
+    font-size: 15vw;
+    text-align: center;
+}
+
+.card {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card .designWeb,
+.card .formulaWeb,
+.card .outsourcing {
+    width: 80%;
+    height: 85vh;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 50px;
+    position: relative;
+}
+
+.card .designWeb h4,
+.card .formulaWeb h4,
+.card .outsourcing h4 {
+    width: 100%;
+    padding: 50px 3px;
+    color: #044389;
+    text-align: center;
+    font-size: 1.2rem;
+    text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+    line-height: 30px;
+}
+
+.card .designWeb p,
+.card .formulaWeb p,
+.card .outsourcing p {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+}
+
+.card .designWeb .findOutMore,
+.card .formulaWeb .findOutMore,
+.card .outsourcing .findOutMore {
+    width: 80%;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #044389;
+    background-color: #fff;
+}
+
+.card .designWeb .findOutMore::before,
+.card .formulaWeb .findOutMore::before,
+.card .outsourcing .findOutMore::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 120%;
+    width: 130%;
+    height: 100%;
+    background: #044389;
+    transition: all .5s;
+    z-index: -1;
+    transform: skewx(-50deg);
+}
+
+.card .designWeb .findOutMore:hover::before,
+.card .formulaWeb .findOutMore:hover::before,
+.card .outsourcing .findOutMore:hover::before {
+    right: -17%;
+    color: #ffffff;
+}
+
+.card .designWeb .findOutMore a,
+.card .formulaWeb .findOutMore a,
+.card .outsourcing .findOutMore a {
+    font-size: 1.4rem;
+    width: 100%;
+    height: 100%;
+    margin-top: 7%;
+    text-decoration: none;
+    color: #044389;
+    transition: all .5s;
+}
+
+.card .designWeb .findOutMore a:hover,
+.card .formulaWeb .findOutMore a:hover,
+.card .outsourcing .findOutMore a:hover {
+    color: white;
+}
+
+.card .designWeb img:nth-child(1) {
+    width: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.card .designWeb .imgTowDesignWeb {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.card .formulaWeb img:nth-child(1) {
+    width: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.card .formulaWeb .imgTowFormulaWeb {
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.card .outsourcing img:nth-child(1) {
+    width: 300px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+}
+
+.card .outsourcing .imgTowOutsourcing {
+    width: 400px;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    z-index: -1;
+}
+
+#services .cardImgEnd {
+    width: 500px;
+    position: relative;
+    bottom: -30px;
+    left: -150px;
+    z-index: -1;
 }
 
 
@@ -384,17 +593,18 @@
 @media screen and (min-width: 350px) {
     /* ------------Presentation section -------- */
     .presentationTitle h1 {
-        font-size: 9vw;
+        font-size: 8.5vw;
     }
     .titleNext {
         margin-bottom: 30px;
     }
+    /*----------about---------------------*/
 }
 
 @media screen and (min-width: 450px) {
     /* ------------Presentation section -------- */
     .presentationTitle h1 {
-        font-size: 8vw;
+        font-size: 6.5vw;
     }
     .presentationTitletow h2 {
         font-size: 5vw;
@@ -415,6 +625,29 @@
         width: 25px;
         height: 35px;
     }
+    /*----------about---------------------*/
+    .quotes p:nth-child(1) {
+        font-size: 20px;
+    }
+    .quotes p:nth-child(2) {
+        font-size: 12px;
+        margin-top: 0;
+    }
+    .bodyAbout .titleAbout h3 {
+        font-size: 6vw;
+    }
+    .bodyAbout .titleAbout h2 {
+        font-size: 10vw;
+        text-align: center;
+    }
+    .bodyAbout .textImgAbout {
+        font-size: 1.2rem;
+    }
+    .imgAboutTwo {
+        position: absolute;
+        left: 170px;
+        top: 150px;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -428,6 +661,24 @@
     .presentationTitletow h2 {
         font-size: 4.5vw;
     }
+    /*----------about---------------------*/
+    .quotes p:nth-child(2) {
+        font-size: 12px;
+        margin-right: 5vw;
+    }
+    .bodyAbout .titleAbout h3 {
+        font-size: 6vw;
+    }
+    .bodyAbout .titleAbout h2 {
+        font-size: 10vw;
+        text-align: center;
+    }
+    .bodyAbout .textImgAbout {
+        font-size: 1.2rem;
+    }
+    .bodyAbout .textImgAbout .imgAbout {
+        height: 350px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -436,7 +687,7 @@
         width: 70%;
     }
     .presentationTitle h1 {
-        font-size: 5.5vw;
+        font-size: 4vw;
         margin-bottom: 50px;
     }
     .presentationTitletow h2 {
@@ -466,6 +717,41 @@
         width: 25px;
         height: 35px;
     }
+    /*----------about---------------------*/
+    .quotes p:nth-child(2) {
+        font-size: 12px;
+        margin-right: 15%;
+    }
+    .bodyAbout .titleAbout h3 {
+        font-size: 6vw;
+    }
+    .bodyAbout .titleAbout h2 {
+        font-size: 10vw;
+        text-align: center;
+    }
+    .bodyAbout .textImgAbout {
+        width: 100%;
+        padding: 0 20px 0 20px;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+    .bodyAbout .textImgAbout .txtAbout {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+    .bodyAbout .textImgAbout .imgAbout {
+        width: 70%;
+        height: 500px;
+        overflow: hidden;
+    }
+    .imgAboutTwo {
+        position: absolute;
+        left: 10px;
+        top: 175px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -476,6 +762,57 @@
     }
     .presentationTitletow h2 {
         font-size: 2vw;
+    }
+    /*----------about---------------------*/
+    .quotes p:nth-child(1) {
+        font-size: 30px;
+    }
+    .quotes p:nth-child(2) {
+        margin-right: 17vw;
+    }
+    .bodyAbout .titleAbout h3 {
+        font-size: 2.5vw;
+        position: relative;
+        left: -2%;
+    }
+    .bodyAbout .titleAbout h2 {
+        font-size: 5vw;
+        position: relative;
+        left: 13%;
+    }
+    .bodyAbout .textImgAbout {
+        font-size: 1.1rem;
+        line-height: 200%;
+    }
+    .bodyAbout .textImgAbout .txtAbout {
+        width: 70vw;
+        height: 420px;
+        overflow: visible;
+    }
+    .bodyAbout .textImgAbout .imgAbout {
+        width: 70%;
+        height: 400px;
+        overflow: visible;
+    }
+    .imgAboutOne,
+    .imgAboutTwo {
+        max-width: 60%;
+        max-height: 60%;
+    }
+    .textImgAbout .imgAbout .imgAboutOne img,
+    .textImgAbout .imgAbout .imgAboutTwo img {
+        max-width: 95%;
+        max-height: 95%;
+    }
+    .imgAboutOne {
+        position: absolute;
+        left: 0;
+        top: -90px;
+    }
+    .imgAboutTwo {
+        position: absolute;
+        left: 28%;
+        top: 100px;
     }
 }
 
@@ -489,5 +826,39 @@
     }
     .presentationTitletow h2 {
         font-size: 1.9vw;
+    }
+    /*----------about---------------------*/
+    .quotes {
+        width: 50%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .quotes p:nth-child(2) {
+        margin-right: 0;
+    }
+    .bodyAbout {
+        margin-bottom: 70px;
+    }
+    .bodyAbout .textImgAbout {
+        font-size: 1.5rem;
+        padding-right: 50px;
+    }
+    .findOutMore {
+        line-height: normal;
+    }
+    .imgAbout {
+        margin-left: .2vw;
+    }
+    .imgAboutOne,
+    .imgAboutTwo {
+        max-height: 80%;
+        max-width: 500px;
+    }
+    .imgAboutOne {
+        top: -150px;
+    }
+    .imgAboutTwo {
+        top: 120px;
     }
 }

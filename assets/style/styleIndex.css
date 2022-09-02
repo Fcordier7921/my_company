@@ -382,11 +382,17 @@
 #services {
     width: 100vw;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titleService {
     width: 100%;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .titleService h3 {
@@ -411,7 +417,8 @@
 .card .formulaWeb,
 .card .outsourcing {
     width: 80%;
-    height: 85vh;
+    max-width: 460px;
+    height: 600px;
     border: 1px solid rgba(0, 0, 0, 0.35);
     border-radius: 30px;
     overflow: hidden;
@@ -426,9 +433,14 @@
     padding: 50px 3px;
     color: #044389;
     text-align: center;
-    font-size: 1.2rem;
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    font-size: 10vw;
     text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
     line-height: 30px;
+}
+
+.card .outsourcing h4 {
+    font-size: 8vw;
 }
 
 .card .designWeb p,
@@ -544,11 +556,241 @@
 }
 
 #services .cardImgEnd {
-    width: 500px;
+    width: 300px;
     position: relative;
     bottom: -30px;
-    left: -150px;
+    left: -80px;
     z-index: -1;
+}
+
+
+/*----------expertise-------------------*/
+
+#expertise {
+    width: 100vw;
+    position: relative;
+}
+
+.titleExpertise {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+
+.titleExpertise h2 {
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+.quotes {
+    position: relative;
+}
+
+.titleExpertise .quotes .quotesTwo,
+.titleExpertise .quotes .quotesThree,
+.titleExpertise .quotes .quotesFour {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+.titleExpertise .quotes .quotesOne p:nth-child(1),
+.titleExpertise .quotes .quotesTwo p:nth-child(1),
+.titleExpertise .quotes .quotesThree p:nth-child(1),
+.titleExpertise .quotes .quotesFour p:nth-child(1) {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.titleExpertise .quotes .quotesOne p:nth-child(2),
+.titleExpertise .quotes .quotesTwo p:nth-child(2),
+.titleExpertise .quotes .quotesThree p:nth-child(2),
+.titleExpertise .quotes .quotesFour p:nth-child(2) {
+    color: white;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+.bodyExpertise {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.bodyExpertise .menuExpertise {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise {
+    width: 96%;
+    border: 1px solid #BFA76A;
+    border-radius: 50%;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    margin-left: 50px;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise div {
+    width: 80vw;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise div::before {
+    content: '•';
+    color: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: #BFA76A;
+    position: absolute;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
+    margin-top: 90vw;
+    padding: 0 20px;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1)::before {
+    top: 35%;
+    left: -2.5vw;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2) {
+    margin-left: .5vw;
+    padding: 0 20px;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2)::before {
+    top: 35%;
+    left: -2.5vw;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3) {
+    margin-left: 6.4vw;
+    padding: 0 20px;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3)::before {
+    top: 35%;
+    left: -3vw;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(4) {
+    margin-left: 21vw;
+    padding: 0 20px;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(4)::before {
+    top: 35%;
+    left: -3.5vw;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise p {
+    text-align: center;
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 10px black;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3) p {
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise .activeExpertise {
+    background-image: url(../img/leaft.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bodyExpertise .menuExpertise .listeMenuExpertise .activeExpertise::before {
+    content: '•';
+    color: transparent;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    top: 35%;
+    left: -3.5%;
+}
+
+.explanationsExpertise {
+    background-color: black;
+    width: 100vw;
+    height: 900px;
+    position: relative;
+}
+
+.explanationsExpertise div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.explanationsExpertise div h3 {
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: #BFA76A;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+    padding: 10px 0;
+}
+
+.explanationsExpertise div p {
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+
+.managementExpertise {
+    background-image: url(../img/expertisePreject.jpg);
+}
+
+.disgnExpertise {
+    background-image: url(../img/expertiseDesign.jpg);
+}
+
+.devExpertise {
+    background-image: url(../img/expertiseDev.jpg);
+}
+
+.performanceExpertise {
+    background-image: url(../img/expertisePerformance.jpg);
+}
+
+.managementExpertise,
+.disgnExpertise,
+.devExpertise,
+.performanceExpertise {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.explanationsExpertise .explanationsExpertiseActive {
+    opacity: 1;
 }
 
 
@@ -599,6 +841,8 @@
         margin-bottom: 30px;
     }
     /*----------about---------------------*/
+    /*----------services---------------------*/
+    /*----------expertise-------------------*/
 }
 
 @media screen and (min-width: 450px) {
@@ -648,6 +892,22 @@
         left: 170px;
         top: 150px;
     }
+    /*----------services---------------------*/
+    .card .designWeb h4,
+    .card .formulaWeb h4,
+    .card .outsourcing h4 {
+        font-size: 1.9rem;
+    }
+    .card .designWeb p,
+    .card .formulaWeb p,
+    .card .outsourcing p {
+        font-size: 1.4rem;
+    }
+    #services .cardImgEnd {
+        width: 360px;
+        left: -20vw;
+    }
+    /*----------expertise-------------------*/
 }
 
 @media screen and (min-width: 600px) {
@@ -679,6 +939,18 @@
     .bodyAbout .textImgAbout .imgAbout {
         height: 350px;
     }
+    /*----------services---------------------*/
+    .titleService h3 {
+        font-size: 7vw;
+    }
+    .titleService h2 {
+        font-size: 10vw;
+    }
+    #services .cardImgEnd {
+        width: 400px;
+        left: -40vw;
+    }
+    /*----------expertise-------------------*/
 }
 
 @media screen and (min-width: 800px) {
@@ -752,6 +1024,19 @@
         left: 10px;
         top: 175px;
     }
+    /*----------services---------------------*/
+    .titleService {
+        width: 90%;
+    }
+    .titleService h3 {
+        font-size: 5vw;
+        text-align: start;
+    }
+    .titleService h2 {
+        font-size: 8vw;
+        text-align: end;
+    }
+    /*----------expertise-------------------*/
 }
 
 @media screen and (min-width: 1000px) {
@@ -814,6 +1099,19 @@
         left: 28%;
         top: 100px;
     }
+    /*----------services---------------------*/
+    .titleService {
+        width: 62%;
+    }
+    .titleService h3 {
+        font-size: 3vw;
+        text-align: start;
+    }
+    .titleService h2 {
+        font-size: 6vw;
+        text-align: end;
+    }
+    /*----------expertise-------------------*/
 }
 
 @media screen and (min-width: 1500px) {
@@ -861,4 +1159,15 @@
     .imgAboutTwo {
         top: 120px;
     }
+    /*----------services---------------------*/
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #services .cardImgEnd {
+        width: 450px;
+        left: -45vw;
+    }
+    /*----------expertise-------------------*/
 }

@@ -133,6 +133,7 @@ function intiAnimationPresretation() {
 
 }
 
+//--------Cookie management, for the start animation------------
 
 const cookieValue = document.cookie.split('; ')[0];
 if (cookieValue != "WelcomeEntertainment=ok") {
@@ -176,3 +177,11 @@ if (cookieValue != "WelcomeEntertainment=ok") {
     titreTowPresentation.style.opacity = 1;
     buttonPresentation.style.opacity = 1;
 }
+
+//--------silde of the expertise section--------
+
+const quotesOne = document.querySelector('.titleExpertise.quotes .quotesOne');
+const quotesTwo = document.querySelector('.titleExpertise.quotes .quotesTwo');
+const quotesThree = document.querySelector('.titleExpertise.quotes .quotesThree');
+const quotesFour = document.querySelector('.titleExpertise.quotes .quotesFour');
+const listeMenuExpertise = document.querySelectorAll('.bodyExpertise .menuExpertise .listeMenuExpertise div')

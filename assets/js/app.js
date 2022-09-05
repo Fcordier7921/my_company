@@ -180,8 +180,107 @@ if (cookieValue != "WelcomeEntertainment=ok") {
 
 //--------silde of the expertise section--------
 
-const quotesOne = document.querySelector('.titleExpertise.quotes .quotesOne');
-const quotesTwo = document.querySelector('.titleExpertise.quotes .quotesTwo');
-const quotesThree = document.querySelector('.titleExpertise.quotes .quotesThree');
-const quotesFour = document.querySelector('.titleExpertise.quotes .quotesFour');
-const listeMenuExpertise = document.querySelectorAll('.bodyExpertise .menuExpertise .listeMenuExpertise div')
+const quotesOne = document.querySelector('.titleExpertise .quotes .quotesOne');
+const quotesTwo = document.querySelector('.titleExpertise .quotes .quotesTwo');
+const quotesThree = document.querySelector('.titleExpertise .quotes .quotesThree');
+const quotesFour = document.querySelector('.titleExpertise .quotes .quotesFour');
+const managementExpertise = document.querySelector('.bodyExpertise .explanationsExpertise .managementExpertise');
+const disgnExpertise = document.querySelector('.bodyExpertise .explanationsExpertise .disgnExpertise');
+const devExpertise = document.querySelector('.bodyExpertise .explanationsExpertise .devExpertise');
+const performanceExpertise = document.querySelector('.bodyExpertise .explanationsExpertise .performanceExpertise');
+
+const listeMenuExpertiseAll = document.querySelectorAll('.bodyExpertise .menuExpertise .listeMenuExpertise div');
+
+const managementExpertiseDiv = document.querySelector('.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1)');
+const disgnExpertiseDiv = document.querySelector('.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2)');
+const devExpertiseDiv = document.querySelector('.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3)');
+const performanceExpertiseDiv = document.querySelector('.bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(4)');
+
+for (let i = 0; i < listeMenuExpertiseAll.length; i++) {
+
+    listeMenuExpertiseAll[i].addEventListener('click', () => {
+
+        if (listeMenuExpertiseAll[i] === managementExpertiseDiv) {
+
+            disgnExpertiseDiv.classList.remove("activeExpertise");
+            devExpertiseDiv.classList.remove("activeExpertise");
+            performanceExpertiseDiv.classList.remove("activeExpertise");
+            managementExpertiseDiv.classList.add("activeExpertise");
+
+            disgnExpertise.classList.remove("explanationsExpertiseActive");
+            devExpertise.classList.remove("explanationsExpertiseActive");
+            performanceExpertise.classList.remove("explanationsExpertiseActive");
+            managementExpertise.classList.add("explanationsExpertiseActive");
+
+            quotesOne.style.opacity = 1;
+            quotesTwo.style.opacity = 0;
+            quotesThree.style.opacity = 0;
+            quotesFour.style.opacity = 0;
+
+
+
+        } else if (listeMenuExpertiseAll[i] === disgnExpertiseDiv) {
+            managementExpertiseDiv.classList.remove("activeExpertise");
+            devExpertiseDiv.classList.remove("activeExpertise");
+            performanceExpertiseDiv.classList.remove("activeExpertise");
+            disgnExpertiseDiv.classList.add("activeExpertise");
+
+            managementExpertiseDiv.classList.remove("explanationsExpertiseActive");
+            devExpertise.classList.remove("explanationsExpertiseActive");
+            performanceExpertise.classList.remove("explanationsExpertiseActive");
+            disgnExpertise.classList.add("explanationsExpertiseActive");
+
+            quotesOne.style.opacity = 0;
+            quotesTwo.style.opacity = 1;
+            quotesThree.style.opacity = 0;
+            quotesFour.style.opacity = 0;
+
+        } else if (listeMenuExpertiseAll[i] === devExpertiseDiv) {
+            managementExpertiseDiv.classList.remove("activeExpertise");
+            disgnExpertiseDiv.classList.remove("activeExpertise");
+            performanceExpertiseDiv.classList.remove("activeExpertise");
+            devExpertiseDiv.classList.add("activeExpertise");
+
+            managementExpertiseDiv.classList.remove("explanationsExpertiseActive");
+            disgnExpertise.classList.remove("explanationsExpertiseActive");
+            performanceExpertise.classList.remove("explanationsExpertiseActive");
+            devExpertise.classList.add("explanationsExpertiseActive");
+
+            quotesOne.style.opacity = 0;
+            quotesTwo.style.opacity = 0;
+            quotesThree.style.opacity = 1;
+            quotesFour.style.opacity = 0;
+
+        } else if (listeMenuExpertiseAll[i] === performanceExpertiseDiv) {
+            managementExpertiseDiv.classList.remove("activeExpertise");
+            disgnExpertiseDiv.classList.remove("activeExpertise");
+            devExpertiseDiv.classList.remove("activeExpertise");
+            performanceExpertiseDiv.classList.add("activeExpertise");
+
+            managementExpertiseDiv.classList.remove("explanationsExpertiseActive");
+            disgnExpertise.classList.remove("explanationsExpertiseActive");
+            devExpertise.classList.remove("explanationsExpertiseActive");
+            performanceExpertise.classList.add("explanationsExpertiseActive");
+
+            quotesOne.style.opacity = 0;
+            quotesTwo.style.opacity = 0;
+            quotesThree.style.opacity = 0;
+            quotesFour.style.opacity = 1;
+
+        }
+
+
+    });
+
+}
+
+
+
+// managementExpertise.addEventListener('click', () => {
+//     if (managementExpertise.classList.contains('explanationsExpertiseActive')) {
+//         alert('ret gger')
+//     }
+//     disgnExpertise.classList.remove("explanationsExpertiseActive");
+//     devExpertise.classList.remove("explanationsExpertiseActive");
+//     performanceExpertise.classList.remove("explanationsExpertiseActive");
+// })

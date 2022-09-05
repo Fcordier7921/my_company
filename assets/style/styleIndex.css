@@ -569,6 +569,7 @@
 #expertise {
     width: 100vw;
     position: relative;
+    overflow-x: hidden;
 }
 
 .titleExpertise {
@@ -659,8 +660,9 @@
 }
 
 .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
-    margin-top: 90vw;
+    margin-top: 275px;
     padding: 0 20px;
+    z-index: 600;
 }
 
 .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1)::before {
@@ -908,6 +910,27 @@
         left: -20vw;
     }
     /*----------expertise-------------------*/
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
+        margin-top: 170px;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1)::before {
+        top: 40%;
+        left: 0;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2)::before {
+        top: 52.6px;
+        left: -2.5vw;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3)::before {
+        left: -4vw;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(4)::before {
+        top: 53px;
+        left: -2;
+    }
+    .explanationsExpertise {
+        height: 700px;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -951,6 +974,43 @@
         left: -40vw;
     }
     /*----------expertise-------------------*/
+    .bodyExpertise .menuExpertise .listeMenuExpertise .activeExpertise {
+        justify-content: flex-start;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
+        padding: 0 40px;
+    }
+    .explanationsExpertise div h3 {
+        padding: 0 50px;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(1),
+    .titleExpertise .quotes .quotesTwo p:nth-child(1),
+    .titleExpertise .quotes .quotesThree p:nth-child(1),
+    .titleExpertise .quotes .quotesFour p:nth-child(1) {
+        font-size: 1.3rem;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2),
+    .titleExpertise .quotes .quotesTwo p:nth-child(2),
+    .titleExpertise .quotes .quotesThree p:nth-child(2),
+    .titleExpertise .quotes .quotesFour p:nth-child(2) {
+        font-size: 1rem;
+    }
+    .explanationsExpertise {
+        height: 650px;
+        padding: 20px 0;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
+        margin-top: 170px;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1)::before {
+        left: 3px;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2)::before {
+        left: -2.2vw;
+    }
+    .explanationsExpertise {
+        height: 600px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -1037,6 +1097,36 @@
         text-align: end;
     }
     /*----------expertise-------------------*/
+    .bodyExpertise .menuExpertise .listeMenuExpertise .activeExpertise {
+        width: 480px;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3) {
+        padding: 0 0;
+    }
+    .titleExpertise h2 {
+        font-size: 3rem;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
+        margin-top: 190px;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1)::before {
+        left: 5px;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2)::before {
+        left: -1.8vw;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3)::before {
+        left: -3vw;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(4)::before {
+        left: -2vw;
+    }
+    .explanationsExpertise {
+        height: 550px;
+    }
+    .explanationsExpertise div p {
+        padding: 0 100px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -1103,6 +1193,11 @@
     .titleService {
         width: 62%;
     }
+    .card .designWeb,
+    .card .formulaWeb,
+    .card .outsourcing {
+        width: 300px;
+    }
     .titleService h3 {
         font-size: 3vw;
         text-align: start;
@@ -1111,7 +1206,83 @@
         font-size: 6vw;
         text-align: end;
     }
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
     /*----------expertise-------------------*/
+    #expertise {
+        width: 100vw;
+        height: 900px;
+        overflow: hidden;
+    }
+    .bodyExpertise {
+        width: 100vw;
+        height: 100%;
+        flex-direction: row-reverse;
+    }
+    .bodyExpertise .menuExpertise {
+        width: 50%;
+    }
+    .explanationsExpertise {
+        height: 100%;
+    }
+    .titleExpertise {
+        z-index: 500;
+    }
+    .titleExpertise h2 {
+        font-size: 3.5rem;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(1),
+    .titleExpertise .quotes .quotesTwo p:nth-child(1),
+    .titleExpertise .quotes .quotesThree p:nth-child(1),
+    .titleExpertise .quotes .quotesFour p:nth-child(1) {
+        font-size: 1rem;
+        width: 100vw;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2),
+    .titleExpertise .quotes .quotesTwo p:nth-child(2),
+    .titleExpertise .quotes .quotesThree p:nth-child(2),
+    .titleExpertise .quotes .quotesFour p:nth-child(2) {
+        font-size: .7rem;
+        position: relative;
+        left: -10vw;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise {
+        width: 85%;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1),
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2),
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3),
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(4) {
+        position: relative;
+        left: 0;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
+        top: 10%;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2) {
+        top: 12%;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3) {
+        top: 14%;
+        left: -6%;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(4) {
+        top: 13%;
+        left: -33.5%;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1)::before {
+        left: -0.5vw;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2)::before {
+        left: -1.4vw;
+    }
+    .explanationsExpertise div h3 {
+        font-size: 2rem;
+        margin-top: 30%;
+    }
 }
 
 @media screen and (min-width: 1500px) {
@@ -1160,14 +1331,148 @@
         top: 120px;
     }
     /*----------services---------------------*/
-    .card {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    .card .designWeb,
+    .card .formulaWeb,
+    .card .outsourcing {
+        width: 350px;
     }
     #services .cardImgEnd {
         width: 450px;
         left: -45vw;
     }
     /*----------expertise-------------------*/
+    .titleExpertise h2 {
+        padding-top: 50px;
+    }
+    .titleExpertise .quotes {
+        width: 90%;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(1),
+    .titleExpertise .quotes .quotesTwo p:nth-child(1),
+    .titleExpertise .quotes .quotesThree p:nth-child(1),
+    .titleExpertise .quotes .quotesFour p:nth-child(1) {
+        font-size: 1.5rem;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2),
+    .titleExpertise .quotes .quotesTwo p:nth-child(2),
+    .titleExpertise .quotes .quotesThree p:nth-child(2),
+    .titleExpertise .quotes .quotesFour p:nth-child(2) {
+        font-size: 1.2rem;
+        left: -5vw;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise .activeExpertise {
+        background-position: left;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
+        top: 5%;
+        left: 25px;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2) {
+        top: 7%;
+        left: 5px;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3) {
+        top: 9%;
+        left: -7%;
+        margin-left: 100px;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(4) {
+        top: 11%;
+        left: -33.5%;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1)::before {
+        left: -0.5vw;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2)::before {
+        left: -1.3vw;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3)::before {
+        left: -1.9vw;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(4)::before {
+        left: -2.2vw;
+    }
+    .explanationsExpertise div h3 {
+        font-size: 2.5rem;
+        margin-top: 35%;
+    }
+    .explanationsExpertise div p {
+        font-size: 1.2rem;
+    }
+    .activeExpertise p {
+        padding-left: 50px;
+    }
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(2)+.activeExpertise {
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+    .managementExpertise,
+    .disgnExpertise,
+    .devExpertise,
+    .performanceExpertise {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3)::before {
+        left: -3vw;
+    }
+    .explanationsExpertise div h3 {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3)::before {
+        left: -2.5vw;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3)::before {
+        left: -2vw;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3)::before {
+        left: -1.8vw;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2),
+    .titleExpertise .quotes .quotesTwo p:nth-child(2),
+    .titleExpertise .quotes .quotesThree p:nth-child(2),
+    .titleExpertise .quotes .quotesFour p:nth-child(2) {
+        left: -10vw;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3)::before {
+        left: -1.3vw;
+    }
+    .explanationsExpertise div h3 {
+        margin-top: 25%;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2),
+    .titleExpertise .quotes .quotesTwo p:nth-child(2),
+    .titleExpertise .quotes .quotesThree p:nth-child(2),
+    .titleExpertise .quotes .quotesFour p:nth-child(2) {
+        left: -15vw;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(3) {
+        left: -2.2vw;
+    }
+    .explanationsExpertise div h3 {
+        margin-top: 20%;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2),
+    .titleExpertise .quotes .quotesTwo p:nth-child(2),
+    .titleExpertise .quotes .quotesThree p:nth-child(2),
+    .titleExpertise .quotes .quotesFour p:nth-child(2) {
+        left: -20vw;
+    }
 }

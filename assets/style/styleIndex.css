@@ -283,7 +283,7 @@
 .findOutMore {
     justify-self: end;
     max-width: 250px;
-    height: 50px;
+    height: 48px;
     margin: 40px 10px;
     border: 2px solid #BFA76A;
     display: flex;
@@ -309,16 +309,18 @@
 
 .findOutMore:hover::before {
     right: -17%;
-    color: black;
+    z-index: 100;
 }
 
 .findOutMore a {
+    font-size: 1.4rem;
     width: 100%;
     height: 100%;
-    margin-top: 7%;
+    margin-top: 5%;
     text-decoration: none;
     color: #BFA76A;
     transition: all .5s;
+    z-index: 100;
 }
 
 .findOutMore a:hover {
@@ -460,11 +462,18 @@
     width: 80%;
     margin: 0;
     position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 79%;
+    left: 48%;
+    transform: translateX(-48%);
     border: 2px solid #044389;
     background-color: #fff;
+}
+
+.card .formulaWeb .findOutMore {
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .card .designWeb .findOutMore::before,
@@ -486,7 +495,6 @@
 .card .formulaWeb .findOutMore:hover::before,
 .card .outsourcing .findOutMore:hover::before {
     right: -17%;
-    color: #ffffff;
 }
 
 .card .designWeb .findOutMore a,
@@ -800,14 +808,9 @@
 /*----------contact---------------------*/
 
 #contact {
-    background-color: blue;
     width: 100vw;
-    height: 100vh;
-}
-
-#contact h2 {
-    background-color: blue;
-    height: 100vh;
+    height: 5000px;
+    min-height: 100vh;
 }
 
 
@@ -1079,7 +1082,6 @@
     .bodyAbout .textImgAbout .txtAbout {
         width: 100%;
         height: 500px;
-        overflow: hidden;
     }
     .bodyAbout .textImgAbout .imgAbout {
         width: 70%;
@@ -1325,7 +1327,16 @@
     .titleExpertise .quotes .quotesThree p:nth-child(2),
     .titleExpertise .quotes .quotesFour p:nth-child(2) {
         font-size: .9rem;
-        left: -12%;
+        left: -10%;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2) {
+        left: -5%;
+    }
+    .titleExpertise .quotes .quotesTwo p:nth-child(2) {
+        left: -3%;
+    }
+    .titleExpertise .quotes .quotesThree p:nth-child(2) {
+        left: -16%;
     }
     .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
         left: 3.5px;
@@ -1361,6 +1372,12 @@
     .titleExpertise .quotes .quotesFour p:nth-child(2) {
         font-size: 1rem;
         left: -9%;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2) {
+        left: -3.5%;
+    }
+    .titleExpertise .quotes .quotesThree p:nth-child(2) {
+        left: -14%;
     }
     .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
         left: 5px;
@@ -1436,7 +1453,7 @@
         padding-top: 50px;
     }
     .titleExpertise .quotes {
-        width: 90%;
+        width: 100%;
     }
     .titleExpertise .quotes .quotesOne p:nth-child(1),
     .titleExpertise .quotes .quotesTwo p:nth-child(1),
@@ -1449,7 +1466,16 @@
     .titleExpertise .quotes .quotesThree p:nth-child(2),
     .titleExpertise .quotes .quotesFour p:nth-child(2) {
         font-size: 1.1rem;
-        left: -15%;
+        left: -12.5%;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2) {
+        left: 1.5%;
+    }
+    .titleExpertise .quotes .quotesTwo p:nth-child(2) {
+        left: -7%;
+    }
+    .titleExpertise .quotes .quotesThree p:nth-child(2) {
+        left: -18%;
     }
     .bodyExpertise .menuExpertise .listeMenuExpertise .activeExpertise {
         background-position: left;
@@ -1506,6 +1532,22 @@
 }
 
 @media screen and (min-width: 1600px) {
+    .titleExpertise .quotes .quotesOne p:nth-child(2),
+    .titleExpertise .quotes .quotesTwo p:nth-child(2),
+    .titleExpertise .quotes .quotesThree p:nth-child(2),
+    .titleExpertise .quotes .quotesFour p:nth-child(2) {
+        font-size: 1.1rem;
+        left: -14.5%;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2) {
+        left: -1.5%;
+    }
+    .titleExpertise .quotes .quotesTwo p:nth-child(2) {
+        left: -8%;
+    }
+    .titleExpertise .quotes .quotesThree p:nth-child(2) {
+        left: -20%;
+    }
     .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
         left: 1.5%;
     }
@@ -1532,7 +1574,16 @@
     .titleExpertise .quotes .quotesThree p:nth-child(2),
     .titleExpertise .quotes .quotesFour p:nth-child(2) {
         font-size: 1.2rem;
-        left: -19%;
+        left: -18%;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2) {
+        left: -5.5%;
+    }
+    .titleExpertise .quotes .quotesTwo p:nth-child(2) {
+        left: -12%;
+    }
+    .titleExpertise .quotes .quotesThree p:nth-child(2) {
+        left: -22.5%;
     }
     .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1) {
         left: 2%;
@@ -1561,10 +1612,19 @@
     .titleExpertise .quotes .quotesThree p:nth-child(2),
     .titleExpertise .quotes .quotesFour p:nth-child(2) {
         font-size: 1.3rem;
-        left: -19%;
+        left: -17.5%;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2) {
+        left: -14.5%;
+    }
+    .titleExpertise .quotes .quotesTwo p:nth-child(2) {
+        left: -11.5%;
+    }
+    .titleExpertise .quotes .quotesThree p:nth-child(2) {
+        left: -22%;
     }
     .explanationsExpertise div p {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -1580,7 +1640,16 @@
     .titleExpertise .quotes .quotesThree p:nth-child(2),
     .titleExpertise .quotes .quotesFour p:nth-child(2) {
         font-size: 1.4rem;
-        left: -25%;
+        left: -22.5%;
+    }
+    .titleExpertise .quotes .quotesOne p:nth-child(2) {
+        left: -20%;
+    }
+    .titleExpertise .quotes .quotesTwo p:nth-child(2) {
+        left: -17%;
+    }
+    .titleExpertise .quotes .quotesThree p:nth-child(2) {
+        left: -26%;
     }
     .bodyExpertise .menuExpertise .listeMenuExpertise div:nth-child(1)::before {
         left: 0;
@@ -1612,5 +1681,8 @@
     .explanationsExpertise div h3 {
         margin-top: 20%;
         font-size: 4rem;
+    }
+    .explanationsExpertise div p {
+        font-size: 1.7rem;
     }
 }

@@ -119,15 +119,15 @@ function intiAnimationPresretation() {
         .to(buttonPresentation, { duration: 0.5, autoAlpha: 1 }, '<')
         .to(nextPresentation, { duration: 0.5, autoAlpha: 1 }, '<')
         //phase 4
-        .to(buttonPresentation, { duration: 0.5, zIndex: 700 }, '<')
-        .to(nextPresentation, { duration: 0.5, zIndex: 700 }, '<')
-        .to(backgrondPresentation, { duration: 2, backgroundColor: 'rgba(0, 0, 0, 0)' }, '<')
+        .to(backgrondPresentation, { duration: 2.2, backgroundColor: 'rgba(0, 0, 0, 0)', ease: "power1.out" }, '<')
         .to(imgPresentationfourteen, { duration: 0.5, autoAlpha: 0 }, '<1.5')
+        .to(nextPresentation, { duration: 2, zIndex: 700 }, '<')
+        .to(buttonPresentation, { duration: 2, zIndex: 700 }, '<0.7')
 
     let dateCookiePresentztion = new Date(Date.now() + 86400000);
     dateCookiePresentztion = dateCookiePresentztion.toUTCString();
 
-    document.cookie = 'WelcomeEntertainment=ok; path=/index.html; secure; expires=' + dateCookiePresentztion
+    document.cookie = 'WelcomeEntertainment=ok; path=http://freelance.local//; secure; expires=' + dateCookiePresentztion
 
 
 

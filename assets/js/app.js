@@ -127,7 +127,7 @@ function intiAnimationPresretation() {
     let dateCookiePresentztion = new Date(Date.now() + 86400000);
     dateCookiePresentztion = dateCookiePresentztion.toUTCString();
 
-    document.cookie = 'WelcomeEntertainment=ok; path=http://freelance.local//; secure; expires=' + dateCookiePresentztion
+    document.cookie = 'WelcomeEntertainment=ok; path=/;  expires=' + dateCookiePresentztion
 
 
 

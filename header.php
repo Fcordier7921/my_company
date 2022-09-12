@@ -8,9 +8,10 @@
     <title>Frédéric cordier| Développeur web freelance</title>
     <meta name="description" content="Développeur web freelance, le web vous donne l'impression d'être dans une jungle dense. J'élague pour vous cette jungle, en vous créant un site adapté a vos besoin et je gére tout son activité pour vous.">
     <link rel="shortcut icon" type="image/png" href="assets/img/logofolio.png" />
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/styleHeader.css">
+    <link rel="stylesheet" href="assets/style/styleFooter.css">
     <link rel="stylesheet" href="assets/style/styleIndex.css">
-
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 
 <body>

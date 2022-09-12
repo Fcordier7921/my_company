@@ -29,6 +29,13 @@
 }
 
 @font-face {
+    font-family: 'Montserrat Italic';
+    font-style: italic;
+    font-weight: normal;
+    src: url('../font/Montserrat/Montserrat-Italic.woff') format('woff');
+}
+
+@font-face {
     font-family: 'Gloria Hallelujah Regular';
     font-style: normal;
     font-weight: normal;

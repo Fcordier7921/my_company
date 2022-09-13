@@ -1,5 +1,6 @@
 <?php include("header.php"); ?>
-<?php include("submit.php"); ?>
+
+
 
 
 
@@ -257,24 +258,43 @@
         
         <div class="ExplaneCantact">
             <h2>Contactez-moi !</h2>
+            
+            <?php 
+            require 'submit.php';
+            var_dump($_POST);
+            
+             if(!empty($_POST)){
+               $captcha =new Recaptcha('6LeS9vQhAAAAAP5U0n7izOtzwHCJqyw65QcI0lvd');
+               if($captcha->checkCode($_POST['g-recaptcha-response']) === false){
+                    ?>
+                    <div class="erreurCaptcha">
+                        Le captcha ne semble pas valide
+                    </div>
+                    <?php
 
-            <form  method="post">
+               }else{
+                    ?>
+                    <div class="validateCaptcha">
+                        Merci pour votre message
+                    </div>
+                    <?php
+               }
+               
+               
+             }
+            ?></p>
+
+            <form  method="POST ">
                 <div class="indentity">
-                    <input type="text" id="name" name="name" placeholder="Nom" required value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>">
-                    <input type="text" id="firstName" name="firstName" placeholder="Prénom" value="<?php echo !empty($postData['firstName'])?$postData['firstName']:''; ?>">
+                    <input type="text" id="name" name="name" placeholder="Nom" required >
+                    <input type="text" id="firstName" name="firstName" placeholder="Prénom" >
                 </div>
-                <input class="emailContact" type="email" id="email" name="email" placeholder="Email" required value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>">
-                <textarea id="message" name="message" placeholder="Message" required><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea>
-                <div class="h-captcha" data-sitekey="<?php echo $siteKey; ?>"></div>
+                <input class="emailContact" type="email" id="email" name="email" placeholder="Email" required >
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                <div class="g-recaptcha" data-sitekey="6LeS9vQhAAAAAACe8Equ2_Hx99kZAcO_mIDok5O2"></div>
+                
                 <button type="submit" id="submit">Envoyer</button>
-                <?php 
-                if($returnMail){
-                    echo "<p>L'email a été envoyer</p>";
-                }
-                    if(!empty($statusMsg)){?>
-<p class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></p>
-                    
-               <?php } ?>
+                
             </form>
         </div>
 

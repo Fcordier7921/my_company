@@ -814,10 +814,10 @@
 }
 
 .bodyContact {
-    background-image: url(../img/contact.png);
+    /* background-image: url(../img/contact.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     width: 100vw;
     height: 100vh;
     min-height: 660px;
@@ -879,10 +879,9 @@
     height: 100px;
 }
 
-.bodyContact .ExplaneCantact form .h-captcha {
+.bodyContact .ExplaneCantact form .g-recaptcha {
     width: 250px;
     height: 80px;
-    background-color: red;
     margin-bottom: 20px;
 }
 
@@ -922,6 +921,20 @@
 
 .bodyContact .ExplaneCantact form #submit[type=submit]:hover::before {
     right: -19%;
+}
+
+.success {
+    width: 80vw;
+    height: 50%;
+    font-size: 2rem;
+    color: red;
+}
+
+.validateCaptcha {
+    width: 80vw;
+    height: 50%;
+    font-size: 2rem;
+    color: green;
 }
 
 
@@ -1270,7 +1283,7 @@
     .bodyContact .ExplaneCantact form textarea {
         height: 200px;
     }
-    .bodyContact .ExplaneCantact form .h-captcha {
+    .bodyContact .ExplaneCantact form .g-recaptcha {
         width: 350px;
         height: 100px;
     }

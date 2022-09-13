@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/style/styleHeader.css">
     <link rel="stylesheet" href="assets/style/styleFooter.css">
     <link rel="stylesheet" href="assets/style/styleIndex.css">
-    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>

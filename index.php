@@ -73,7 +73,7 @@
                     sur le terrain du numérique et bien plus encore.
                 </p>
                 <div class="findOutMore">
-                    <a href="index.html">En savoir + </a>
+                    <a href="about.php">En savoir + </a>
                 </div>
             </div>
             <div class="imgAbout">

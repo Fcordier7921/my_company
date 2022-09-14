@@ -1,0 +1,231 @@
+#privacyPolicyPresentation {
+    width: 100vw;
+    position: relative;
+}
+
+.titlePrivacyPolicy {
+    width: 100vw;
+    height: 140vh;
+    min-height: 580px;
+    background-image: url(../img/politiquedeconfidencialité.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.titlePrivacyPolicy h1 {
+    font-size: 2rem;
+    color: #BFA76A;
+    text-shadow: -4px 4px 5px black;
+    margin-top: 250px;
+}
+
+.titlePrivacyPolicy p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.titlePrivacyPolicy .next {
+    opacity: 1;
+    visibility: visible;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #fff;
+    place-self: center end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2%;
+}
+
+.titlePrivacyPolicy .next img {
+    margin-top: 5px;
+    width: 20px;
+    height: 25px;
+}
+
+#EditingTheSitePrivacyPolicy {
+    width: 100vw;
+}
+
+#EditingTheSitePrivacyPolicy .informationPrivacyPolicy,
+#EditingTheSitePrivacyPolicy .accommodationPrivacyPolicy,
+#EditingTheSitePrivacyPolicy .PublicationDirectorPrivacyPolicy,
+#EditingTheSitePrivacyPolicy .DescriptionPrivacyPolicy,
+#EditingTheSitePrivacyPolicy .RestrictionsPrivacyPolicy,
+#EditingTheSitePrivacyPolicy .LimitationPrivacyPolicy,
+#EditingTheSitePrivacyPolicy .LPersonalDataPrivacyPolicy {
+    width: 100vw;
+    padding: 15px 0;
+}
+
+#EditingTheSitePrivacyPolicy .informationPrivacyPolicy h2,
+#EditingTheSitePrivacyPolicy .accommodationPrivacyPolicy h2,
+#EditingTheSitePrivacyPolicy .PublicationDirectorPrivacyPolicy h2,
+#EditingTheSitePrivacyPolicy .DescriptionPrivacyPolicy h2,
+#EditingTheSitePrivacyPolicy .RestrictionsPrivacyPolicy h2,
+#EditingTheSitePrivacyPolicy .LimitationPrivacyPolicy h2,
+#EditingTheSitePrivacyPolicy .LPersonalDataPrivacyPolicy h2 {
+    width: 80%;
+    font-size: 2.5rem;
+    color: #BFA76A;
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    margin: 60px 10px 20px 10px;
+}
+
+#EditingTheSitePrivacyPolicy .informationPrivacyPolicy p,
+#EditingTheSitePrivacyPolicy .accommodationPrivacyPolicy p,
+#EditingTheSitePrivacyPolicy .PublicationDirectorPrivacyPolicy p,
+#EditingTheSitePrivacyPolicy .DescriptionPrivacyPolicy p,
+#EditingTheSitePrivacyPolicy .RestrictionsPrivacyPolicy p,
+#EditingTheSitePrivacyPolicy .LimitationPrivacyPolicy p,
+#EditingTheSitePrivacyPolicy .LPersonalDataPrivacyPolicy p {
+    width: 90%;
+    font-size: 1.1rem;
+    margin: 40px 20px 40px 10px;
+}
+
+
+/*----------media querise--------------------------------*/
+
+
+/*-------height management--------------*/
+
+@media screen and (min-height: 631px) {
+    #EditingTheSitePrivacyPolicy .informationPrivacyPolicy h2 {
+        margin: 140px 10px 20px 10px;
+    }
+}
+
+
+/*-------width management--------------*/
+
+@media screen and (min-width: 350px) {
+    .titlePrivacyPolicy {
+        width: 100vw;
+        height: 100vh;
+    }
+    .titlePrivacyPolicy h1 {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .titlePrivacyPolicy .next {
+        width: 60px;
+        height: 60px;
+    }
+    .titlePrivacyPolicy .next img {
+        width: 30px;
+        height: 37.5px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .titlePrivacyPolicy h1 {
+        font-size: 3rem;
+        padding: 0 30px;
+    }
+    .titlePrivacyPolicy p {
+        font-size: 1.7rem;
+        padding: 0 30px;
+    }
+    #EditingTheSitePrivacyPolicy .informationPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .accommodationPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .PublicationDirectorPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .DescriptionPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .RestrictionsPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .LimitationPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .LPersonalDataPrivacyPolicy h2 {
+        font-size: 3rem;
+        padding: 0 30px;
+    }
+    #EditingTheSitePrivacyPolicy .informationPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .accommodationPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .PublicationDirectorPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .DescriptionPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .RestrictionsPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .LimitationPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .LPersonalDataPrivacyPolicy p {
+        font-size: 1.3rem;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .titlePrivacyPolicy h1 {
+        font-size: 3.5rem;
+    }
+    .titlePrivacyPolicy p {
+        font-size: 2rem;
+        padding: 0 40px;
+    }
+    .titlePrivacyPolicy .next {
+        bottom: 2%;
+        right: 5%;
+    }
+    #EditingTheSitePrivacyPolicy .informationPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .accommodationPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .PublicationDirectorPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .DescriptionPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .RestrictionsPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .LimitationPrivacyPolicy h2,
+    #EditingTheSitePrivacyPolicy .LPersonalDataPrivacyPolicy h2 {
+        padding: 0 150px;
+    }
+    #EditingTheSitePrivacyPolicy .informationPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .accommodationPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .PublicationDirectorPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .DescriptionPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .RestrictionsPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .LimitationPrivacyPolicy p,
+    #EditingTheSitePrivacyPolicy .LPersonalDataPrivacyPolicy p {
+        padding: 0 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .titlePrivacyPolicy h1 {
+        font-size: 4rem;
+    }
+    .titlePrivacyPolicy p {
+        font-size: 2rem;
+        padding: 0 40px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .titlePrivacyPolicy h1 {
+        font-size: 5rem;
+        padding: 0 140px;
+    }
+    .titlePrivacyPolicy p {
+        font-size: 2.2rem;
+        padding: 0 140px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .titlePrivacyPolicy h1 {
+        font-size: 6rem;
+        padding: 0 140px;
+    }
+    .titlePrivacyPolicy p {
+        font-size: 2.4rem;
+        padding: 0 140px;
+    }
+}

@@ -578,7 +578,7 @@
 #expertise {
     width: 100vw;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .titleExpertise {
@@ -814,10 +814,10 @@
 }
 
 .bodyContact {
-    /* background-image: url(../img/contact.png);
+    background-image: url(../img/contact.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; */
+    background-position: center;
     width: 100vw;
     height: 100vh;
     min-height: 660px;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/style/styleHeader.css">
     <link rel="stylesheet" href="assets/style/styleFooter.css">
     <link rel="stylesheet" href="assets/style/styleIndex.css">
+    <link rel="stylesheet" href="assets/style/stylePrivacyPolicy.css">
+    <link rel="stylesheet" href="assets/style/styleAbout.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
@@ -32,10 +34,10 @@
 
 <nav>
     <ul>
-        <li> <a href="#presentationSection">Acceuil</a> </li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#services">Mes services</a></li>
-        <li><a href="#contact">Contacts</a></li>
+        <li> <a href="/#presentationSection">Acceuil</a> </li>
+        <li><a href="/#about">À propos</a></li>
+        <li><a href="/#services">Mes services</a></li>
+        <li><a href="/#contact">Contacts</a></li>
         <li>
             <div>
 

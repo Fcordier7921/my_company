@@ -1,7 +1,7 @@
 <footer>
     <div class="bodyFooter">
         <div class="legalNoticeFooter">
-            <a href="index.php">Mentions légales et politiques de confidentialité</a>
+            <a href="privacyPolicy.php">Mentions légales et politiques de confidentialité</a>
         </div>
         <div class="socialNetworkFooter">
         <a href="https://www.linkedin.com/in/fredericcordierpro6/" target="_blank" rel="noopener noreferrer"><img src="assets/img/linkedin.svg" alt="Accès à la page LinkedIn de Frédéric CORDIER."> </a>

@@ -1,0 +1,300 @@
+#presentationAbout {
+    height: 100vh;
+}
+
+.titlePresentationAbout {
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    background-image: url(../img/aboutSection.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.titlePresentationAbout h2 {
+    font-size: 1.7rem;
+    color: white;
+    margin-top: 70px;
+    text-shadow: -4px 4px 5px black;
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+}
+
+.titlePresentationAbout h1 {
+    color: #BFA76A;
+    font-size: 2rem;
+    margin-top: 15px;
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+}
+
+.titlePresentationAbout p {
+    color: white;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.titlePresentationAbout .next {
+    opacity: 1;
+    visibility: visible;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #fff;
+    place-self: center end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2%;
+}
+
+.titlePresentationAbout .next img {
+    margin-top: 5px;
+    width: 20px;
+    height: 25px;
+}
+
+
+/* about me section */
+
+#aboutMe {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutMe .presentationAboutMe {
+    width: 100vw;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+#aboutMe .presentationAboutMe img:nth-child(1) {
+    width: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#aboutMe .presentationAboutMe h2 {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0 10px;
+    font-size: 2rem;
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+}
+
+#aboutMe .presentationAboutMe .imgpresentationAboutMe {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#aboutMe .presentationAboutMe .explaineAboutMe {
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+#aboutMe .presentationAboutMe .explaineAboutMe p {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+
+#aboutMe .imgAboutMe {
+    width: 100vw;
+    height: 900px;
+    background-image: url(../img/aboutcode.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#freelanceAbout {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#freelanceAbout .presentationFreelanceAbout {
+    width: 100vw;
+    height: 1450px;
+    position: relative;
+    overflow: hidden;
+}
+
+#freelanceAbout .presentationFreelanceAbout img:nth-child(1) {
+    width: 200%;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+#freelanceAbout .presentationFreelanceAbout h2 {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0 10px;
+    font-size: 2rem;
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+}
+
+#freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0 10px;
+    font-size: 2rem;
+}
+
+#freelanceAbout .presentationFreelanceAbout .imgpresentationfreelanceAbout {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout {
+    width: 90%;
+    height: 77%;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout p {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+
+#freelanceAbout .imgFreelanceAbout {
+    width: 100vw;
+    height: 900px;
+    background-image: url(../img/leurabout.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*----------media querise--------------------------------*/
+
+
+/*-------height management--------------*/
+
+@media screen and (max-height: 450px) {}
+
+
+/*-------width management--------------*/
+
+@media screen and (min-width: 350px) {
+    .titlePresentationAbout h2 {
+        font-size: 2.5rem;
+    }
+    .titlePresentationAbout h1 {
+        font-size: 2.6rem;
+    }
+    .titlePresentationAbout p {
+        font-size: 1.2rem;
+    }
+    /* about me section */
+    #aboutMe .presentationAboutMe .explaineAboutMe {
+        width: 87%;
+        height: 75%;
+    }
+    #freelanceAbout .presentationFreelanceAbout {
+        width: 100vw;
+        height: 1200px;
+        position: relative;
+        overflow: hidden;
+    }
+    #freelanceAbout .presentationFreelanceAbout img:nth-child(1) {
+        width: 200%;
+        position: absolute;
+        top: 0;
+        right: 0
+    }
+    #freelanceAbout .presentationFreelanceAbout h2 {
+        width: 100%;
+        margin-top: 100px;
+        padding: 0 10px;
+        font-size: 2rem;
+        font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    }
+    #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout {
+        width: 100%;
+        margin-top: 100px;
+        padding: 0 10px;
+        font-size: 2rem;
+    }
+    #freelanceAbout .presentationFreelanceAbout .imgpresentationfreelanceAbout {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+    #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout {
+        width: 90%;
+        height: 77%;
+        background-color: white;
+        margin-left: 20px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout p {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 40px;
+        padding: 0 10px;
+        font-size: 1.5rem;
+    }
+    #freelanceAbout .imgFreelanceAbout {
+        width: 100vw;
+        height: 900px;
+        background-image: url(../img/leurabout.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 450px) {}
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (min-width: 800px) {}
+
+@media screen and (min-width: 1000px) {}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1250px) {}
+
+@media screen and (min-width: 1500px) {}
+
+@media screen and (min-width: 1600px) {}
+
+@media screen and (min-width: 1900px) {}
+
+@media screen and (min-width: 2000px) {}
+
+@media screen and (min-width: 2500px) {}

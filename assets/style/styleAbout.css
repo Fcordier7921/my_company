@@ -82,6 +82,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 #aboutMe .presentationAboutMe h2 {
@@ -200,7 +201,47 @@
 
 /*-------height management--------------*/
 
-@media screen and (max-height: 450px) {}
+@media screen and (max-height: 450px) {
+    .titlePresentationAbout {
+        height: 570px;
+    }
+    #aboutMe {
+        margin-top: 193px;
+    }
+}
+
+@media screen and (max-height: 430px) {
+    .titlePresentationAbout {
+        height: 570px;
+    }
+    #aboutMe {
+        margin-top: 140px;
+    }
+}
+
+@media screen and (max-height: 380px) {
+    .titlePresentationAbout {
+        height: 570px;
+    }
+    #aboutMe {
+        margin-top: 193px;
+    }
+    #aboutMe .presentationAboutMe h2 {
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    .titlePresentationAbout {
+        height: 570px;
+    }
+    #aboutMe {
+        margin-top: 245px;
+    }
+    #aboutMe .presentationAboutMe h2 {
+        margin-top: 130px;
+    }
+}
 
 
 /*-------width management--------------*/
@@ -208,12 +249,15 @@
 @media screen and (min-width: 350px) {
     .titlePresentationAbout h2 {
         font-size: 2.5rem;
+        padding: 0 30px 0 10px;
     }
     .titlePresentationAbout h1 {
         font-size: 2.6rem;
+        padding: 0 30px 0 10px;
     }
     .titlePresentationAbout p {
         font-size: 1.2rem;
+        padding: 0 30px 0 10px;
     }
     /* about me section */
     #aboutMe .presentationAboutMe .explaineAboutMe {
@@ -226,75 +270,234 @@
         position: relative;
         overflow: hidden;
     }
-    #freelanceAbout .presentationFreelanceAbout img:nth-child(1) {
-        width: 200%;
-        position: absolute;
-        top: 0;
-        right: 0
+}
+
+@media screen and (min-width: 450px) {
+    #aboutMe .presentationAboutMe {
+        height: 730px;
     }
-    #freelanceAbout .presentationFreelanceAbout h2 {
-        width: 100%;
-        margin-top: 100px;
-        padding: 0 10px;
-        font-size: 2rem;
-        font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    #aboutMe .presentationAboutMe .explaineAboutMe {
+        height: 70%;
+    }
+    #aboutMe .presentationAboutMe .explaineAboutMe p {
+        padding: 0 20px;
+    }
+    #aboutMe .imgAboutMe {
+        height: 730px;
+    }
+    #freelanceAbout .presentationFreelanceAbout {
+        height: 1200px;
     }
     #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout {
-        width: 100%;
-        margin-top: 100px;
-        padding: 0 10px;
-        font-size: 2rem;
-    }
-    #freelanceAbout .presentationFreelanceAbout .imgpresentationfreelanceAbout {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
+        height: 85%;
+        padding: 0 30px;
     }
     #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout {
         width: 90%;
         height: 77%;
-        background-color: white;
-        margin-left: 20px;
-        margin-top: 20px;
-        overflow: hidden;
     }
     #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout p {
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 40px;
-        padding: 0 10px;
-        font-size: 1.5rem;
-    }
-    #freelanceAbout .imgFreelanceAbout {
-        width: 100vw;
-        height: 900px;
-        background-image: url(../img/leurabout.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        padding: 0 20px;
     }
 }
 
-@media screen and (min-width: 450px) {}
+@media screen and (min-width: 600px) {
+    .titlePresentationAbout h2 {
+        font-size: 2.5rem;
+    }
+    .titlePresentationAbout h1 {
+        font-size: 2.6rem;
+    }
+    .titlePresentationAbout p {
+        font-size: 1.2rem;
+    }
+    /* about me section */
+    #aboutMe .presentationAboutMe {
+        height: 670px;
+    }
+    #aboutMe .presentationAboutMe img:nth-child(1) {
+        width: 150%;
+    }
+    #aboutMe .presentationAboutMe .explaineAboutMe {
+        width: 87%;
+        height: 65%;
+    }
+    #aboutMe .presentationAboutMe .imgpresentationAboutMe {
+        width: 75%;
+    }
+    #aboutMe .imgAboutMe {
+        height: 670px;
+    }
+    #freelanceAbout .presentationFreelanceAbout {
+        height: 820px;
+    }
+    #freelanceAbout .presentationFreelanceAbout img:nth-child(1) {
+        width: 130%;
+        right: 0;
+    }
+    #freelanceAbout .presentationFreelanceAbout h2 {
+        padding: 0 30px;
+    }
+    #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout {
+        height: 72%;
+    }
+    #freelanceAbout .presentationFreelanceAbout .imgpresentationfreelanceAbout {
+        width: 95%;
+        left: 0;
+    }
+    #freelanceAbout .imgFreelanceAbout {
+        height: 820px;
+    }
+}
 
-@media screen and (min-width: 600px) {}
+@media screen and (min-width: 800px) {
+    .titlePresentationAbout h2 {
+        font-size: 2.5rem;
+    }
+    .titlePresentationAbout h1 {
+        font-size: 2.6rem;
+    }
+    .titlePresentationAbout p {
+        font-size: 1.2rem;
+    }
+    .titlePresentationAbout .next {
+        width: 60px;
+        height: 60px;
+    }
+    /* about me section */
+    #aboutMe .presentationAboutMe {
+        height: 570px;
+    }
+    #aboutMe .presentationAboutMe img:nth-child(1) {
+        width: 120%;
+    }
+    #aboutMe .presentationAboutMe h2 {
+        margin-top: 150px;
+    }
+    #aboutMe .presentationAboutMe .explaineAboutMe {
+        height: 55%;
+    }
+    #aboutMe .presentationAboutMe .imgpresentationAboutMe {
+        width: 65%;
+    }
+    #aboutMe .imgAboutMe {
+        height: 570px;
+    }
+    #freelanceAbout .presentationFreelanceAbout {
+        height: 680px;
+    }
+    #freelanceAbout .presentationFreelanceAbout img:nth-child(1) {
+        width: 110%;
+        right: 0;
+    }
+    #freelanceAbout .presentationFreelanceAbout h2 {
+        padding: 0 30px;
+    }
+    #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout {
+        height: 68%;
+    }
+    #freelanceAbout .presentationFreelanceAbout .imgpresentationfreelanceAbout {
+        width: 75%;
+    }
+    #freelanceAbout .imgFreelanceAbout {
+        height: 680px;
+    }
+}
 
-@media screen and (min-width: 800px) {}
+@media screen and (min-width: 1200px) {
+    .titlePresentationAbout .next {
+        width: 60px;
+        height: 60px;
+        right: 5%;
+    }
+    .titlePresentationAbout p {
+        padding: 0 100px 0 10px;
+    }
+    #aboutMe {
+        flex-direction: row-reverse;
+    }
+    #aboutMe .presentationAboutMe {
+        height: 770px;
+    }
+    #aboutMe .presentationAboutMe h2 {
+        margin-top: 150px;
+        padding-left: 30px;
+    }
+    #aboutMe .presentationAboutMe .explaineAboutMe {
+        width: 80%;
+        height: 65%;
+        padding-right: 20px;
+    }
+    #aboutMe .presentationAboutMe .imgpresentationAboutMe {
+        width: 65%;
+        right: 20px;
+    }
+    #aboutMe .imgAboutMe {
+        height: 770px;
+    }
+    #freelanceAbout {
+        flex-direction: row;
+    }
+    #freelanceAbout .presentationFreelanceAbout {
+        height: 800px;
+    }
+    #freelanceAbout .presentationFreelanceAbout img:nth-child(1) {
+        width: 120%;
+        right: 0;
+    }
+    #freelanceAbout .presentationFreelanceAbout h2 {
+        padding: 0 30px;
+    }
+    #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout {
+        height: 75%;
+    }
+    #freelanceAbout .presentationFreelanceAbout .imgpresentationfreelanceAbout {
+        width: 75%;
+    }
+    #freelanceAbout .imgFreelanceAbout {
+        height: 800px;
+    }
+}
 
-@media screen and (min-width: 1000px) {}
+@media screen and (min-width: 1500px) {
+    .titlePresentationAbout h2 {
+        font-size: 4rem;
+        padding: 0 40px 0 10px;
+    }
+    .titlePresentationAbout h1 {
+        font-size: 5rem;
+        padding: 0 100px 0 10px;
+    }
+    .titlePresentationAbout p {
+        font-size: 2rem;
+        padding: 0 200px 0 100px;
+    }
+    #aboutMe .presentationAboutMe h2 {
+        font-size: 3rem;
+    }
+    #aboutMe .presentationAboutMe .explaineAboutMe p {
+        font-size: 1.7rem;
+    }
+    #freelanceAbout .presentationFreelanceAbout h2 {
+        font-size: 2.7rem;
+        padding: 0 30px;
+    }
+    #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout p {
+        font-size: 1.6rem;
+    }
+}
 
-@media screen and (min-width: 1200px) {}
-
-@media screen and (min-width: 1250px) {}
-
-@media screen and (min-width: 1500px) {}
-
-@media screen and (min-width: 1600px) {}
-
-@media screen and (min-width: 1900px) {}
-
-@media screen and (min-width: 2000px) {}
-
-@media screen and (min-width: 2500px) {}
+@media screen and (min-width: 1900px) {
+    #aboutMe .presentationAboutMe h2 {
+        font-size: 4rem;
+    }
+    #aboutMe .presentationAboutMe .explaineAboutMe p {
+        font-size: 1.9rem;
+    }
+    #freelanceAbout .presentationFreelanceAbout h2 {
+        font-size: 3rem;
+    }
+    #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout p {
+        font-size: 1.8rem;
+    }
+}

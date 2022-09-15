@@ -110,7 +110,7 @@
                 <span>Je conçois, développe et anime vos sites.</span> <br>Avec votre regard, je crée le design de vos rêves. Je développe et mets en ligne votre site.
             </p>
             <div class="findOutMore">
-                <a href="index.html">En savoir + </a>
+                <a href="services.php">En savoir + </a>
             </div>
             <img class="imgTowDesignWeb" src="assets/img/card2.png" alt="image en fin de carte de la premiére prestation">
         </div>
@@ -122,7 +122,7 @@
 
             </p>
             <div class="findOutMore">
-                <a href="index.html">En savoir + </a>
+                <a href="services.php">En savoir + </a>
             </div>
             <img class="imgTowFormulaWeb" src="assets/img/card4.png" alt="image en fin de carte de la deuxiéme prestation">
         </div>
@@ -134,7 +134,7 @@
 
             </p>
             <div class="findOutMore">
-                <a href="index.html">En savoir + </a>
+                <a href="services.php">En savoir + </a>
             </div>
             <img class="imgTowOutsourcing" src="assets/img/card6.png" alt="image en fin de carte de la troisiéme prestation">
         </div>

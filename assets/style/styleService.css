@@ -1,0 +1,101 @@
+#presentationServices {
+    width: 100vw;
+    height: 100vh;
+    min-height: 450px;
+    background-image: url(../img/services.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.titleServices {
+    width: 100vw;
+    height: 100vh;
+    min-height: 450px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+}
+
+.presentationTitleServices {
+    width: 90%;
+    height: 150px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.presentationTitleServices h1 {
+    color: #BFA76A;
+    text-shadow: black -4px 4px 5px;
+    font-size: 18vw;
+    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-shadow: 0px 0px 2px black, 0 0 3px black, 0 0 4px black;
+}
+
+.presentationTitletowServices {
+    width: 90%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.presentationTitletowServices h2 {
+    color: white;
+    font-size: 9vw;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    font-weight: 100;
+}
+
+.titleNext {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contactButun {
+    width: 150px;
+    height: 50px;
+    background-color: #BFA76A;
+    box-shadow: -4px 4px 5px black;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.contactButun a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
+}
+
+.next {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #fff;
+    place-self: center end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next a img {
+    width: 20px;
+    height: 25px;
+}

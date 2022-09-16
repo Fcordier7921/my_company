@@ -17,6 +17,7 @@
             echo '<title>Développeur web freelance, création de site web & gestion de site web</title>';
             echo '<meta name="description" content="Développeur web freelance, le web vous donne l\'impression d\'être dans une jungle dense. J"élague pour vous cette jungle, en vous créant un site adapté a vos besoin et je gére tout son activité pour vous.">';
             echo '<link rel="stylesheet" href="assets/style/styleIndex.css">';
+            echo ' <script src="https://www.google.com/recaptcha/api.js" async defer></script>';
          }else if($newPhpSelf == "/services.php" ){
              echo '<title>Développeur web freelance, création de site web & gestion de site web & sous-traitance</title>';
              echo '<meta name="description" content="Développeur web freelance, le web vous donne l\'impression d\'être dans une jungle dense. J"élague pour vous cette jungle, en vous créant un site adapté a vos besoin et je gére tout son activité pour vous.">';
@@ -43,7 +44,7 @@
     
     
     
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   
 </head>
 
 <body>

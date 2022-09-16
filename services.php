@@ -31,7 +31,7 @@
 <section id="websiteCreation">
 
     <div class="bodyWebsiteCreation">
-        <img src="assets/img/card3.png" alt="image de feuille de la jungle">
+        <img class="featWebsiteCreation" src="assets/img/card3.png" alt="image de feuille de la jungle">
         <div class="titleWebsiteCreation">
             <h2>Besoin d’un site web ? d’une visibilité ? </h2>
             <h3>Une idée ,  un projet n’hésitez pas à demander un devis ! [Gratuit] </h3>
@@ -86,7 +86,7 @@
             <div class="quotationWebsiteCreation">
                 <p>N’attendez plus, demander votre <span>devis en ligne !</span></p>
                 <div class="findOutMore">
-                    <a href="index.php/#contact">En savoir + </a>
+                    <a href="index.php#contact">Devis gratuit </a>
                 </div>
             </div>
         </div>

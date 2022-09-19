@@ -18,10 +18,10 @@
         <div class="titleNext">
             <div></div>
             <div class="contactButun">
-                <a href="#contact">Devis gratuit</a>
+                <a href="index.php#contact">Devis gratuit</a>
             </div>
             <div class="next">
-                <a href="#about"><img src="assets/img/Arrow 1.png" alt="page suivante"></a>
+                <a href="#websiteCreation"><img src="assets/img/Arrow 1.png" alt="page suivante"></a>
             </div>
         </div>
 
@@ -108,19 +108,22 @@
 <!--------- website formula --------->
 
 <section id="websiteFormula">
-    <div class="titlewebsiteFormula">
+    <div class="titleWebsiteFormula">
         <h3>Sortez les crocs . Pour enfin, se tailler la part du lion</h3>
         <h2>Je m’occupe de votre site.</h2>
     </div>
-    <div class="textwebsiteFormula">
+    <div class="textWebsiteFormula">
         <div>
             <p>Vous avez besoin de maintenance sur votre site web, mise à jour de contenus, nouvelles promotions, nouveaux produits, actualités…
             </p>
         </div>
         <div>
-            <p>Vous avez besoin de maintenance sur votre site web, mise à jour de contenus, nouvelles promotions, nouveaux produits, actualités…
+            <p>Je propose des packs adapté à vos besoins, pour vous déchargez de ces tâches chronophage.
             </p>
         </div>
+    </div>
+    <div class="contactButunWebsiteFormula">
+        <a href="#pack">Voir les Formules</a>
     </div>
 </section>
 

@@ -1,120 +1,306 @@
-#presentationServices {
-    width: 100vw;
-    height: 100vh;
-    min-height: 450px;
-    background-image: url(../img/services.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
-
-.titleServices {
-    width: 100vw;
-    height: 100vh;
-    min-height: 450px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    text-align: center;
-}
-
-.presentationTitleServices {
-    width: 90%;
-    height: 150px;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.presentationTitleServices h1 {
-    color: #BFA76A;
-    text-shadow: black -4px 4px 5px;
-    font-size: 18vw;
-    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    text-shadow: 0px 0px 2px black, 0 0 3px black, 0 0 4px black;
-}
-
-.presentationTitletowServices {
-    width: 90%;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.presentationTitletowServices h2 {
-    color: white;
-    font-size: 9vw;
-    margin-top: 5px;
-    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
-    font-weight: 100;
-}
-
-.titleNext {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.contactButun {
-    width: 150px;
-    height: 50px;
-    background-color: #BFA76A;
-    box-shadow: -4px 4px 5px black;
-    border-radius: 5px;
-    margin-top: 30px;
-    display: flex;
-}
-
-.contactButun a {
-    color: black;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    margin: auto;
-    font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
-}
-
-.next {
-    width: 40px;
-    height: 40px;
-    margin-top: 20px;
-    background-color: black;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 2px #fff;
-    place-self: center end;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.next a img {
-    width: 20px;
-    height: 25px;
-}
-
-#websiteCreation {
-    width: 100vw;
-}
-
-#websiteCreation .bodyWebsiteCreation {
-    width: 100vw;
-    position: relative;
-}
-
-#websiteCreation .bodyWebsiteCreation .featWebsiteCreation {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-}
-
-#websiteCreation .bodyWebsiteCreation .titleWebsiteCreation {}
+        #presentationServices {
+            width: 100vw;
+            height: 100vh;
+            min-height: 450px;
+            background-image: url(../img/services.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        
+        .titleServices {
+            width: 100vw;
+            height: 100vh;
+            min-height: 450px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .presentationTitleServices {
+            width: 90%;
+            height: 150px;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .presentationTitleServices h1 {
+            color: #BFA76A;
+            text-shadow: black -4px 4px 5px;
+            font-size: 18vw;
+            font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+            font-weight: 100;
+            text-shadow: 0px 0px 2px black, 0 0 3px black, 0 0 4px black;
+        }
+        
+        .presentationTitletowServices {
+            width: 90%;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .presentationTitletowServices h2 {
+            color: white;
+            font-size: 9vw;
+            margin-top: 5px;
+            text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+            font-weight: 100;
+        }
+        
+        .titleNext {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .contactButun {
+            width: 150px;
+            height: 50px;
+            background-color: #BFA76A;
+            box-shadow: -4px 4px 5px black;
+            border-radius: 5px;
+            margin-top: 30px;
+            display: flex;
+        }
+        
+        .contactButun a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            margin: auto;
+            font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
+        }
+        
+        .next {
+            width: 40px;
+            height: 40px;
+            margin-top: 20px;
+            background-color: black;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 2px #fff;
+            place-self: center end;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .next a img {
+            width: 20px;
+            height: 25px;
+        }
+        /* -------website creation section----- */
+        
+        #websiteCreation {
+            width: 100vw;
+        }
+        
+        #websiteCreation .bodyWebsiteCreation {
+            width: 100vw;
+            position: relative;
+        }
+        
+        #websiteCreation .bodyWebsiteCreation .featWebsiteCreation {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+        
+        #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation {
+            width: 100%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h2 {
+            color: #044389;
+            margin-top: 5%;
+            font-size: 2.4rem;
+            padding: 10px;
+        }
+        
+        #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h3 {
+            margin-top: 5%;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+        
+        #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        
+        #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .txtWebsiteCreation {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+        
+        #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .imgWebsiteCreation {
+            width: 100%;
+            height: 75vw;
+            position: relative;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        
+        .imgWebsiteCreationOne,
+        .imgWebsiteCreationTwo {
+            width: 61vw;
+            max-width: 250px;
+            height: 40vw;
+            max-height: 176px;
+            background-color: #BFA76A;
+            position: relative;
+        }
+        
+        .textImgWebsiteCreation .imgWebsiteCreation .imgWebsiteCreationOne img,
+        .textImgWebsiteCreation .imgWebsiteCreation .imgWebsiteCreationTwo img {
+            width: 58vw;
+            max-width: 240px;
+            height: 37vw;
+            max-height: 169px;
+        }
+        
+        .textImgWebsiteCreation .imgWebsiteCreation .imgWebsiteCreationOne img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .imgWebsiteCreationTwo {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        
+        #websiteCreation .explanationWebsiteCreation {
+            width: 100%;
+            position: relative;
+        }
+        
+        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation,
+        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation,
+        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation {
+            width: 80%;
+            font-size: 1.2rem;
+            text-align: start;
+            margin-bottom: 50px;
+        }
+        
+        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation img,
+        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation img,
+        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 170px;
+            height: 170px;
+        }
+        
+        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation h3,
+        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation h3,
+        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation h3 {
+            font-size: 1.7rem;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #websiteCreation .callToActionWebsiteCreation {
+            width: 100%;
+            font-size: 1.3rem;
+            padding: 10px;
+        }
+        
+        .quotationWebsiteCreation {
+            width: 100%;
+            font-size: 1.3rem;
+            padding: 10px;
+            margin-top: 30px;
+            color: #044389;
+        }
+        
+        .quotationWebsiteCreation p {
+            text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+        }
+        
+        .findOutMore {
+            justify-self: end;
+            max-width: 250px;
+            height: 48px;
+            margin: 40px 10px;
+            border: 2px solid #BFA76A;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            background-color: #fff;
+            z-index: 0;
+        }
+        
+        .findOutMore::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 120%;
+            width: 130%;
+            height: 100%;
+            background: #BFA76A;
+            transition: all .5s;
+            z-index: -1;
+            transform: skewx(-50deg);
+        }
+        
+        .findOutMore:hover::before {
+            right: -17%;
+            z-index: 100;
+        }
+        
+        .findOutMore a {
+            font-size: 1.4rem;
+            width: 100%;
+            height: 100%;
+            margin-top: 5%;
+            text-decoration: none;
+            color: #BFA76A;
+            transition: all .5s;
+            z-index: 100;
+        }
+        
+        .findOutMore a:hover {
+            color: black;
+        }
+        
+        #websiteCreation .explanationWebsiteCreation .imgWebsiteCreationEnd {
+            width: 100%;
+            height: 12%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }

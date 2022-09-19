@@ -1,6 +1,6 @@
 <?php include("header.php"); ?>
 
-
+<!------ presenttion service section-------->
 <section id="presentationServices">
 <div class="titleServices">
         <div class="presentationTitleServices">
@@ -28,27 +28,31 @@
     </div>
 </section>   
 
+<!--------- website Création --------->
 <section id="websiteCreation">
+
 
     <div class="bodyWebsiteCreation">
         <img class="featWebsiteCreation" src="assets/img/card3.png" alt="image de feuille de la jungle">
         <div class="titleWebsiteCreation">
             <h2>Besoin d’un site web ? d’une visibilité ? </h2>
-            <h3>Une idée ,  un projet n’hésitez pas à demander un devis ! [Gratuit] </h3>
+            <h3>Une idée ,  un projet n’hésitez pas à <span>demander un devis !</span> [Gratuit] </h3>
         </div>
         <div class="textImgWebsiteCreation">
             <div class="txtWebsiteCreation">
                 <p>Site vitrine, site marchand ou site mobile, je réalise avec vous <span>votre site internet sur mesure.</span> 
                 </p>
+                <br>
                 <p>Je vous accompagne dans les différentes étapes de création. En définissant un cadre qui correspond à votre identité. Qui passe par <span>un design qui reprend vos codes, votre personnalité, votre style.</span> 
                 </p>
+                <br>
                 <p><span>Je donne vie au design</span> grâce à des animations et des interactions travaillées. Au-delà de l’esthétisme, je réalise l’intégration en respectant la qualité et l’accessibilité du code. Pour permettre une meilleure visibilité, grâce au référencement naturel.
                 </p>
                 <p><span>Devenez acteurs de votre image sur le web.</span></p>
                 
             </div>
             <div class="imgWebsiteCreation">
-                <div class="imgWebsiteCreation">
+                <div class="imgWebsiteCreationOne">
                     <img src="assets/img/serviceOne.jpg" alt="image d'un développeur disignent un site web">
                 </div>
                 <div class="imgWebsiteCreationTwo">
@@ -60,7 +64,7 @@
     <div class="explanationWebsiteCreation">
         <div class="cardExplanationWebsiteCreation">
             <div class="cardOneExplanationWebsiteCreation">
-                <img src="assets/img/notebook.png" alt="image d'un cahier de note">
+                <img  src="assets/img/notebook.png" alt="image d'un cahier de note">
                 <h3>Réaliser votre site avec mon aide</h3>
                 <p>Avec vous, <span>nous définissons un cahier des charges</span> de vos besoins. Qui est votre clientèle ou votre cible ? Quelle est votre identité visuelle ? quelle stratégie de référencement ? etc. <br>
                 <span>Vous êtes un acteur majeur</span> dans la conception de votre site.
@@ -90,13 +94,35 @@
                 </div>
             </div>
         </div>
+        <img class="imgWebsiteCreationEnd" src="assets/img/card4.png" alt="image de feuille de la jungle">
  
     </div>
 
 
 
+
+
 </section>
 
+
+<!--------- website formula --------->
+
+<section id="websiteFormula">
+    <div class="titlewebsiteFormula">
+        <h3>Sortez les crocs . Pour enfin, se tailler la part du lion</h3>
+        <h2>Je m’occupe de votre site.</h2>
+    </div>
+    <div class="textwebsiteFormula">
+        <div>
+            <p>Vous avez besoin de maintenance sur votre site web, mise à jour de contenus, nouvelles promotions, nouveaux produits, actualités…
+            </p>
+        </div>
+        <div>
+            <p>Vous avez besoin de maintenance sur votre site web, mise à jour de contenus, nouvelles promotions, nouveaux produits, actualités…
+            </p>
+        </div>
+    </div>
+</section>
 
 
 

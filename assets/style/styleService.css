@@ -367,3 +367,260 @@
             margin: auto;
             font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
         }
+        /*--------website pack section--------*/
+        
+        body .overlayDetailscardPack {
+            display: none;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        
+        #pack {
+            width: 100vw;
+            position: relative;
+            overflow: scroll;
+        }
+        
+        #pack .bodyPack {
+            width: 100vw;
+            margin: 10px;
+            position: relative;
+            margin: 0;
+        }
+        
+        #pack .bodyPack .imgOne {
+            width: 150%;
+            height: 40%;
+            margin: 20px;
+            position: absolute;
+            top: -1.5%;
+            left: -10%;
+            z-index: -1;
+        }
+        
+        #pack .bodyPack .PresentationPack {
+            width: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+            padding-top: 20%;
+            padding-right: 7%;
+        }
+        
+        #pack .bodyPack .PresentationPack p {
+            text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+        }
+        
+        #pack .bodyPack .cardPack {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #pack .bodyPack .cardPack .cardPackFormulaOne,
+        #pack .bodyPack .cardPack .cardPackFormulaTow,
+        #pack .bodyPack .cardPack .cardPackFormulaThee,
+        #pack .bodyPack .cardPack .cardPackFormulaFour,
+        #pack .bodyPack .cardPack .cardPackFormulaFive {
+            width: 80%;
+            height: 550px;
+            border: 1px solid rgba(0, 0, 0, 0.35);
+            border-radius: 30px;
+            overflow: hidden;
+            margin-top: 50px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #pack .bodyPack .cardPack .cardPackFormulaOne h2,
+        #pack .bodyPack .cardPack .cardPackFormulaTow h2,
+        #pack .bodyPack .cardPack .cardPackFormulaThee h2,
+        #pack .bodyPack .cardPack .cardPackFormulaFour h2,
+        #pack .bodyPack .cardPack .cardPackFormulaFive h2 {
+            font-size: 2rem;
+            margin-top: 20px;
+            color: #BFA76A;
+        }
+        
+        #pack .bodyPack .cardPack .cardPackFormulaOne p,
+        #pack .bodyPack .cardPack .cardPackFormulaTow p,
+        #pack .bodyPack .cardPack .cardPackFormulaThee p,
+        #pack .bodyPack .cardPack .cardPackFormulaFour p,
+        #pack .bodyPack .cardPack .cardPackFormulaFive p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        
+        #pack .bodyPack .cardPack .cardPackFormulaOne p strong,
+        #pack .bodyPack .cardPack .cardPackFormulaTow p strong,
+        #pack .bodyPack .cardPack .cardPackFormulaThee p strong,
+        #pack .bodyPack .cardPack .cardPackFormulaFour p strong,
+        #pack .bodyPack .cardPack .cardPackFormulaFive p strong {
+            font-size: 1.7rem;
+            color: #044389;
+        }
+        
+        #pack .bodyPack .cardPack .cardPackFormulaOne .detailsPackFormula,
+        #pack .bodyPack .cardPack .cardPackFormulaTow .detailsPackFormula,
+        #pack .bodyPack .cardPack .cardPackFormulaThee .detailsPackFormula,
+        #pack .bodyPack .cardPack .cardPackFormulaFour .detailsPackFormula,
+        #pack .bodyPack .cardPack .cardPackFormulaFive .detailsPackFormula {
+            margin-bottom: 30px;
+        }
+        
+        #pack .bodyPack .cardPack .cardPackFormulaOne .jsdetailscardPack,
+        #pack .bodyPack .cardPack .cardPackFormulaTow .jsdetailscardPack,
+        #pack .bodyPack .cardPack .cardPackFormulaThee .jsdetailscardPack,
+        #pack .bodyPack .cardPack .cardPackFormulaFour .jsdetailscardPack,
+        #pack .bodyPack .cardPack .cardPackFormulaFive .jsdetailscardPack {
+            cursor: pointer;
+        }
+        
+        #pack .bodyPack .cardPack .cardPackFormulaOne .jsdetailscardPack a,
+        #pack .bodyPack .cardPack .cardPackFormulaTow .jsdetailscardPack a,
+        #pack .bodyPack .cardPack .cardPackFormulaThee .jsdetailscardPack a,
+        #pack .bodyPack .cardPack .cardPackFormulaFour .jsdetailscardPack a,
+        #pack .bodyPack .cardPack .cardPackFormulaFive .jsdetailscardPack a {
+            pointer-events: none;
+            cursor: none;
+        }
+        
+        #pack .bodyPack .cardPack .cardPackFormulaOne .findOutMore,
+        #pack .bodyPack .cardPack .cardPackFormulaTow .findOutMore,
+        #pack .bodyPack .cardPack .cardPackFormulaThee .findOutMore,
+        #pack .bodyPack .cardPack .cardPackFormulaFour .findOutMore,
+        #pack .bodyPack .cardPack .cardPackFormulaFive .findOutMore {
+            width: 80%;
+        }
+        
+        #pack .bodyPack .callTooActionPack {
+            width: 100%;
+            margin-top: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #pack .bodyPack .callTooActionPack p {
+            font-size: 2rem;
+            text-align: center;
+            text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+        }
+        
+        #pack .bodyPack .callTooActionPack .findOutMore {
+            width: 100%;
+            background-color: #fff;
+        }
+        
+        #pack .bodyPack .imgTow {
+            width: 100%;
+            height: 10%;
+            position: absolute;
+            bottom: -0.3%;
+            right: 0;
+            z-index: -1;
+        }
+        
+        #pack .detailscardPack {
+            display: none;
+            width: 100%;
+            height: 50%;
+            position: absolute;
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack {
+            width: 90vw;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translatex(-50%);
+            background-color: white;
+            border: solid 2px #BFA76A;
+            padding: 10px;
+            border-radius: 10px;
+            z-index: 1000;
+            overflow: hidden;
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            right: -85%;
+            bottom: 0%;
+            margin-bottom: 30px;
+            margin-top: -10px;
+            cursor: pointer;
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack:hover {
+            background-color: #BFA76A;
+            top: -10%;
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack:hover div {
+            background-color: #fff;
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack div {
+            width: 80%;
+            height: 2px;
+            background-color: #000;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            pointer-events: none;
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack div:nth-child(1) {
+            transform: rotate(135deg);
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack div:nth-child(2) {
+            transform: rotate(-135deg);
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack h2 {
+            color: #BFA76A;
+            font-size: 2.3rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack h3 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack p {
+            font-size: 1.2rem;
+            text-align: start;
+            margin-bottom: 20px;
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack ul li {
+            font-size: 1.2rem;
+            text-align: start;
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        
+        #pack .detailscardPack .bodydetailscardPack .bodydetailscardPackContact {
+            margin-top: 30px;
+        }
+        
+        #pack .ActivedetailscardPack {
+            display: block;
+            z-index: 900;
+        }
+        
+        body .ActivedetailscardPack {
+            display: block;
+            z-index: 900;
+        }

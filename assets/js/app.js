@@ -275,6 +275,39 @@ for (let i = 0; i < listeMenuExpertiseAll.length; i++) {
 }
 
 
+//--------website pack section--------
+
+
+const detailscardPackButton = Array.from(document.querySelectorAll('.jsdetailscardPack'));
+const detailscardPack = document.querySelector('.detailscardPack');
+const packSection = document.querySelector('#pack');
+const closingdetailscardPack = document.querySelector('.closingdetailscardPack');
+const overlayDetailscardPack = document.querySelector('.overlayDetailscardPack');
+
+
+function adddetailscardPack() {
+    if (detailscardPack.classList.contains("ActivedetailscardPack")) {
+        detailscardPack.classList.remove('ActivedetailscardPack');
+        overlayDetailscardPack.classList.remove('ActivedetailscardPack');
+
+    } else {
+        detailscardPack.classList.add('ActivedetailscardPack');
+        overlayDetailscardPack.classList.add('ActivedetailscardPack');
+        let detailscardPackButtonY = window.scrollY;
+        let packSectionY = packSection.offsetHeight;
+        let resulDetailscardPack = detailscardPackButtonY - packSectionY;
+        detailscardPack.style.top = "" + resulDetailscardPack - 900 + "px";
+    }
+}
+
+for (let i = 0; i < detailscardPackButton.length; i++) {
+
+    detailscardPackButton[i].addEventListener('click', adddetailscardPack)
+
+}
+
+closingdetailscardPack.addEventListener('click', adddetailscardPack)
+overlayDetailscardPack.addEventListener('click', adddetailscardPack)
 
 // managementExpertise.addEventListener('click', () => {
 //     if (managementExpertise.classList.contains('explanationsExpertiseActive')) {

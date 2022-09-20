@@ -1,5 +1,5 @@
 <?php include("header.php"); ?>
-
+<div class="overlayDetailscardPack"></div>
 <!------ presenttion service section-------->
 <section id="presentationServices">
 <div class="titleServices">
@@ -105,7 +105,7 @@
 </section>
 
 
-<!--------- website formula --------->
+<!--------- website formula section--------->
 
 <section id="websiteFormula">
     <div class="titleWebsiteFormula">
@@ -127,6 +127,128 @@
     </div>
 </section>
 
+<!--------- website pack section --------->
+
+<section id="pack">
+    <div  class="detailscardPack ">
+                <div class="bodydetailscardPack">
+                    <div class="closingdetailscardPack">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <h2>Les formules,  je m’occupe de votre jungle    </h2>
+                    <h3>Tous les formules  son fait pour vous libérer du temps  </h3>
+                    <p>j’éffectue tout <sapn>l’entretien et la maintenace technique de votre site.</sapn>  <span>En fonction de la fréquance des mise a jour et de  la taille de votre site </span>, nous déterminerons enssemble la formule qui vous correspond le mieux </p>
+                    <br>
+                    <p>Vous pouvez cumuler la création d’un site et une formule.  Cela vous permet de répartire le coût de création du site sur 12 mois d’engagement.</p>
+                    <br>
+                    <p><span>Tous les packs comprennent :</span></p>
+                    <ul>
+                        <li>La mise à jour du contenu</li>
+                        <li>le rajout de page</li>
+                        <li>le traitement de l’image et de la vidéo à rajouter </li>
+                        <li>possibilité de reprendre votre actualité des réseaux sociaux et de l’adapter à votre site</li>
+                        <li>mises à jour de produit pour les sites e-commerce</li>
+                        <li>support technique</li>
+                        <li>Ajouter vos promotion</li>
+                    </ul>
+                    <br>
+                    <p>Possibilité de prendre en charge <span>la gestion de l’hébergement</span> du site dans les formules, compter  <span>45€/mois  en plus </span>.</p>
+                    <p><span>Cela comprend :</span>  </p>
+                    <ul>
+                        <li>L’hébergement sera pris pour une durée minimum de 12 mois. Et sera mis à votre nom, avec mail personnalisé. Je passe par le fournisseur d’hébergement o2switch, ou celui de votre choix.</li>
+                        <li>Je m’occupe de la maintenance et de la résolution des problèmes liés à l’hébergement dans les plus brefs délais. Le délai peut varier en fonction du temps de traitement et de réponse de l’hébergeur. </li>
+                    </ul>
+
+                    <div class="bodydetailscardPackContact">
+                        <h3>Pour tout autre renseignement, je reste a votre disposition</h3>
+                        <div class="findOutMore">
+                            <a href="index.php#contact">Contactez-moi </a>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="bodyPack">
+        <img class="imgOne" src="/assets/img/card7.png" alt="immage de feuille tropicale">
+        <div class="PresentationPack">
+            <p><span>Tous les formules proposés vous engagent pour une durée de 12 mois renouvelable.</span> </p>
+            <br>
+            <p>Possibilité de <span>cumuler la création d’un site avec les packs, sur devis</span> </p>
+        </div>
+        <div class="cardPack">
+            <div class="cardPackFormulaOne">
+                <h2>Un formule pour les  petites  jungle avec peut d’entretient</h2>
+                <p><span>2 h/mois</span></p>
+                <p><strong>80€</strong>/mois </p>
+                <p class="detailsPackFormula">Heure non utilisée, <span>cumulable</span> sur plusieurs mois, <span>le temps de l’engagement.</span></p>
+                <div class="jsdetailscardPack" > 
+                    <a href="#">en savoir plus</a> 
+                </div>
+                <div class="findOutMore">
+                    <a href="index.php#contact">Contactez-moi </a>
+                </div>
+            </div>
+            <div class="cardPackFormulaTow">
+                <h2>Un formule pour les petites   jungle avec beaucoup d’entretien</h2>
+                <p><span> 4 h/mois </span></p>
+                <p><strong>152€</strong>/mois </p>
+                <p class="detailsPackFormula">Heure non utilisée, <span>cumulable</span> sur plusieurs mois, <span>le temps de l’engagement.</span></p>
+                <div class="jsdetailscardPack" > 
+                    <a href="#">en savoir plus</a> 
+                </div>
+                <div class="findOutMore">
+                    <a href="index.php#contact">Contactez-moi </a>
+                </div>
+            </div>
+            <div class="cardPackFormulaThee">
+                <h2>Un formule pour les grand   jungle avec peux d’entretien</h2>
+                <p><span> 7 h/mois  </span></p>
+                <p><strong>288€</strong>/mois </p>
+                <p class="detailsPackFormula">Heure non utilisée, <span>cumulable</span> sur plusieurs mois, <span>le temps de l’engagement.</span></p>
+                <div class="jsdetailscardPack" > 
+                    <a href="#">en savoir plus</a> 
+                </div>
+                <div class="findOutMore">
+                    <a href="index.php#contact">Contactez-moi </a>
+                </div>
+            </div>
+            <div class="cardPackFormulaFour">
+                <h2>Un formule pour les grand   jungle avec beaucoup d’entretien</h2>
+                <p><span> 16 h/mois  </span></p>
+                <p><strong>544€</strong>/mois </p>
+                <p class="detailsPackFormula">Heure non utilisée, <span>cumulable</span> sur plusieurs mois, <span>le temps de l’engagement.</span></p>
+                <div class="jsdetailscardPack" > 
+                    <a href="#">en savoir plus</a> 
+                </div>
+                <div class="findOutMore">
+                    <a href="index.php#contact">Contactez-moi </a>
+                </div>
+            </div>
+            <div class="cardPackFormulaFive">
+                <h2>Un formule qui s'adapte a la taille de la jungle</h2>
+                <p><span> N° d'heure en fonction de vos besoin  </span></p>
+                <p><strong>Sur devis</strong> </p>
+                <p class="detailsPackFormula">Heure non utilisée, <span>cumulable</span> sur plusieurs mois, <span>le temps de l’engagement.</span></p>
+                <div class="jsdetailscardPack" > 
+                    <a href="#">en savoir plus</a> 
+                </div>
+                <div class="findOutMore">
+                    <a href="index.php#contact">Contactez-moi </a>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="callTooActionPack">
+            <p>N’hésitez pas à <span>demander un devis !</span> </p>
+            <div class="findOutMore">
+                    <a href="index.php#contact">Contactez-moi </a>
+                </div>
+        </div>
+        <img class="imgTow" src="assets/img/card2.png" alt="immage de feuille tropicale">
+    </div>
+            
+</section>
 
 
 

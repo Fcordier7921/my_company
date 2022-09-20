@@ -50,10 +50,16 @@
     padding: 0;
 }
 
+html,
+body {
+    min-height: 100%;
+}
+
 body {
     width: 100vw;
     font-family: 'Montserrat Regular', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
 
 h2 {

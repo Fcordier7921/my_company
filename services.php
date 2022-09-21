@@ -21,7 +21,7 @@
                 <a href="index.php#contact">Devis gratuit</a>
             </div>
             <div class="next">
-                <a href="#websiteCreation"><img src="assets/img/Arrow 1.png" alt="page suivante"></a>
+                <a href="#websiteCreation"><img src="assets/img/Arrow1.png" alt="page suivante"></a>
             </div>
         </div>
 
@@ -246,10 +246,69 @@
                 </div>
         </div>
         <img class="imgTow" src="assets/img/card2.png" alt="immage de feuille tropicale">
+        
     </div>
             
 </section>
 
 
+<!--------- outsourcing section --------->
+
+<section id="outsourcing">
+     <div class="titileOutsourcing">
+        <h2>J’offre mes compétences au service de votre entreprise</h2>
+        <h3>Un besoin temporaire ! une compétence que vous n’avez pas au sein de votre équipe !  N’attendez plus, profitez de mon expertise</h3>
+     </div>
+     <div class="contactButun">
+                <a href="index.php#contact">Devis gratuit</a>
+            </div>
+</section>
+
+<!--------- outsourcing  skill section --------->
+<section id="outsourcingoutsourcingSkill">
+    <div class="skillOne">
+        <h2>Compétences en développement</h2>
+        <p>Je me suis spécialisé dans le développement Front-end, ce qui me permet de vous apporter mes compétences dans les domaines suivants :</p>
+        <ul>
+            <li> Intégration web</li>
+            <li>Vue (Vuex, Vue Router)</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>GreenSock</li>
+        </ul>
+        <br>
+        <p>J’ai également des connaissances en  développement back-end :</p>
+        <ul>
+            <li>PHP</li>
+            <li>Symfony </li>
+            <li>Yii2 </li>
+            <li>SQL </li>
+        </ul>
+        
+    </div>
+    <div class="skillTow">
+        <h2>Compétences en conception graphique</h2>
+        <p>Pour la création sur mesure du web design. j’ai des compétences dans ces logiciels :</p>
+        <ul>
+            <li>Photoshop</li>
+            
+            <li>Figma</li>
+            <li>Adobe XD</li>
+        </ul>
+        <br>
+        <p>je garde de mon expérience de dessinateur spécialisé en bureau d’études des compétences dans la création d’objet 3D :</p>
+        <ul>
+            <li>AutoCAD electrical</li>
+            <li>Fusion 360</li>
+        </ul>
+    </div>
+    <div class="collToAcvtion ">
+        <p>Besoin de mes services ? <span>demander un devis !</span> </p>
+        <div class="findOutMore">
+                    <a href="index.php#contact">Contactez-moi </a>
+                </div>
+    </div>
+     
+</section>
 
 <?php include("footer.php"); ?>

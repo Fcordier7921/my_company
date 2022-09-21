@@ -332,7 +332,7 @@
         }
         
         #websiteFormula .titleWebsiteFormula h2 {
-            font-size: 2.6rem;
+            font-size: 3.3rem;
             color: #BFA76A;
             text-shadow: -4px 4px 5px #000;
         }
@@ -382,7 +382,8 @@
         #pack {
             width: 100vw;
             position: relative;
-            overflow: scroll;
+            overflow: hidden;
+            overflow-y: scroll;
         }
         
         #pack .bodyPack {
@@ -509,6 +510,7 @@
         #pack .bodyPack .callTooActionPack p {
             font-size: 2rem;
             text-align: center;
+            color: #044389;
             text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
         }
         
@@ -623,4 +625,86 @@
         body .ActivedetailscardPack {
             display: block;
             z-index: 900;
+        }
+        /*--------outsourcing section--------*/
+        
+        #outsourcing {
+            width: 100vw;
+            height: 100vh;
+            min-height: 568px;
+            color: white;
+            background-image: url(/assets/img/aboutSection.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        
+        #outsourcing .titileOutsourcing {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        #outsourcing .titileOutsourcing h2 {
+            font-size: 2rem;
+            padding: 10px;
+            color: #BFA76A;
+        }
+        
+        #outsourcing .titileOutsourcing h3 {
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+        
+        #outsourcing .contactButun {
+            position: absolute;
+            bottom: 7%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        /*-------outsourcing  skill section--------*/
+        
+        #outsourcingoutsourcingSkill {
+            width: 100vw;
+            background-image: url(/assets/img/contact.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #outsourcingoutsourcingSkill .skillOne,
+        #outsourcingoutsourcingSkill .skillTow {
+            width: 90%;
+            margin-top: 90px;
+            font-size: 1.3rem;
+        }
+        
+        #outsourcingoutsourcingSkill .skillOne h2,
+        #outsourcingoutsourcingSkill .skillTow h2 {
+            font-size: 2.5rem;
+            color: #BFA76A;
+            margin-bottom: 20px;
+        }
+        
+        #outsourcingoutsourcingSkill .skillOne ul,
+        #outsourcingoutsourcingSkill .skillTow ul {
+            padding-left: 20px;
+        }
+        
+        #outsourcingoutsourcingSkill .collToAcvtion {
+            width: 90%;
+        }
+        
+        #outsourcingoutsourcingSkill .collToAcvtion p {
+            font-size: 1.7rem;
+            margin-top: 30px;
+            color: #044389;
+            text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
         }

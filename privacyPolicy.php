@@ -10,7 +10,7 @@
         <h1>Mentions légales et politique de confidentialité</h1>
         <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site Frédéric CORDIER Développeur web l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.</p>
         <div class="next">
-                <a href="#EditingTheSitePrivacyPolicy"><img src="assets/img/Arrow 1.png" alt="page suivante"></a>
+                <a href="#EditingTheSitePrivacyPolicy"><img src="assets/img/Arrow1.png" alt="page suivante"></a>
             </div>
     </div>
     

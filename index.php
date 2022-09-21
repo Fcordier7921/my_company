@@ -46,7 +46,7 @@
                 <a href="#contact">Devis gratuit</a>
             </div>
             <div class="next">
-                <a href="#about"><img src="assets/img/Arrow 1.png" alt="page suivante"></a>
+                <a href="#about"><img src="assets/img/Arrow1.png" alt="page suivante"></a>
             </div>
         </div>
 

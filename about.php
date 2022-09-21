@@ -9,7 +9,7 @@
         <h1>Frédéric CORDIER,  Développeur web</h1>
         <p>La programmation fait partie de mes passions. J'ai créé une application en VBA pour générer un menu et une liste de courses pour une semaine. J’ai aussi développé pour de l'Arduino et les raspberry pi.</p>
         <div class="next">
-            <a href="#aboutMe"><img src="assets/img/Arrow 1.png" alt="page suivante"></a>
+            <a href="#aboutMe"><img src="assets/img/Arrow1.png" alt="page suivante"></a>
         </div>
     </div>
     
@@ -20,7 +20,7 @@
 
 <section id="aboutMe">
     <div class="presentationAboutMe">
-        <img src="assets/img/pngegg-(24).png" alt="feuille en haut a gauche">
+        <img src="assets/img/card7.png" alt="feuille en haut a gauche">
         <h2>Qui je suis ?</h2>
         <div class="explaineAboutMe">
             <p>Développeur web freelance, je mets ma passion au service de votre visibilité. Je vous assiste dans la création d’un site performant et à votre image.

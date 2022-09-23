@@ -1,710 +1,1190 @@
-        #presentationServices {
-            width: 100vw;
-            height: 100vh;
-            min-height: 450px;
-            background-image: url(../img/services.jpg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            z-index: -1;
-        }
-        
-        .titleServices {
-            width: 100vw;
-            height: 100vh;
-            min-height: 450px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            align-items: center;
-            text-align: center;
-        }
-        
-        .presentationTitleServices {
-            width: 90%;
-            height: 150px;
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .presentationTitleServices h1 {
-            color: #BFA76A;
-            text-shadow: black -4px 4px 5px;
-            font-size: 18vw;
-            font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
-            font-weight: 100;
-            text-shadow: 0px 0px 2px black, 0 0 3px black, 0 0 4px black;
-        }
-        
-        .presentationTitletowServices {
-            width: 90%;
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .presentationTitletowServices h2 {
-            color: white;
-            font-size: 9vw;
-            margin-top: 5px;
-            text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
-            font-weight: 100;
-        }
-        
-        .titleNext {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        
-        .contactButun {
-            width: 150px;
-            height: 50px;
-            background-color: #BFA76A;
-            box-shadow: -4px 4px 5px black;
-            border-radius: 5px;
-            margin-top: 30px;
-            display: flex;
-        }
-        
-        .contactButun a {
-            color: black;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: bold;
-            margin: auto;
-            font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
-        }
-        
-        .next {
-            width: 40px;
-            height: 40px;
-            margin-top: 20px;
-            background-color: black;
-            border-radius: 50%;
-            box-shadow: 0 0 10px 2px #fff;
-            place-self: center end;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .next a img {
-            width: 20px;
-            height: 25px;
-        }
-        /* -------website creation section----- */
-        
-        #websiteCreation {
-            width: 100vw;
-        }
-        
-        #websiteCreation .bodyWebsiteCreation {
-            width: 100vw;
-            position: relative;
-        }
-        
-        #websiteCreation .bodyWebsiteCreation .featWebsiteCreation {
-            width: 100%;
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: -1;
-        }
-        
-        #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation {
-            width: 100%;
-            height: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h2 {
-            color: #044389;
-            margin-top: 5%;
-            font-size: 2.4rem;
-            padding: 10px;
-        }
-        
-        #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h3 {
-            margin-top: 5%;
-            font-size: 1.5rem;
-            padding: 10px;
-        }
-        
-        #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-        }
-        
-        #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .txtWebsiteCreation {
-            width: 100%;
-            font-size: 1.2rem;
-        }
-        
-        #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .imgWebsiteCreation {
-            width: 100%;
-            height: 75vw;
-            position: relative;
-            margin-bottom: 30px;
-            margin-top: 30px;
-        }
-        
-        .imgWebsiteCreationOne,
-        .imgWebsiteCreationTwo {
-            width: 61vw;
-            max-width: 250px;
-            height: 40vw;
-            max-height: 176px;
-            background-color: #BFA76A;
-            position: relative;
-        }
-        
-        .textImgWebsiteCreation .imgWebsiteCreation .imgWebsiteCreationOne img,
-        .textImgWebsiteCreation .imgWebsiteCreation .imgWebsiteCreationTwo img {
-            width: 58vw;
-            max-width: 240px;
-            height: 37vw;
-            max-height: 169px;
-        }
-        
-        .textImgWebsiteCreation .imgWebsiteCreation .imgWebsiteCreationOne img {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
-        
-        .imgWebsiteCreationTwo {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
-        
-        #websiteCreation .explanationWebsiteCreation {
-            width: 100%;
-            position: relative;
-        }
-        
-        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation,
-        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation,
-        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation {
-            width: 80%;
-            font-size: 1.2rem;
-            text-align: start;
-            margin-bottom: 50px;
-        }
-        
-        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation img,
-        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation img,
-        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 170px;
-            height: 170px;
-        }
-        
-        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation h3,
-        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation h3,
-        #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation h3 {
-            font-size: 1.7rem;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-        
-        #websiteCreation .callToActionWebsiteCreation {
-            width: 100%;
-            font-size: 1.3rem;
-            padding: 10px;
-        }
-        
-        .quotationWebsiteCreation {
-            width: 100%;
-            font-size: 1.3rem;
-            padding: 10px;
-            margin-top: 30px;
-            color: #044389;
-        }
-        
-        .quotationWebsiteCreation p {
-            text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
-        }
-        
-        .findOutMore {
-            justify-self: end;
-            max-width: 250px;
-            height: 48px;
-            margin: 40px auto;
-            border: 2px solid #BFA76A;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            overflow: hidden;
-            position: relative;
-            background-color: #fff;
-            z-index: 0;
-        }
-        
-        .findOutMore::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 120%;
-            width: 130%;
-            height: 100%;
-            background: #BFA76A;
-            transition: all .5s;
-            z-index: -1;
-            transform: skewx(-50deg);
-        }
-        
-        .findOutMore:hover::before {
-            right: -17%;
-            z-index: 100;
-        }
-        
-        .findOutMore a {
-            font-size: 1.4rem;
-            width: 100%;
-            height: 100%;
-            margin-top: 5%;
-            text-decoration: none;
-            color: #BFA76A;
-            transition: all .5s;
-            z-index: 100;
-        }
-        
-        .findOutMore a:hover {
-            color: black;
-        }
-        
-        #websiteCreation .explanationWebsiteCreation .imgWebsiteCreationEnd {
-            width: 100%;
-            height: 12%;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-        }
-        /*--------website formula section--------*/
-        
-        #websiteFormula {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-image: url(../img/formula.jpg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        
-        #websiteFormula .titleWebsiteFormula {
-            margin: 40px auto;
-            width: 90%;
-            text-align: center;
-        }
-        
-        #websiteFormula .titleWebsiteFormula h3 {
-            font-size: 1.7rem;
-            color: white;
-            margin-bottom: 30px;
-            text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000;
-        }
-        
-        #websiteFormula .titleWebsiteFormula h2 {
-            font-size: 3.3rem;
-            color: #BFA76A;
-            text-shadow: -4px 4px 5px #000;
-        }
-        
-        #websiteFormula .textWebsiteFormula {
-            font-size: 1.5rem;
-            color: #fff;
-            width: 80%;
-            text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000;
-        }
-        
-        #websiteFormula .textWebsiteFormula div:nth-child(1) {
-            margin-bottom: 20px;
-        }
-        
-        .contactButunWebsiteFormula {
-            width: 150px;
-            height: 50px;
-            background-color: #BFA76A;
-            box-shadow: -4px 4px 5px black;
-            border-radius: 5px;
-            margin-top: 40px;
-            margin-bottom: 40px;
-            display: flex;
-        }
-        
-        .contactButunWebsiteFormula a {
-            color: black;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: bold;
-            margin: auto;
-            font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
-        }
-        /*--------website pack section--------*/
-        
-        body .overlayDetailscardPack {
-            display: none;
-            width: 100vw;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: -1;
-        }
-        
-        #pack {
-            width: 100vw;
-            position: relative;
-            overflow: hidden;
-            overflow-y: scroll;
-        }
-        
-        #pack .bodyPack {
-            width: 100vw;
-            margin: 10px;
-            position: relative;
-            margin: 0;
-        }
-        
-        #pack .bodyPack .imgOne {
-            width: 150%;
-            height: 40%;
-            margin: 20px;
-            position: absolute;
-            top: -1.5%;
-            left: -10%;
-            z-index: -1;
-        }
-        
-        #pack .bodyPack .PresentationPack {
-            width: 100%;
-            text-align: center;
-            font-size: 1.5rem;
-            padding-top: 20%;
-            padding-right: 7%;
-        }
-        
-        #pack .bodyPack .PresentationPack p {
-            text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
-        }
-        
-        #pack .bodyPack .cardPack {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        #pack .bodyPack .cardPack .cardPackFormulaOne,
-        #pack .bodyPack .cardPack .cardPackFormulaTow,
-        #pack .bodyPack .cardPack .cardPackFormulaThee,
-        #pack .bodyPack .cardPack .cardPackFormulaFour,
-        #pack .bodyPack .cardPack .cardPackFormulaFive {
-            width: 80%;
-            height: 550px;
-            border: 1px solid rgba(0, 0, 0, 0.35);
-            border-radius: 30px;
-            overflow: hidden;
-            margin-top: 50px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        #pack .bodyPack .cardPack .cardPackFormulaOne h2,
-        #pack .bodyPack .cardPack .cardPackFormulaTow h2,
-        #pack .bodyPack .cardPack .cardPackFormulaThee h2,
-        #pack .bodyPack .cardPack .cardPackFormulaFour h2,
-        #pack .bodyPack .cardPack .cardPackFormulaFive h2 {
-            font-size: 2rem;
-            margin-top: 20px;
-            color: #BFA76A;
-        }
-        
-        #pack .bodyPack .cardPack .cardPackFormulaOne p,
-        #pack .bodyPack .cardPack .cardPackFormulaTow p,
-        #pack .bodyPack .cardPack .cardPackFormulaThee p,
-        #pack .bodyPack .cardPack .cardPackFormulaFour p,
-        #pack .bodyPack .cardPack .cardPackFormulaFive p {
-            font-size: 1.2rem;
-            margin-top: 20px;
-        }
-        
-        #pack .bodyPack .cardPack .cardPackFormulaOne p strong,
-        #pack .bodyPack .cardPack .cardPackFormulaTow p strong,
-        #pack .bodyPack .cardPack .cardPackFormulaThee p strong,
-        #pack .bodyPack .cardPack .cardPackFormulaFour p strong,
-        #pack .bodyPack .cardPack .cardPackFormulaFive p strong {
-            font-size: 1.7rem;
-            color: #044389;
-        }
-        
-        #pack .bodyPack .cardPack .cardPackFormulaOne .detailsPackFormula,
-        #pack .bodyPack .cardPack .cardPackFormulaTow .detailsPackFormula,
-        #pack .bodyPack .cardPack .cardPackFormulaThee .detailsPackFormula,
-        #pack .bodyPack .cardPack .cardPackFormulaFour .detailsPackFormula,
-        #pack .bodyPack .cardPack .cardPackFormulaFive .detailsPackFormula {
-            margin-bottom: 30px;
-        }
-        
-        #pack .bodyPack .cardPack .cardPackFormulaOne .jsdetailscardPack,
-        #pack .bodyPack .cardPack .cardPackFormulaTow .jsdetailscardPack,
-        #pack .bodyPack .cardPack .cardPackFormulaThee .jsdetailscardPack,
-        #pack .bodyPack .cardPack .cardPackFormulaFour .jsdetailscardPack,
-        #pack .bodyPack .cardPack .cardPackFormulaFive .jsdetailscardPack {
-            cursor: pointer;
-        }
-        
-        #pack .bodyPack .cardPack .cardPackFormulaOne .jsdetailscardPack a,
-        #pack .bodyPack .cardPack .cardPackFormulaTow .jsdetailscardPack a,
-        #pack .bodyPack .cardPack .cardPackFormulaThee .jsdetailscardPack a,
-        #pack .bodyPack .cardPack .cardPackFormulaFour .jsdetailscardPack a,
-        #pack .bodyPack .cardPack .cardPackFormulaFive .jsdetailscardPack a {
-            pointer-events: none;
-            cursor: none;
-        }
-        
-        #pack .bodyPack .cardPack .cardPackFormulaOne .findOutMore,
-        #pack .bodyPack .cardPack .cardPackFormulaTow .findOutMore,
-        #pack .bodyPack .cardPack .cardPackFormulaThee .findOutMore,
-        #pack .bodyPack .cardPack .cardPackFormulaFour .findOutMore,
-        #pack .bodyPack .cardPack .cardPackFormulaFive .findOutMore {
-            width: 80%;
-        }
-        
-        #pack .bodyPack .callTooActionPack {
-            width: 100%;
-            margin-top: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        #pack .bodyPack .callTooActionPack p {
-            font-size: 2rem;
-            text-align: center;
-            color: #044389;
-            text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
-        }
-        
-        #pack .bodyPack .callTooActionPack .findOutMore {
-            width: 100%;
-            background-color: #fff;
-        }
-        
-        #pack .bodyPack .imgTow {
-            width: 100%;
-            height: 10%;
-            position: absolute;
-            bottom: -0.3%;
-            right: 0;
-            z-index: -1;
-        }
-        
-        #pack .detailscardPack {
-            display: none;
-            width: 100%;
-            height: 50%;
-            position: absolute;
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack {
-            width: 90vw;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translatex(-50%);
-            background-color: white;
-            border: solid 2px #BFA76A;
-            padding: 10px;
-            border-radius: 10px;
-            z-index: 1000;
-            overflow: hidden;
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack {
-            width: 50px;
-            height: 50px;
-            position: relative;
-            right: -85%;
-            bottom: 0%;
-            margin-bottom: 30px;
-            margin-top: -10px;
-            cursor: pointer;
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack:hover {
-            background-color: #BFA76A;
-            top: -10%;
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack:hover div {
-            background-color: #fff;
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack div {
-            width: 80%;
-            height: 2px;
-            background-color: #000;
-            position: absolute;
-            top: 50%;
-            left: 10%;
-            pointer-events: none;
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack div:nth-child(1) {
-            transform: rotate(135deg);
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack div:nth-child(2) {
-            transform: rotate(-135deg);
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack h2 {
-            color: #BFA76A;
-            font-size: 2.3rem;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack h3 {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack p {
-            font-size: 1.2rem;
-            text-align: start;
-            margin-bottom: 20px;
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack ul li {
-            font-size: 1.2rem;
-            text-align: start;
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        
-        #pack .detailscardPack .bodydetailscardPack .bodydetailscardPackContact {
-            margin-top: 30px;
-        }
-        
-        #pack .ActivedetailscardPack {
-            display: block;
-            z-index: 900;
-        }
-        
-        body .ActivedetailscardPack {
-            display: block;
-            z-index: 900;
-        }
-        /*--------outsourcing section--------*/
-        
-        #outsourcing {
-            width: 100vw;
-            height: 100vh;
-            min-height: 568px;
-            color: white;
-            background-image: url(/assets/img/aboutSection.jpg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: relative;
-        }
-        
-        #outsourcing .titileOutsourcing {
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-        
-        #outsourcing .titileOutsourcing h2 {
-            font-size: 2rem;
-            padding: 10px;
-            color: #BFA76A;
-        }
-        
-        #outsourcing .titileOutsourcing h3 {
-            font-size: 1.5rem;
-            padding: 10px;
-        }
-        
-        #outsourcing .contactButun {
-            position: absolute;
-            bottom: 7%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        /*-------outsourcing  skill section--------*/
-        
-        #outsourcingoutsourcingSkill {
-            width: 100vw;
-            background-image: url(/assets/img/contact.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        #outsourcingoutsourcingSkill .skillOne,
-        #outsourcingoutsourcingSkill .skillTow {
-            width: 90%;
-            margin-top: 90px;
-            font-size: 1.3rem;
-        }
-        
-        #outsourcingoutsourcingSkill .skillOne h2,
-        #outsourcingoutsourcingSkill .skillTow h2 {
-            font-size: 2.5rem;
-            color: #BFA76A;
-            margin-bottom: 20px;
-        }
-        
-        #outsourcingoutsourcingSkill .skillOne ul,
-        #outsourcingoutsourcingSkill .skillTow ul {
-            padding-left: 20px;
-        }
-        
-        #outsourcingoutsourcingSkill .collToAcvtion {
-            width: 90%;
-        }
-        
-        #outsourcingoutsourcingSkill .collToAcvtion p {
-            font-size: 1.7rem;
-            margin-top: 30px;
-            color: #044389;
-            text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
-        }
+                /* --------------------sevice prensentation------------ */
+                
+                #presentationServices {
+                    width: 100vw;
+                    height: 100vh;
+                    min-height: 450px;
+                    background-image: url(../img/services.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    z-index: -1;
+                }
+                
+                #presentationServices .titleServices {
+                    width: 100vw;
+                    height: 100vh;
+                    min-height: 550px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    align-items: center;
+                    text-align: center;
+                }
+                
+                #presentationServices .titleServices .presentationTitleServices {
+                    width: 90%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                
+                #presentationServices .titleServices .presentationTitleServices h1 {
+                    color: #BFA76A;
+                    text-shadow: black -4px 4px 5px;
+                    font-size: 18vw;
+                    font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+                    font-weight: 100;
+                    text-shadow: 0px 0px 2px black, 0 0 3px black, 0 0 4px black;
+                }
+                
+                #presentationServices .titleServices .presentationTitleServices h2 {
+                    color: white;
+                    font-size: 9vw;
+                    margin-top: 5px;
+                    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+                    font-weight: 100;
+                }
+                
+                .titleNext {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+                
+                .contactButun {
+                    width: 150px;
+                    height: 50px;
+                    background-color: #BFA76A;
+                    box-shadow: -4px 4px 5px black;
+                    border-radius: 5px;
+                    margin-top: 30px;
+                    display: flex;
+                }
+                
+                .contactButun a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-weight: bold;
+                    margin: auto;
+                    font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
+                }
+                
+                .next {
+                    width: 40px;
+                    height: 40px;
+                    margin-top: 37px;
+                    margin-bottom: 13px;
+                    background-color: black;
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px 2px #fff;
+                    place-self: center end;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .next a img {
+                    width: 20px;
+                    height: 25px;
+                }
+                /* -------website creation section----- */
+                
+                #websiteCreation {
+                    width: 100vw;
+                }
+                
+                #websiteCreation .bodyWebsiteCreation {
+                    width: 100vw;
+                    position: relative;
+                }
+                
+                #websiteCreation .bodyWebsiteCreation .featWebsiteCreation {
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: -1;
+                }
+                
+                #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation {
+                    width: 100%;
+                    height: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 35px;
+                }
+                
+                #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h2 {
+                    color: #044389;
+                    margin-top: 5%;
+                    font-size: 2.4rem;
+                    padding: 10px;
+                }
+                
+                #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h3 {
+                    margin-top: 5%;
+                    font-size: 1.5rem;
+                    padding: 10px;
+                }
+                
+                #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                }
+                
+                #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .txtWebsiteCreation {
+                    width: 100%;
+                    font-size: 1.2rem;
+                    text-align: justify;
+                }
+                
+                #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .imgWebsiteCreation {
+                    width: 100%;
+                    max-width: 430px;
+                    height: 75vw;
+                    max-height: 336px;
+                    position: relative;
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                }
+                
+                .imgWebsiteCreationOne,
+                .imgWebsiteCreationTwo {
+                    width: 61vw;
+                    max-width: 250px;
+                    height: 40vw;
+                    max-height: 176px;
+                    background-color: #BFA76A;
+                    position: relative;
+                }
+                
+                .textImgWebsiteCreation .imgWebsiteCreation .imgWebsiteCreationOne img,
+                .textImgWebsiteCreation .imgWebsiteCreation .imgWebsiteCreationTwo img {
+                    width: 58vw;
+                    max-width: 240px;
+                    height: 37vw;
+                    max-height: 169px;
+                }
+                
+                .textImgWebsiteCreation .imgWebsiteCreation .imgWebsiteCreationOne img {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+                
+                .imgWebsiteCreationTwo {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+                
+                #websiteCreation .explanationWebsiteCreation {
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation {
+                    width: 100%;
+                    max-width: 440px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation,
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation,
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation {
+                    width: 80%;
+                    font-size: 1.2rem;
+                    text-align: justify;
+                    margin-bottom: 50px;
+                }
+                
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation img,
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation img,
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 170px;
+                    height: 170px;
+                }
+                
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation h3,
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation h3,
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation h3 {
+                    font-size: 1.7rem;
+                    text-decoration: underline;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-top: 40px;
+                }
+                
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation p,
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation p,
+                #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation p {
+                    margin-top: 40px;
+                }
+                
+                #websiteCreation .callToActionWebsiteCreation {
+                    width: 100%;
+                    font-size: 1.3rem;
+                    padding: 40px;
+                }
+                
+                #websiteCreation .callToActionWebsiteCreation p {
+                    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+                }
+                
+                .quotationWebsiteCreation {
+                    width: 100%;
+                    font-size: 1.3rem;
+                    padding: 10px;
+                    margin-top: 30px;
+                    color: #044389;
+                }
+                
+                .quotationWebsiteCreation p {
+                    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+                }
+                
+                .findOutMore {
+                    justify-self: end;
+                    max-width: 250px;
+                    height: 48px;
+                    margin: 40px auto;
+                    border: 2px solid #BFA76A;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    overflow: hidden;
+                    position: relative;
+                    background-color: #fff;
+                    z-index: 0;
+                }
+                
+                .findOutMore::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 120%;
+                    width: 130%;
+                    height: 100%;
+                    background: #BFA76A;
+                    transition: all .5s;
+                    z-index: -1;
+                    transform: skewx(-50deg);
+                }
+                
+                .findOutMore:hover::before {
+                    right: -17%;
+                    z-index: 100;
+                }
+                
+                .findOutMore a {
+                    font-size: 1.4rem;
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 5%;
+                    text-decoration: none;
+                    color: #BFA76A;
+                    transition: all .5s;
+                    z-index: 100;
+                }
+                
+                .findOutMore a:hover {
+                    color: black;
+                }
+                
+                #websiteCreation .explanationWebsiteCreation .imgWebsiteCreationEnd {
+                    width: 100%;
+                    height: 12%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: -1;
+                }
+                /*--------website formula section--------*/
+                
+                #websiteFormula {
+                    width: 100vw;
+                    height: 100vh;
+                    min-height: 900px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-image: url(../img/formula.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    padding-bottom: 40px;
+                }
+                
+                #websiteFormula .titleWebsiteFormula {
+                    margin: 40px auto;
+                    width: 90%;
+                    text-align: center;
+                }
+                
+                #websiteFormula .titleWebsiteFormula h3 {
+                    font-size: 1.7rem;
+                    color: white;
+                    margin-bottom: 30px;
+                    text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000;
+                }
+                
+                #websiteFormula .titleWebsiteFormula h2 {
+                    font-size: 3.3rem;
+                    color: #BFA76A;
+                    text-shadow: -4px 4px 5px #000;
+                }
+                
+                #websiteFormula .textWebsiteFormula {
+                    font-size: 1.4rem;
+                    color: #fff;
+                    width: 80%;
+                    text-align: start;
+                    text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000, 0px 0px 20px #000;
+                }
+                
+                #websiteFormula .textWebsiteFormula div:nth-child(1) {
+                    margin-bottom: 20px;
+                }
+                
+                .contactButunWebsiteFormula {
+                    width: 250px;
+                    height: 40px;
+                    background-color: #BFA76A;
+                    box-shadow: -4px 4px 5px black;
+                    border-radius: 5px;
+                    margin-top: 44px;
+                    display: flex;
+                }
+                
+                .contactButunWebsiteFormula a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-weight: bold;
+                    margin: auto;
+                    font-family: 'Montserrat Regular', 'Times New Roman', Times, serif;
+                }
+                /*--------website pack section--------*/
+                
+                body .overlayDetailscardPack {
+                    display: none;
+                    width: 100vw;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    z-index: -1;
+                }
+                
+                #pack {
+                    width: 100vw;
+                    position: relative;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                }
+                
+                #pack .bodyPack {
+                    width: 100vw;
+                    margin: 10px;
+                    position: relative;
+                    margin: 0;
+                }
+                
+                #pack .bodyPack .imgOne {
+                    width: 150%;
+                    height: 40%;
+                    margin: 20px;
+                    position: absolute;
+                    top: -21px;
+                    left: -10%;
+                    z-index: -1;
+                }
+                
+                #pack .bodyPack .PresentationPack {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    padding-top: 20%;
+                    padding-right: 7%;
+                }
+                
+                #pack .bodyPack .PresentationPack p {
+                    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+                }
+                
+                #pack .bodyPack .cardPack {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                #pack .bodyPack .cardPack .cardPackFormulaOne,
+                #pack .bodyPack .cardPack .cardPackFormulaTow,
+                #pack .bodyPack .cardPack .cardPackFormulaThee,
+                #pack .bodyPack .cardPack .cardPackFormulaFour,
+                #pack .bodyPack .cardPack .cardPackFormulaFive {
+                    width: 80%;
+                    height: max-content;
+                    border: 1px solid rgba(0, 0, 0, 0.35);
+                    border-radius: 30px;
+                    overflow: hidden;
+                    margin-top: 50px;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                #pack .bodyPack .cardPack .cardPackFormulaOne h2,
+                #pack .bodyPack .cardPack .cardPackFormulaTow h2,
+                #pack .bodyPack .cardPack .cardPackFormulaThee h2,
+                #pack .bodyPack .cardPack .cardPackFormulaFour h2,
+                #pack .bodyPack .cardPack .cardPackFormulaFive h2 {
+                    font-size: 2rem;
+                    margin-top: 20px;
+                    padding: 10px;
+                    color: #BFA76A;
+                }
+                
+                #pack .bodyPack .cardPack .cardPackFormulaOne p,
+                #pack .bodyPack .cardPack .cardPackFormulaTow p,
+                #pack .bodyPack .cardPack .cardPackFormulaThee p,
+                #pack .bodyPack .cardPack .cardPackFormulaFour p,
+                #pack .bodyPack .cardPack .cardPackFormulaFive p {
+                    font-size: 1.2rem;
+                    margin-top: 20px;
+                    padding: 10px;
+                }
+                
+                #pack .bodyPack .cardPack .cardPackFormulaOne p strong,
+                #pack .bodyPack .cardPack .cardPackFormulaTow p strong,
+                #pack .bodyPack .cardPack .cardPackFormulaThee p strong,
+                #pack .bodyPack .cardPack .cardPackFormulaFour p strong,
+                #pack .bodyPack .cardPack .cardPackFormulaFive p strong {
+                    font-size: 1.7rem;
+                    color: #044389;
+                }
+                
+                #pack .bodyPack .cardPack .cardPackFormulaOne .detailsPackFormula,
+                #pack .bodyPack .cardPack .cardPackFormulaTow .detailsPackFormula,
+                #pack .bodyPack .cardPack .cardPackFormulaThee .detailsPackFormula,
+                #pack .bodyPack .cardPack .cardPackFormulaFour .detailsPackFormula,
+                #pack .bodyPack .cardPack .cardPackFormulaFive .detailsPackFormula {
+                    margin-bottom: 30px;
+                }
+                
+                #pack .bodyPack .cardPack .cardPackFormulaOne .jsdetailscardPack,
+                #pack .bodyPack .cardPack .cardPackFormulaTow .jsdetailscardPack,
+                #pack .bodyPack .cardPack .cardPackFormulaThee .jsdetailscardPack,
+                #pack .bodyPack .cardPack .cardPackFormulaFour .jsdetailscardPack,
+                #pack .bodyPack .cardPack .cardPackFormulaFive .jsdetailscardPack {
+                    cursor: pointer;
+                }
+                
+                #pack .bodyPack .cardPack .cardPackFormulaOne .jsdetailscardPack a,
+                #pack .bodyPack .cardPack .cardPackFormulaTow .jsdetailscardPack a,
+                #pack .bodyPack .cardPack .cardPackFormulaThee .jsdetailscardPack a,
+                #pack .bodyPack .cardPack .cardPackFormulaFour .jsdetailscardPack a,
+                #pack .bodyPack .cardPack .cardPackFormulaFive .jsdetailscardPack a {
+                    pointer-events: none;
+                    cursor: none;
+                }
+                
+                #pack .bodyPack .cardPack .cardPackFormulaOne .findOutMore,
+                #pack .bodyPack .cardPack .cardPackFormulaTow .findOutMore,
+                #pack .bodyPack .cardPack .cardPackFormulaThee .findOutMore,
+                #pack .bodyPack .cardPack .cardPackFormulaFour .findOutMore,
+                #pack .bodyPack .cardPack .cardPackFormulaFive .findOutMore {
+                    width: 80%;
+                }
+                
+                #pack .bodyPack .callTooActionPack {
+                    width: 100%;
+                    margin-top: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                #pack .bodyPack .callTooActionPack p {
+                    font-size: 2rem;
+                    text-align: center;
+                    color: #044389;
+                    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+                }
+                
+                #pack .bodyPack .callTooActionPack .findOutMore {
+                    width: 100%;
+                    background-color: #fff;
+                }
+                
+                #pack .bodyPack .imgTow {
+                    width: 100%;
+                    height: 10%;
+                    position: absolute;
+                    bottom: -0.3%;
+                    right: 0;
+                    z-index: -1;
+                }
+                
+                #pack .detailscardPack {
+                    display: none;
+                    width: 100%;
+                    height: 50%;
+                    position: absolute;
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack {
+                    width: 90vw;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translatex(-50%);
+                    background-color: white;
+                    border: solid 2px #BFA76A;
+                    padding: 10px;
+                    border-radius: 10px;
+                    z-index: 1000;
+                    overflow: hidden;
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack {
+                    width: 50px;
+                    height: 50px;
+                    position: relative;
+                    right: -85%;
+                    bottom: 0%;
+                    margin-bottom: 30px;
+                    margin-top: -10px;
+                    cursor: pointer;
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack:hover {
+                    background-color: #BFA76A;
+                    top: -10%;
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack:hover div {
+                    background-color: #fff;
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack div {
+                    width: 80%;
+                    height: 2px;
+                    background-color: #000;
+                    position: absolute;
+                    top: 50%;
+                    left: 10%;
+                    pointer-events: none;
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack div:nth-child(1) {
+                    transform: rotate(135deg);
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack .closingdetailscardPack div:nth-child(2) {
+                    transform: rotate(-135deg);
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack h2 {
+                    color: #BFA76A;
+                    font-size: 2.3rem;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack h3 {
+                    font-size: 2rem;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack p {
+                    font-size: 1.2rem;
+                    text-align: start;
+                    margin-bottom: 20px;
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack ul li {
+                    font-size: 1.2rem;
+                    text-align: start;
+                    list-style-type: disc;
+                    margin-left: 20px;
+                }
+                
+                #pack .detailscardPack .bodydetailscardPack .bodydetailscardPackContact {
+                    margin-top: 30px;
+                }
+                
+                #pack .ActivedetailscardPack {
+                    display: block;
+                    z-index: 900;
+                }
+                
+                body .ActivedetailscardPack {
+                    display: block;
+                    z-index: 900;
+                }
+                /*--------outsourcing section--------*/
+                
+                #outsourcing {
+                    width: 100vw;
+                    height: 100vh;
+                    min-height: 568px;
+                    color: white;
+                    background-image: url(/assets/img/aboutSection.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: relative;
+                }
+                
+                #outsourcing .titileOutsourcing {
+                    width: 100%;
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%, -34%);
+                    text-align: center;
+                }
+                
+                #outsourcing .titileOutsourcing h2 {
+                    font-size: 2.7rem;
+                    padding: 10px;
+                    color: #BFA76A;
+                }
+                
+                #outsourcing .titileOutsourcing h3 {
+                    font-size: 1.7rem;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                }
+                
+                #outsourcing .contactButun {
+                    position: absolute;
+                    bottom: 7%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                /*-------outsourcing  skill section--------*/
+                
+                #outsourcingoutsourcingSkill {
+                    width: 100vw;
+                    background-image: url(/assets/img/contact.png);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                #outsourcingoutsourcingSkill .skillOne,
+                #outsourcingoutsourcingSkill .skillTow {
+                    width: 90%;
+                    margin-top: 90px;
+                    font-size: 1.3rem;
+                }
+                
+                #outsourcingoutsourcingSkill .skillOne h2,
+                #outsourcingoutsourcingSkill .skillTow h2 {
+                    font-size: 2.5rem;
+                    color: #BFA76A;
+                    margin-bottom: 20px;
+                }
+                
+                #outsourcingoutsourcingSkill .skillOne ul,
+                #outsourcingoutsourcingSkill .skillTow ul {
+                    padding-left: 20px;
+                }
+                
+                #outsourcingoutsourcingSkill .collToAcvtion {
+                    width: 90%;
+                }
+                
+                #outsourcingoutsourcingSkill .collToAcvtion p {
+                    font-size: 1.7rem;
+                    margin-top: 30px;
+                    color: #044389;
+                    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+                }
+                /*----------media querise--------------------------------*/
+                /*-------height management--------------*/
+                
+                @media screen and (max-height: 450px) {}
+                /*-------width management--------------*/
+                /* -------website creation section----- */
+                /*--------website pack section--------*/
+                
+                @media screen and (min-width: 350px) {
+                    /* --------------------sevice prensentation------------ */
+                    /* -------website creation section----- */
+                    /*--------website pack section--------*/
+                }
+                
+                @media screen and (min-width: 450px) {
+                    /* --------------------sevice prensentation------------ */
+                    #presentationServices {
+                        min-height: 650px;
+                    }
+                    #presentationServices .titleServices {
+                        min-height: 650px;
+                    }
+                    /* -------website creation section----- */
+                    /*--------website pack section--------*/
+                }
+                
+                @media screen and (min-width: 600px) {
+                    /* --------------------sevice prensentation------------ */
+                    #presentationServices {
+                        min-height: 750px;
+                    }
+                    #presentationServices .titleServices {
+                        min-height: 750px;
+                    }
+                    /* -------website creation section----- */
+                    /*--------website pack section--------*/
+                    .contactButunWebsiteFormula {
+                        width: 250px;
+                    }
+                }
+                
+                @media screen and (min-width: 700px) {
+                    /* --------------------sevice prensentation------------ */
+                    #presentationServices {
+                        min-height: 850px;
+                    }
+                    #presentationServices .titleServices {
+                        min-height: 850px;
+                    }
+                    /* -------website creation section----- */
+                    /*--------website pack section--------*/
+                }
+                
+                @media screen and (min-width: 800px) {
+                    /* --------------------sevice prensentation------------ */
+                    /* -------website creation section----- */
+                    #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation {
+                        padding: 100px;
+                    }
+                    /*--------website pack section--------*/
+                    #websiteFormula {
+                        position: relative;
+                    }
+                    #websiteFormula .textWebsiteFormula div:nth-child(1) {
+                        width: 400px;
+                        text-align: justify;
+                        position: absolute;
+                        top: 35%;
+                        left: 5%;
+                    }
+                    #websiteFormula .textWebsiteFormula div:nth-child(2) {
+                        width: 400px;
+                        text-align: justify;
+                        position: absolute;
+                        bottom: 30%;
+                        right: 5%;
+                    }
+                }
+                
+                @media screen and (min-width: 900px) {
+                    /* --------------------sevice prensentation------------ */
+                    #presentationServices {
+                        min-height: 950px;
+                    }
+                    #presentationServices .titleServices {
+                        min-height: 950px;
+                    }
+                    /* -------website creation section----- */
+                    /*--------website pack section--------*/
+                }
+                
+                @media screen and (min-width: 1000px) {
+                    /* --------------------sevice prensentation------------ */
+                    #presentationServices {
+                        min-height: 650px;
+                    }
+                    #presentationServices .titleServices {
+                        min-height: 650px;
+                    }
+                    #presentationServices .titleServices .presentationTitleServices h1 {
+                        font-size: 10vw;
+                    }
+                    #presentationServices .titleServices .presentationTitleServices h2 {
+                        font-size: 5vw;
+                    }
+                    .titleNext {
+                        width: 90%;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-bottom: 50px;
+                    }
+                    .contactButun {
+                        width: 250px;
+                    }
+                    .contactButun a {
+                        font-size: 22px;
+                    }
+                    .next {
+                        margin-top: 40px;
+                        margin-right: 30px;
+                        width: 60px;
+                        height: 60px;
+                    }
+                    .next a img {
+                        width: 31px;
+                        height: 38px;
+                        margin-top: 4px;
+                    }
+                    /* -------website creation section----- */
+                    #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation {
+                        width: 100%;
+                        height: 20%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        margin-bottom: 50px;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h2 {
+                        margin-top: 10%;
+                        font-size: 2.4rem;
+                        padding: 5px;
+                        margin-left: 40px;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h3 {
+                        margin-top: 0;
+                        padding: 0;
+                        margin-left: 180px;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation {
+                        flex-direction: row-reverse;
+                        padding: 0;
+                        margin-bottom: 50px;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .imgWebsiteCreation {
+                        width: 50%;
+                        margin-right: 50px;
+                        margin-left: 40px;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .txtWebsiteCreation {
+                        width: 50%;
+                        padding-right: 50px;
+                        font-size: 1.1rem;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation {
+                        width: 100%;
+                        max-width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        align-items: baseline;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation {
+                        width: 25%;
+                        font-size: 1.1rem;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation h3,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation h3,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation h3 {
+                        font-size: 1.27rem;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation p,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation p,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation p {
+                        font-size: 1.05rem;
+                    }
+                    #websiteCreation .callToActionWebsiteCreation p {
+                        padding-left: 25px;
+                    }
+                    .quotationWebsiteCreation {
+                        display: flex;
+                        margin-bottom: 25px;
+                        margin-left: 10px;
+                    }
+                    .quotationWebsiteCreation .findOutMore {
+                        width: 250px;
+                        margin: -9px 80px;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .imgWebsiteCreationEnd {
+                        width: 42%;
+                        height: 42%;
+                    }
+                    /*--------website pack section--------*/
+                    #websiteFormula .titleWebsiteFormula h3 {
+                        font-size: 2.5rem;
+                    }
+                    #websiteFormula .titleWebsiteFormula h2 {
+                        font-size: 5rem;
+                    }
+                    #websiteFormula .textWebsiteFormula div:nth-child(1) {
+                        width: 260px;
+                    }
+                    #websiteFormula .textWebsiteFormula div:nth-child(2) {
+                        width: 260px;
+                        text-align: left;
+                    }
+                    .contactButunWebsiteFormula {
+                        margin-bottom: 15px;
+                    }
+                }
+                
+                @media screen and (min-width: 1200px) {
+                    /* --------------------sevice prensentation------------ */
+                    #presentationServices {
+                        min-height: 750px;
+                    }
+                    #presentationServices .titleServices {
+                        min-height: 750px;
+                    }
+                    /* -------website creation section----- */
+                    #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h2 {
+                        margin-top: 7%;
+                        margin-left: 118px;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .txtWebsiteCreation {
+                        padding-top: 46px;
+                    }
+                    .quotationWebsiteCreation {
+                        margin-left: 70px;
+                    }
+                    /*--------website pack section--------*/
+                    #websiteFormula .textWebsiteFormula div:nth-child(1) {
+                        width: 280px;
+                        text-align: left;
+                    }
+                    #websiteFormula .textWebsiteFormula div:nth-child(2) {
+                        width: 280px;
+                    }
+                }
+                
+                @media screen and (min-width: 1250px) {
+                    /* --------------------sevice prensentation------------ */
+                    /* -------website creation section----- */
+                    /*--------website pack section--------*/
+                }
+                
+                @media screen and (min-width: 1500px) {
+                    /* --------------------sevice prensentation------------ */
+                    #presentationServices {
+                        min-height: 750px;
+                    }
+                    #presentationServices .titleServices {
+                        min-height: 750px;
+                    }
+                    #presentationServices .titleServices .presentationTitleServices h1 {
+                        font-size: 8vw;
+                    }
+                    #presentationServices .titleServices .presentationTitleServices h2 {
+                        font-size: 3vw;
+                    }
+                    /* -------website creation section----- */
+                    #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h2 {
+                        font-size: 3rem;
+                        margin-left: 146px;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h3 {
+                        font-size: 2.5rem;
+                        margin-left: 249px;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .txtWebsiteCreation {
+                        font-size: 1.3rem;
+                        padding-top: 8px;
+                        padding-left: 115px;
+                        padding-right: 0;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation {
+                        margin: 0;
+                        margin-bottom: 50px;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation h3,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation h3,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation h3 {
+                        font-size: 1.8rem;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation p,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation p,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation p {
+                        font-size: 1.25rem;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation {
+                        margin-bottom: 90px;
+                    }
+                    #websiteCreation .callToActionWebsiteCreation {
+                        font-size: 1.7rem;
+                    }
+                    .quotationWebsiteCreation {
+                        font-size: 1.7rem;
+                    }
+                    #websiteCreation .callToActionWebsiteCreation .quotationWebsiteCreation p {
+                        padding-left: 120px;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .imgWebsiteCreationEnd {
+                        width: 50%;
+                        height: 50%;
+                    }
+                    /*--------website pack section--------*/
+                    #websiteFormula .textWebsiteFormula div:nth-child(1) {
+                        width: 350px;
+                    }
+                    #websiteFormula .textWebsiteFormula div:nth-child(2) {
+                        width: 350px;
+                    }
+                }
+                
+                @media screen and (min-width: 1600px) {
+                    /* --------------------sevice prensentation------------ */
+                    /* -------website creation section----- */
+                    /*--------website pack section--------*/
+                }
+                
+                @media screen and (min-width: 1900px) {
+                    /* --------------------sevice prensentation------------ */
+                    #presentationServices .titleServices .presentationTitleServices h1 {
+                        font-size: 6vw;
+                    }
+                    #presentationServices .titleServices .presentationTitleServices h2 {
+                        font-size: 2vw;
+                    }
+                    /* -------website creation section----- */
+                    #websiteCreation .bodyWebsiteCreation .featWebsiteCreation {
+                        width: 50%;
+                        height: 100%;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation {
+                        width: 78%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-left: 1%;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .imgWebsiteCreation {
+                        max-width: 530px;
+                        max-height: 436px;
+                    }
+                    .imgWebsiteCreationOne,
+                    .imgWebsiteCreationTwo {
+                        max-width: 350px;
+                        max-height: 227px;
+                    }
+                    .textImgWebsiteCreation .imgWebsiteCreation .imgWebsiteCreationOne img,
+                    .textImgWebsiteCreation .imgWebsiteCreation .imgWebsiteCreationTwo img {
+                        max-width: 335px;
+                        max-height: 213px;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation {
+                        margin-bottom: 0;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardOneExplanationWebsiteCreation p,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardTowExplanationWebsiteCreation p,
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation .cardThreeExplanationWebsiteCreation p {
+                        line-height: 50px;
+                        text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+                    }
+                    #websiteCreation .callToActionWebsiteCreation {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .quotationWebsiteCreation {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    #websiteCreation .callToActionWebsiteCreation .quotationWebsiteCreation p {
+                        padding-left: 0;
+                        margin: 0 105px 0 10px;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .imgWebsiteCreationEnd {
+                        width: 50%;
+                        height: 50%;
+                    }
+                    /*--------website pack section--------*/
+                    #websiteFormula .textWebsiteFormula div:nth-child(1) {
+                        left: 10%;
+                    }
+                    #websiteFormula .textWebsiteFormula div:nth-child(2) {
+                        right: 10%;
+                    }
+                }
+                
+                @media screen and (min-width: 2000px) {
+                    /* --------------------sevice prensentation------------ */
+                    /* -------website creation section----- */
+                    #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .txtWebsiteCreation {
+                        line-height: 40px;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .textImgWebsiteCreation .txtWebsiteCreation {
+                        max-width: 900px;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation {
+                        width: 70%;
+                        max-width: 1400px;
+                        padding-left: 0;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h2 {
+                        margin-left: 40px;
+                    }
+                    #websiteCreation .bodyWebsiteCreation .titleWebsiteCreation h3 {
+                        margin-left: 120px;
+                    }
+                    #websiteCreation .explanationWebsiteCreation .cardExplanationWebsiteCreation {
+                        max-width: 1500px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    /*--------website pack section--------*/
+                    #websiteFormula {
+                        min-height: 1600px;
+                    }
+                    #websiteFormula .titleWebsiteFormula {
+                        margin: 210px auto;
+                    }
+                    #websiteFormula .textWebsiteFormula div:nth-child(1) {
+                        left: 16%;
+                        font-size: 1.7rem;
+                    }
+                    #websiteFormula .textWebsiteFormula div:nth-child(2) {
+                        right: 17%;
+                        font-size: 1.7rem;
+                    }
+                    .contactButunWebsiteFormula {
+                        width: 350px;
+                        height: 50px;
+                    }
+                    .contactButunWebsiteFormula a {
+                        font-size: 1.5rem;
+                    }
+                }
+                
+                @media screen and (min-width: 2500px) {
+                    /* --------------------sevice prensentation------------ */
+                    /* -------website creation section----- */
+                    /*--------website pack section--------*/
+                }

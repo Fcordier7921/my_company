@@ -296,7 +296,7 @@ function adddetailscardPack() {
         let detailscardPackButtonY = window.scrollY;
         let packSectionY = packSection.offsetHeight;
         let resulDetailscardPack = detailscardPackButtonY - packSectionY;
-        detailscardPack.style.top = "" + resulDetailscardPack - 900 + "px";
+        detailscardPack.style.top = "" + resulDetailscardPack - 700 + "px";
     }
 }
 

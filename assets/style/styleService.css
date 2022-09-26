@@ -402,8 +402,9 @@
                 #pack {
                     width: 100vw;
                     position: relative;
-                    overflow: hidden;
-                    overflow-y: scroll;
+                    /* overflow: hidden;
+                    overflow-y: scroll; */
+                    position: relative;
                 }
                 
                 #pack .bodyPack {
@@ -438,7 +439,9 @@
                 #pack .bodyPack .cardPack {
                     width: 100%;
                     display: flex;
-                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
                 }
                 
                 #pack .bodyPack .cardPack .cardPackFormulaOne,
@@ -447,7 +450,10 @@
                 #pack .bodyPack .cardPack .cardPackFormulaFour,
                 #pack .bodyPack .cardPack .cardPackFormulaFive {
                     width: 80%;
+                    min-width: 300px;
+                    max-width: 400px;
                     height: max-content;
+                    min-height: 600px;
                     border: 1px solid rgba(0, 0, 0, 0.35);
                     border-radius: 30px;
                     overflow: hidden;
@@ -520,9 +526,13 @@
                     width: 80%;
                 }
                 
+                #pack .bodyPack .cardPack .cardPackFormulaFive h2 {
+                    margin-bottom: 55px;
+                }
+                
                 #pack .bodyPack .callTooActionPack {
                     width: 100%;
-                    margin-top: 30%;
+                    margin-top: 10%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -553,16 +563,16 @@
                 #pack .detailscardPack {
                     display: none;
                     width: 100%;
-                    height: 50%;
+                    height: 100%;
                     position: absolute;
                 }
                 
                 #pack .detailscardPack .bodydetailscardPack {
-                    width: 90vw;
+                    width: 90%;
                     position: absolute;
-                    top: 0;
+                    top: 50%;
                     left: 50%;
-                    transform: translatex(-50%);
+                    transform: translate(-50%, -50%);
                     background-color: white;
                     border: solid 2px #BFA76A;
                     padding: 10px;
@@ -770,6 +780,9 @@
                     .contactButunWebsiteFormula {
                         width: 250px;
                     }
+                    #pack .bodyPack .PresentationPack {
+                        padding-top: 10%;
+                    }
                 }
                 
                 @media screen and (min-width: 700px) {
@@ -807,6 +820,14 @@
                         position: absolute;
                         bottom: 30%;
                         right: 5%;
+                    }
+                    #pack .bodyPack .cardPack {
+                        width: 90%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    #pack .bodyPack .imgTow {
+                        height: 20%;
                     }
                 }
                 
@@ -952,6 +973,17 @@
                     .contactButunWebsiteFormula {
                         margin-bottom: 15px;
                     }
+                    #pack .bodyPack .imgOne {
+                        width: 130%;
+                        height: 30%;
+                        left: -2%;
+                    }
+                    #pack .bodyPack .PresentationPack {
+                        padding-top: 5%;
+                    }
+                    #pack .bodyPack .callTooActionPack {
+                        margin-top: 5%;
+                    }
                 }
                 
                 @media screen and (min-width: 1200px) {
@@ -981,12 +1013,41 @@
                     #websiteFormula .textWebsiteFormula div:nth-child(2) {
                         width: 280px;
                     }
+                    #pack .bodyPack .imgOne {
+                        width: 130%;
+                        height: 30%;
+                    }
                 }
                 
                 @media screen and (min-width: 1250px) {
                     /* --------------------sevice prensentation------------ */
                     /* -------website creation section----- */
                     /*--------website pack section--------*/
+                    #pack .bodyPack .imgTow {
+                        width: 100%;
+                        height: 10%;
+                        position: absolute;
+                        bottom: -0.3%;
+                        right: 0;
+                        z-index: -1;
+                    }
+                }
+                
+                @media screen and (min-width: 1400px) {
+                    #pack .bodyPack .imgOne {
+                        width: 120%;
+                        height: 40%;
+                    }
+                    #pack .bodyPack .imgTow {
+                        height: 30%;
+                    }
+                }
+                
+                @media screen and (min-width: 1466px) {
+                    #pack .bodyPack .imgOne {
+                        width: 120%;
+                        height: 40%;
+                    }
                 }
                 
                 @media screen and (min-width: 1500px) {
@@ -1055,9 +1116,22 @@
                     #websiteFormula .textWebsiteFormula div:nth-child(2) {
                         width: 350px;
                     }
+                    #pack .bodyPack .imgOne {
+                        width: 90%;
+                        height: 30%;
+                    }
+                    #pack .bodyPack .PresentationPack {
+                        padding-top: 3%;
+                    }
                 }
                 
                 @media screen and (min-width: 1600px) {
+                    /* --------------------sevice prensentation------------ */
+                    /* -------website creation section----- */
+                    /*--------website pack section--------*/
+                }
+                
+                @media screen and (min-width: 1700px) {
                     /* --------------------sevice prensentation------------ */
                     /* -------website creation section----- */
                     /*--------website pack section--------*/
@@ -1132,6 +1206,15 @@
                     #websiteFormula .textWebsiteFormula div:nth-child(2) {
                         right: 10%;
                     }
+                    #pack .bodyPack .imgOne {
+                        width: 70%;
+                    }
+                    #pack .bodyPack .PresentationPack {
+                        width: 70%;
+                        margin-right: auto;
+                        margin-left: auto;
+                        padding-top: 2%;
+                    }
                 }
                 
                 @media screen and (min-width: 2000px) {
@@ -1181,10 +1264,52 @@
                     .contactButunWebsiteFormula a {
                         font-size: 1.5rem;
                     }
+                    #pack .bodyPack .cardPack {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    #pack .bodyPack .cardPack .cardPackFormulaFour,
+                    #pack .bodyPack .cardPack .cardPackFormulaFive {
+                        background-color: white;
+                    }
+                    #pack .bodyPack .callTooActionPack {
+                        margin-top: 2%;
+                    }
+                    #pack .bodyPack .imgTow {
+                        height: 80%;
+                    }
+                }
+                
+                @media screen and (min-width: 2268px) {
+                    #pack .bodyPack .imgOne {
+                        width: 50%;
+                    }
                 }
                 
                 @media screen and (min-width: 2500px) {
                     /* --------------------sevice prensentation------------ */
                     /* -------website creation section----- */
                     /*--------website pack section--------*/
+                    #websiteFormula .titleWebsiteFormula h3 {
+                        font-size: 6rem;
+                    }
+                    #websiteFormula .titleWebsiteFormula h2 {
+                        font-size: 15rem;
+                    }
+                    #websiteFormula .textWebsiteFormula div:nth-child(1) {
+                        left: 16%;
+                        top: 45%;
+                        width: 600px;
+                        font-size: 3rem;
+                    }
+                    #websiteFormula .textWebsiteFormula div:nth-child(2) {
+                        right: 17%;
+                        bottom: 20%;
+                        width: 600px;
+                        font-size: 3rem;
+                    }
+                    #pack .bodyPack .imgOne {
+                        width: 80%;
+                        height: 100%;
+                    }
                 }

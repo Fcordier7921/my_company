@@ -293,10 +293,10 @@ function adddetailscardPack() {
     } else {
         detailscardPack.classList.add('ActivedetailscardPack');
         overlayDetailscardPack.classList.add('ActivedetailscardPack');
-        let detailscardPackButtonY = window.scrollY;
-        let packSectionY = packSection.offsetHeight;
-        let resulDetailscardPack = detailscardPackButtonY - packSectionY;
-        detailscardPack.style.top = "" + resulDetailscardPack - 700 + "px";
+        // let detailscardPackButtonY = window.scrollY;
+        // let packSectionY = packSection.offsetHeight;
+        // let resulDetailscardPack = detailscardPackButtonY - packSectionY;
+        // detailscardPack.style.top = "" + resulDetailscardPack - 700 + "px";
     }
 }
 
@@ -308,12 +308,3 @@ for (let i = 0; i < detailscardPackButton.length; i++) {
 
 closingdetailscardPack.addEventListener('click', adddetailscardPack)
 overlayDetailscardPack.addEventListener('click', adddetailscardPack)
-
-// managementExpertise.addEventListener('click', () => {
-//     if (managementExpertise.classList.contains('explanationsExpertiseActive')) {
-//         alert('ret gger')
-//     }
-//     disgnExpertise.classList.remove("explanationsExpertiseActive");
-//     devExpertise.classList.remove("explanationsExpertiseActive");
-//     performanceExpertise.classList.remove("explanationsExpertiseActive");
-// })

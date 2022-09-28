@@ -122,7 +122,7 @@
 
             </p>
             <div class="findOutMore">
-                <a href="services.php">En savoir + </a>
+                <a href="services.php#pack">En savoir + </a>
             </div>
             <img class="imgTowFormulaWeb" src="assets/img/card4.png" alt="image en fin de carte de la deuxiéme prestation">
         </div>
@@ -134,7 +134,7 @@
 
             </p>
             <div class="findOutMore">
-                <a href="services.php">En savoir + </a>
+                <a href="services.php#outsourcingoutsourcingSkill">En savoir + </a>
             </div>
             <img class="imgTowOutsourcing" src="assets/img/card6.png" alt="image en fin de carte de la troisiéme prestation">
         </div>
@@ -258,10 +258,11 @@
         
         <div class="ExplaneCantact">
             <h2>Contactez-moi !</h2>
-            
+            <p><span>email:</span> fredericcordierpro6@gmail.com </p>
+           <p><span>tel:</span> 07 81 46 65 76</p>
             <?php 
             require 'submit.php';
-            var_dump($_POST);
+            
             
              if(!empty($_POST)){
                $captcha =new Recaptcha('6LeS9vQhAAAAAP5U0n7izOtzwHCJqyw65QcI0lvd');

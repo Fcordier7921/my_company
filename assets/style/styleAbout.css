@@ -73,6 +73,7 @@
 #aboutMe .presentationAboutMe {
     width: 100vw;
     height: 900px;
+    min-height: 670px;
     position: relative;
     overflow: hidden;
 }
@@ -91,6 +92,7 @@
     padding: 0 10px;
     font-size: 2rem;
     font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
 }
 
 #aboutMe .presentationAboutMe .imgpresentationAboutMe {
@@ -104,7 +106,6 @@
 #aboutMe .presentationAboutMe .explaineAboutMe {
     width: 90%;
     height: 80%;
-    background-color: white;
     margin-left: 20px;
     overflow: hidden;
 }
@@ -115,6 +116,7 @@
     margin-bottom: 40px;
     padding: 0 10px;
     font-size: 1.5rem;
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
 }
 
 #aboutMe .imgAboutMe {
@@ -152,6 +154,7 @@
     padding: 0 10px;
     font-size: 2rem;
     font-family: 'Crimson Text Regular', Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
 }
 
 #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout {
@@ -172,7 +175,6 @@
 #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout {
     width: 90%;
     height: 77%;
-    background-color: white;
     margin-left: 20px;
     margin-top: 20px;
     overflow: hidden;
@@ -184,6 +186,7 @@
     margin-bottom: 40px;
     padding: 0 10px;
     font-size: 1.5rem;
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
 }
 
 #freelanceAbout .imgFreelanceAbout {
@@ -430,7 +433,7 @@
     }
     #aboutMe .presentationAboutMe .imgpresentationAboutMe {
         width: 65%;
-        right: 20px;
+        right: 0;
     }
     #aboutMe .imgAboutMe {
         height: 770px;
@@ -492,12 +495,31 @@
         font-size: 4rem;
     }
     #aboutMe .presentationAboutMe .explaineAboutMe p {
-        font-size: 1.9rem;
+        font-size: 1.25rem;
     }
     #freelanceAbout .presentationFreelanceAbout h2 {
         font-size: 3rem;
     }
     #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout p {
-        font-size: 1.8rem;
+        font-size: 1.25rem;
+    }
+    #aboutMe {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #freelanceAbout {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 2600px) {
+    #aboutMe .presentationAboutMe .explaineAboutMe p {
+        font-size: 1.5rem;
+    }
+    #freelanceAbout .presentationFreelanceAbout .explainefreelanceAbout p {
+        font-size: 1.5rem;
     }
 }

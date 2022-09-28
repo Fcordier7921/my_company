@@ -569,6 +569,7 @@
                 
                 #pack .detailscardPack .bodydetailscardPack {
                     width: 90%;
+                    max-width: 1170px;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -585,7 +586,7 @@
                     width: 50px;
                     height: 50px;
                     position: relative;
-                    right: -85%;
+                    right: 10px;
                     bottom: 0%;
                     margin-bottom: 30px;
                     margin-top: -10px;
@@ -703,6 +704,7 @@
                 
                 #outsourcingoutsourcingSkill {
                     width: 100vw;
+                    min-height: 900px;
                     background-image: url(/assets/img/contact.png);
                     background-position: center;
                     background-size: cover;
@@ -710,11 +712,13 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    position: relative;
                 }
                 
                 #outsourcingoutsourcingSkill .skillOne,
                 #outsourcingoutsourcingSkill .skillTow {
                     width: 90%;
+                    max-width: 650px;
                     margin-top: 90px;
                     font-size: 1.3rem;
                 }
@@ -724,18 +728,26 @@
                     font-size: 2.5rem;
                     color: #BFA76A;
                     margin-bottom: 20px;
+                    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+                }
+                
+                #outsourcingoutsourcingSkill .skillOne p,
+                #outsourcingoutsourcingSkill .skillTow p {
+                    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
                 }
                 
                 #outsourcingoutsourcingSkill .skillOne ul,
                 #outsourcingoutsourcingSkill .skillTow ul {
                     padding-left: 20px;
+                    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
                 }
                 
                 #outsourcingoutsourcingSkill .collToAcvtion {
-                    width: 90%;
+                    width: 100%;
                 }
                 
                 #outsourcingoutsourcingSkill .collToAcvtion p {
+                    text-align: center;
                     font-size: 1.7rem;
                     margin-top: 30px;
                     color: #044389;
@@ -984,6 +996,14 @@
                     #pack .bodyPack .callTooActionPack {
                         margin-top: 5%;
                     }
+                    #outsourcing .titileOutsourcing h2 {
+                        font-size: 5rem;
+                        padding: 30px;
+                    }
+                    #outsourcing .titileOutsourcing h3 {
+                        font-size: 2.2rem;
+                        padding: 0 90px;
+                    }
                 }
                 
                 @media screen and (min-width: 1200px) {
@@ -1040,6 +1060,16 @@
                     }
                     #pack .bodyPack .imgTow {
                         height: 30%;
+                    }
+                    #outsourcingoutsourcingSkill .skillOne {
+                        position: relative;
+                        top: 30%;
+                        left: -10%;
+                    }
+                    #outsourcingoutsourcingSkill .skillTow {
+                        position: relative;
+                        top: -10%;
+                        right: -15%;
                     }
                 }
                 
@@ -1276,7 +1306,34 @@
                         margin-top: 2%;
                     }
                     #pack .bodyPack .imgTow {
-                        height: 80%;
+                        height: 70%;
+                        width: 50%;
+                    }
+                    #outsourcing .titileOutsourcing h2 {
+                        font-size: 7rem;
+                        padding: 0 225px;
+                    }
+                    #outsourcing .titileOutsourcing h3 {
+                        font-size: 3.2rem;
+                        padding: 0 270px;
+                    }
+                    #outsourcingoutsourcingSkill .skillOne {
+                        position: absolute;
+                        top: 5%;
+                        left: 20%;
+                        transform: translate(-20%, -5%);
+                    }
+                    #outsourcingoutsourcingSkill .skillTow {
+                        position: absolute;
+                        top: 45%;
+                        left: 80%;
+                        transform: translate(-80%, -45%);
+                    }
+                    #outsourcingoutsourcingSkill .collToAcvtion {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
                     }
                 }
                 
@@ -1311,5 +1368,35 @@
                     #pack .bodyPack .imgOne {
                         width: 80%;
                         height: 100%;
+                    }
+                    #outsourcingoutsourcingSkill .skillOne {
+                        position: absolute;
+                        top: 5%;
+                        left: 30%;
+                        transform: translate(-30%, -5%);
+                    }
+                    #outsourcingoutsourcingSkill .skillTow {
+                        position: absolute;
+                        top: 45%;
+                        left: 70%;
+                        transform: translate(-70%, -45%);
+                    }
+                }
+                
+                @media screen and (min-width: 3000px) {
+                    /* --------------------sevice prensentation------------ */
+                    /* -------website creation section----- */
+                    /*--------website pack section--------*/
+                    #outsourcingoutsourcingSkill .skillOne {
+                        position: absolute;
+                        top: 5%;
+                        left: 35%;
+                        transform: translate(-35%, -5%);
+                    }
+                    #outsourcingoutsourcingSkill .skillTow {
+                        position: absolute;
+                        top: 45%;
+                        left: 65%;
+                        transform: translate(-65%, -45%);
                     }
                 }

@@ -131,7 +131,7 @@
 
 <section id="pack">
     <div  class="detailscardPack ">
-                <div class="bodydetailscardPack">
+                <div class="bodydetailscardPack" id="bodydetailscardPackId">
                     <div class="closingdetailscardPack">
                         <div></div>
                         <div></div>

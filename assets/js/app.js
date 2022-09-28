@@ -293,10 +293,8 @@ function adddetailscardPack() {
     } else {
         detailscardPack.classList.add('ActivedetailscardPack');
         overlayDetailscardPack.classList.add('ActivedetailscardPack');
-        // let detailscardPackButtonY = window.scrollY;
-        // let packSectionY = packSection.offsetHeight;
-        // let resulDetailscardPack = detailscardPackButtonY - packSectionY;
-        // detailscardPack.style.top = "" + resulDetailscardPack - 700 + "px";
+
+        window.location.replace("http://freelance.local/services.php#bodydetailscardPackId");
     }
 }
 

@@ -13,6 +13,7 @@
         $phpSelf =$_SERVER['PHP_SELF'];
         $newPhpSelf = rtrim($phpSelf, "/ ");
         
+        
         if($newPhpSelf == "/index.php" ){
             echo '<title>Développeur web freelance, création de site web & gestion de site web</title>';
             echo '<meta name="description" content="Développeur web freelance, le web vous donne l\'impression d\'être dans une jungle dense. J"élague pour vous cette jungle, en vous créant un site adapté a vos besoin et je gére tout son activité pour vous.">';
@@ -31,6 +32,7 @@
              echo "<meta name='description' content='Développeur web freelance, Avoir un site internet conforme au RGPD nécessite de suivre trois grands principes, que nous allons ici vous présenter. Le premier est de demander le consentement de l’utilisateur avant la récolte de ses données.'>";
              echo '<link rel="stylesheet" href="assets/style/stylePrivacyPolicy.css"> ';
          }
+        
            
     ?>
     
@@ -53,7 +55,7 @@
  <header>
 
    
-<img src="assets/img/logoV2blanc.png" alt="Logo de Frédéric cordier développeur web freelance">
+<img class="logoScroll" src="assets/img/logoV2blanc.png" alt="Logo de Frédéric cordier développeur web freelance">
 
 <div class="box">
     <div class="contLigne btn1">

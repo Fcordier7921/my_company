@@ -35,8 +35,7 @@
 
             </h1>
 
-        </div>
-        <div class="presentationTitletow">
+        
 
             <h2>Conception et gestion de sites web qui vous ressemble</h2>
         </div>
@@ -268,22 +267,23 @@
                $captcha =new Recaptcha('6LeS9vQhAAAAAP5U0n7izOtzwHCJqyw65QcI0lvd');
                if($captcha->checkCode($_POST['g-recaptcha-response']) === false){
                     ?>
-                    <div class="erreurCaptcha">
+                    <!-- <div class="erreurCaptcha">
                         Le captcha ne semble pas valide
-                    </div>
+                    </div> -->
                     <?php
 
                }else{
                     ?>
-                    <div class="validateCaptcha">
+                    <!-- <div class="validateCaptcha">
                         Merci pour votre message
-                    </div>
+                    </div> -->
                     <?php
                }
                
                
              }
-            ?></p>
+            ?>
+            <!-- </p>
 
             <form  method="POST ">
                 <div class="indentity">
@@ -296,7 +296,7 @@
                 
                 <button type="submit" id="submit">Envoyer</button>
                 
-            </form>
+            </form>  -->
         </div>
 
     </div>

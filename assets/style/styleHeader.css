@@ -59,6 +59,7 @@ body {
     width: 100vw;
     font-family: 'Montserrat Regular', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    overflow-y: scroll;
     position: relative;
 }
 
@@ -85,8 +86,12 @@ header {
     height: 170px;
     display: flex;
     align-items: center;
+    padding-top: 35px;
     position: fixed;
     z-index: 900;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-snap-type: y mandatory;
 }
 
 header img {
@@ -160,11 +165,13 @@ nav {
     opacity: 0;
     width: 100vw;
     height: 100vh;
+    min-height: 470px;
     background-color: black;
     position: absolute;
     top: 0;
     left: 0;
     visibility: hidden;
+    overflow-y: scroll;
 }
 
 nav ul {
@@ -173,8 +180,7 @@ nav ul {
     left: 50%;
     transform: translate(-50%, -50%);
     list-style-type: none;
-    width: 400px;
-    max-width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -225,7 +231,7 @@ nav ul li div a img {
     height: 100%;
 }
 
-@media screen and (min-height: 600px) {
+@media screen and (min-height: 300px) {
     header img {
         width: 225px;
         height: 113px;
@@ -236,6 +242,9 @@ nav ul li div a img {
     }
     nav ul li div a {
         width: 10vw;
+    }
+    nav ul li a {
+        font-size: 40px;
     }
 }
 
@@ -284,5 +293,11 @@ nav ul li div a img {
     }
     nav ul li div a img {
         margin-left: 0;
+    }
+}
+
+@media screen and (max-height: 414px) {
+    nav ul li a {
+        font-size: 40px;
     }
 }

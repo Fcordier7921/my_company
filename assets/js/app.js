@@ -3,16 +3,20 @@
 
 //------------------navigation menu -----------
 
-
+const body = document.querySelector('body');
+const header = document.querySelector('header');
 const btn = document.querySelector('.contLigne');
 const nav = document.querySelector('nav');
 const LigneBtn = document.querySelectorAll('.lignes');
+
+const menulist = document.querySelector('header nav ul');
 const menuLigneOne = document.querySelector('header nav ul li:nth-child(1)');
 const menuLigneTwo = document.querySelector('header nav ul li:nth-child(2)');
 const menuLigneThree = document.querySelector('header nav ul li:nth-child(3)');
 const menuLigneFour = document.querySelector('header nav ul li:nth-child(4)');
 const menuLigneFive = document.querySelector('header nav ul li:nth-child(5)');
-console.log(menuLigneFour);
+
+
 
 function displayNav() {
     if (btn.className === 'contLigne btn1 active') {
@@ -26,7 +30,9 @@ function displayNav() {
             .fromTo(menuLigneThree, { autoAlpha: 1, x: 0 }, { autoAlpha: 0, x: '7vw' }, '-=0.4')
             .fromTo(menuLigneTwo, { autoAlpha: 1, x: 0 }, { autoAlpha: 0, x: '7vw' }, '-=0.35')
             .fromTo(menuLigneOne, { autoAlpha: 1, x: 0 }, { autoAlpha: 0, x: '7vw' }, '-=0.37')
-            .fromTo(nav, { duration: 1, autoAlpha: 1, x: 0 }, { duration: 1, autoAlpha: 0, x: '100vw' }, '-=0.2')
+            .fromTo(nav, { duration: 1, autoAlpha: 1, x: 0 }, { duration: 1, autoAlpha: 0, x: '100vw', scrollSnapAlign: 'start' })
+            .fromTo(header, { duration: 1, y: 0, minHeight: '100vh', overflowY: "scroll", alignItems: 'flex-start' }, { duration: .1, y: 0, minHeight: '170px', overflowY: "hidden", scrollSnapAlign: 'end' })
+            .fromTo(body, { duration: .05, overflowY: "hidden" }, { duration: .1, overflowY: "scroll" }, '<')
 
         btn.classList.remove('active');
 
@@ -38,7 +44,9 @@ function displayNav() {
 
         hideTheNav
 
-            .fromTo(nav, { duration: 1, autoAlpha: 0, x: '100vw' }, { duration: 1, autoAlpha: 1, x: 0 })
+            .fromTo(body, { duration: .05, overflowY: "scroll" }, { duration: .1, overflowY: "hidden" })
+            .fromTo(nav, { duration: 1, autoAlpha: 0, x: '100vw' }, { duration: 1, autoAlpha: 1, x: 0 }, '<')
+            .fromTo(header, { duration: 1, y: 0, minHeight: '170px', overflowY: "hidden", alignItems: 'center' }, { duration: .1, y: 0, minHeight: '100vh', overflowY: "scroll", alignItems: 'flex-start' }, '<')
             .fromTo(menuLigneOne, { autoAlpha: 0, x: '7vw' }, { autoAlpha: 1, x: 0 }, '-=1')
             .fromTo(menuLigneTwo, { autoAlpha: 0, x: '7vw' }, { autoAlpha: 1, x: 0 }, '-=0.8')
             .fromTo(menuLigneThree, { autoAlpha: 0, x: '7vw' }, { autoAlpha: 1, x: 0 }, '-=0.6')
@@ -57,6 +65,23 @@ menuLigneThree.addEventListener('click', displayNav);
 menuLigneFour.addEventListener('click', displayNav);
 
 
+//------------------navigation menu  scroll-----------
+const logoSrcoll = document.querySelector('header .logoScroll');
+
+gsap.to(logoSrcoll, {
+    duration: 1,
+    y: 0,
+    scale: 2,
+    autoAlpha: 0,
+    scrollTrigger: {
+        trigger: ".logoScroll",
+        markers: false,
+        start: "end+=100 5%",
+        end: "end+=320 top",
+        toggleActions: "play complete reverse reset"
+    }
+})
+
 //------------------section presentation -----------
 const backgrondPresentation = document.querySelector('.contenaireAnimation')
 const imgPresentationOne = document.querySelector('.imgAnimation1')
@@ -74,7 +99,7 @@ const imgPresentationTwelve = document.querySelector('.imgAnimation12')
 const imgPresentationThirteen = document.querySelector('.imgAnimation13')
 const imgPresentationfourteen = document.querySelector('.imgAnimation14')
 const titrePresentation = document.querySelector('.presentationTitle h1')
-const titreTowPresentation = document.querySelector('.presentationTitletow h2')
+const titreTowPresentation = document.querySelector('.presentationTitle h2')
 const buttonPresentation = document.querySelector('.title .titleNext .contactButun')
 const nextPresentation = document.querySelector('.title .titleNext .next')
 
@@ -88,7 +113,8 @@ function intiAnimationPresretation() {
     });
 
     animTimeligne
-        .fromTo(titrePresentation, { autoAlpha: 0, x: '-50vw' }, { autoAlpha: 1, x: '0vw', ease: "power1.out" })
+
+        .fromTo(titrePresentation, { autoAlpha: 0, x: '-50vw' }, { autoAlpha: 1, x: '0vw', ease: "power1.out", zIndex: 300 })
         //phase 1
         .to(imgPresentationThirteen, { autoAlpha: 0, x: '100vw' }, '+=1.6')
         .to(imgPresentationTwelve, { autoAlpha: 0, x: '-100vw' }, '<')
@@ -115,14 +141,15 @@ function intiAnimationPresretation() {
         .to(imgPresentationOne, { autoAlpha: 0, x: '100vw' }, '<')
         .to(imgPresentationthree, { autoAlpha: 0, x: '100vw' }, '<')
         .to(imgPresentationtow, { autoAlpha: 0, x: '-100vw' }, '<-0.05')
+        //phase 4
+        .to(backgrondPresentation, { duration: 2.2, backgroundColor: 'rgba(0, 0, 0, 0)', ease: "power1.out" }, '<')
+        .to(imgPresentationfourteen, { duration: 2.2, autoAlpha: 0, ease: "power4.out" }, '<1.5')
         .to(titreTowPresentation, { duration: 0.5, autoAlpha: 1 }, '<')
         .to(buttonPresentation, { duration: 0.5, autoAlpha: 1 }, '<')
         .to(nextPresentation, { duration: 0.5, autoAlpha: 1 }, '<')
-        //phase 4
-        .to(backgrondPresentation, { duration: 2.2, backgroundColor: 'rgba(0, 0, 0, 0)', ease: "power1.out" }, '<')
-        .to(imgPresentationfourteen, { duration: 0.5, autoAlpha: 0 }, '<1.5')
         .to(nextPresentation, { duration: 2, zIndex: 700 }, '<')
         .to(buttonPresentation, { duration: 2, zIndex: 700 }, '<0.7')
+
 
     let dateCookiePresentztion = new Date(Date.now() + 86400000);
     dateCookiePresentztion = dateCookiePresentztion.toUTCString();

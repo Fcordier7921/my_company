@@ -113,7 +113,7 @@
         }
         
         .imgAnimation14 {
-            background-color: rgb(0, 0, 0, 0.3);
+            background-color: rgb(0, 0, 0, 0.7);
         }
         
         .title {
@@ -137,14 +137,6 @@
             z-index: 300;
         }
         
-        .presentationTitletow {
-            width: 90%;
-            position: absolute;
-            top: 65%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
         .presentationTitle h1 {
             color: #BFA76A;
             text-shadow: black -4px 4px 5px;
@@ -156,14 +148,15 @@
             opacity: 0;
         }
         
-        .presentationTitletow h2 {
+        .presentationTitle h2 {
             opacity: 0;
             visibility: hidden;
             color: white;
             font-size: 6vw;
-            margin-top: 5px;
             text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
             font-weight: 100;
+            margin-top: 20px;
+            z-index: -1;
         }
         
         .titleNext {
@@ -589,6 +582,7 @@
         
         .titleExpertise .quotes {
             width: 70%;
+            min-width: 600px;
             margin-left: auto;
             margin-right: auto;
             position: relative;
@@ -814,7 +808,7 @@
         }
         
         .bodyContact {
-            background-image: url(../img/contact.png);
+            background-image: url(../img/contactMini.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -984,7 +978,7 @@
             .presentationTitle h1 {
                 font-size: 6.5vw;
             }
-            .presentationTitletow h2 {
+            .presentationTitle h2 {
                 font-size: 5vw;
                 margin-top: 10px;
             }
@@ -1074,7 +1068,7 @@
             .presentationTitle h1 {
                 font-size: 6vw;
             }
-            .presentationTitletow h2 {
+            .presentationTitle h2 {
                 font-size: 4.5vw;
             }
             /*----------about---------------------*/
@@ -1159,7 +1153,7 @@
                 font-size: 4vw;
                 margin-bottom: 50px;
             }
-            .presentationTitletow h2 {
+            .presentationTitle h2 {
                 font-size: 3.5vw;
             }
             .titleNext {
@@ -1304,7 +1298,7 @@
                 font-size: 3vw;
                 margin-bottom: 50px;
             }
-            .presentationTitletow h2 {
+            .presentationTitle h2 {
                 font-size: 2vw;
             }
             /*----------about---------------------*/
@@ -1565,7 +1559,7 @@
             .presentationTitle h1 {
                 font-size: 3vw;
             }
-            .presentationTitletow h2 {
+            .presentationTitle h2 {
                 font-size: 1.9vw;
             }
             /*----------about---------------------*/
@@ -1716,6 +1710,16 @@
                 font-size: 1.15rem;
             }
             /*----------contact---------------------*/
+            .bodyContact {
+                background-image: url(../img/contact.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: initial;
+                width: 100vw;
+                height: 100vh;
+                min-height: 660px;
+                position: relative;
+            }
         }
         
         @media screen and (min-width: 1800px) {

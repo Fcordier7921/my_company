@@ -936,6 +936,13 @@
             font-size: 2rem;
             color: green;
         }
+        
+        .errorsMesages {
+            width: 90%;
+            font-size: 1.3rem;
+            color: red;
+            text-align: center;
+        }
         /*----------media querise--------------------------------*/
         /*-------height management--------------*/
         

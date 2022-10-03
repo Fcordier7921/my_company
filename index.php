@@ -257,51 +257,52 @@
         
         <div class="ExplaneCantact">
             <h2>Contactez-moi !</h2>
-            <p><span>email:</span> fredericcordierpro6@gmail.com </p>
-           <p><span>tel:</span> 07 81 46 65 76</p>
-            <?php 
-            require 'submit.php';
-            
-            
-             if(!empty($_POST)){
-               $captcha =new Recaptcha('6LeS9vQhAAAAAP5U0n7izOtzwHCJqyw65QcI0lvd');
-               if($captcha->checkCode($_POST['g-recaptcha-response']) === false){
-                    ?>
-                    <!-- <div class="erreurCaptcha">
-                        Le captcha ne semble pas valide
-                    </div> -->
-                    <?php
+           
+        
 
-               }else{
-                    ?>
-                    <!-- <div class="validateCaptcha">
-                        Merci pour votre message
-                    </div> -->
-                    <?php
-               }
-               
-               
-             }
-            ?>
-            <!-- </p>
-
-            <form  method="POST ">
+            <form action="submit.php" method="POST">
                 <div class="indentity">
-                    <input type="text" id="name" name="name" placeholder="Nom" required >
-                    <input type="text" id="firstName" name="firstName" placeholder="Prénom" >
+                    <input type="text" id="name" name="name" placeholder="Nom" required value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>" >
+                    <input type="text" id="firstName" name="firstName" required placeholder="Prénom" value="<?= isset($_SESSION['inputs']['firstName']) ? $_SESSION['inputs']['firstName'] : ''; ?>">
                 </div>
-                <input class="emailContact" type="email" id="email" name="email" placeholder="Email" required >
-                <textarea id="message" name="message" placeholder="Message" required></textarea>
-                <div class="g-recaptcha" data-sitekey="6LeS9vQhAAAAAACe8Equ2_Hx99kZAcO_mIDok5O2"></div>
+                
+                <input type="email" class="emailContact"  id="email" name="email" placeholder="Email"  value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : ''; ?>">
+                <textarea id="message" name="message" placeholder="Message" required ><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : ''; ?></textarea>
+                <!-- <div class="g-recaptcha" data-sitekey="6LeS9vQhAAAAAACe8Equ2_Hx99kZAcO_mIDok5O2"></div> -->
                 
                 <button type="submit" id="submit">Envoyer</button>
                 
-            </form>  -->
+            </form> 
+            
+            <?php
+            if(array_key_exists('errors', $_SESSION)): ?>
+                <div class="errorsMesages">
+                    <p>
+                    <?= implode("</p><br><p></p>", $_SESSION['errors']); ?>
+                    </p>
+                </div>
+            
+           <?php unset($_SESSION['errors']); endif; ?>
+           <?php
+            if(array_key_exists('success', $_SESSION)): ?>
+                <div class="successMesages">
+                    <p>
+                    Votre email a bien été envoyé
+                    </p>
+                </div>
+            
+           <?php unset($_SESSION['errors']); endif; ?>
         </div>
-
+                
     </div>
 
 
 </secttion>
 
+
 <?php include("footer.php"); ?>
+<?php 
+ unset($_SESSION['inputs']);
+ unset($_SESSION['success']);
+ unset($_SESSION['errors']);
+ ?>

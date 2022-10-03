@@ -161,11 +161,10 @@ function intiAnimationPresretation() {
 }
 
 //--------Cookie management, for the start animation------------
+const cookieValue = document.cookie.split('; ');
+console.log(cookieValue);
+if (cookieValue.includes("WelcomeEntertainment=ok")) {
 
-const cookieValue = document.cookie.split('; ')[0];
-if (cookieValue != "WelcomeEntertainment=ok") {
-    window.addEventListener('load', intiAnimationPresretation)
-} else {
     backgrondPresentation.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     imgPresentationOne.style.opacity = 0;
     imgPresentationtow.style.opacity = 0;
@@ -203,6 +202,8 @@ if (cookieValue != "WelcomeEntertainment=ok") {
     titrePresentation.style.opacity = 1;
     titreTowPresentation.style.opacity = 1;
     buttonPresentation.style.opacity = 1;
+} else {
+    window.addEventListener('load', intiAnimationPresretation);
 }
 
 //--------silde of the expertise section--------

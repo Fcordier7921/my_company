@@ -35,7 +35,7 @@
 
             </h1>
 
-        
+
 
             <h2>Conception et gestion de sites web qui vous ressemble</h2>
         </div>
@@ -254,46 +254,68 @@
 
 <secttion id="contact">
     <div class="bodyContact">
-        
+
         <div class="ExplaneCantact">
             <h2>Contactez-moi !</h2>
-           
-        
+
+
 
             <form action="submit.php" method="POST">
                 <div class="indentity">
-                    <input type="text" id="name" name="name" placeholder="Nom" required value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>" >
+                    <input type="text" id="name" name="name" placeholder="Nom" required value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>">
                     <input type="text" id="firstName" name="firstName" required placeholder="Prénom" value="<?= isset($_SESSION['inputs']['firstName']) ? $_SESSION['inputs']['firstName'] : ''; ?>">
                 </div>
-                
-                <input type="email" class="emailContact"  id="email" name="email" placeholder="Email"  value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : ''; ?>">
-                <textarea id="message" name="message" placeholder="Message" required ><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : ''; ?></textarea>
-                <!-- <div class="g-recaptcha" data-sitekey="6LeS9vQhAAAAAACe8Equ2_Hx99kZAcO_mIDok5O2"></div> -->
-                
+
+                <input type="email" class="emailContact" id="email" name="email" placeholder="Email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : ''; ?>">
+                <textarea id="message" name="message" placeholder="Message" required><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : ''; ?></textarea>
+
+                <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
                 <button type="submit" id="submit">Envoyer</button>
-                
-            </form> 
-            
+
+            </form>
+            <script src="https://www.google.com/recaptcha/api.js?render=6LcpDlMiAAAAAGBUOzZPhVR9kk4zwPVqZ8qy6dR9"></script>
+            <script>
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6LcpDlMiAAAAAGBUOzZPhVR9kk4zwPVqZ8qy6dR9', {
+                        action: 'homepage'
+                    }).then(function(token) {
+                        document.getElementById('recaptchaResponse').value = token
+                    });
+                });
+            </script>
+
             <?php
-            if(array_key_exists('errors', $_SESSION)): ?>
+            if (array_key_exists('errors', $_SESSION)) : ?>
                 <div class="errorsMesages">
                     <p>
-                    <?= implode("</p><br><p></p>", $_SESSION['errors']); ?>
+                        <?= implode("</p><br><p></p>", $_SESSION['errors']); ?>
                     </p>
                 </div>
-            
-           <?php unset($_SESSION['errors']); endif; ?>
-           <?php
-            if(array_key_exists('success', $_SESSION)): ?>
+
+            <?php unset($_SESSION['errors']);
+            endif; ?>
+            <?php
+            if (array_key_exists('success', $_SESSION)) : ?>
                 <div class="successMesages">
                     <p>
-                    Votre email a bien été envoyé
+                        Votre email a bien été envoyé
                     </p>
                 </div>
-            
-           <?php unset($_SESSION['errors']); endif; ?>
+
+            <?php unset($_SESSION['errors']);
+            endif; ?>
+            <?php
+            if (array_key_exists('errorsEmail', $_SESSION)) : ?>
+                <div class="errorsMesages">
+                    <p>
+                        Un probléme est survenue lors de l'envoie, veuillez réessayer ultérieurement.
+                    </p>
+                </div>
+
+            <?php unset($_SESSION['errors']);
+            endif; ?>
         </div>
-                
+
     </div>
 
 
@@ -301,8 +323,9 @@
 
 
 <?php include("footer.php"); ?>
-<?php 
- unset($_SESSION['inputs']);
- unset($_SESSION['success']);
- unset($_SESSION['errors']);
- ?>
+<?php
+unset($_SESSION['inputs']);
+unset($_SESSION['success']);
+unset($_SESSION['errorsEmail']);
+unset($_SESSION['errors']);
+?>

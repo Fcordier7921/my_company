@@ -10,11 +10,11 @@ const nav = document.querySelector('nav');
 const LigneBtn = document.querySelectorAll('.lignes');
 
 const menulist = document.querySelector('header nav ul');
-const menuLigneOne = document.querySelector('header nav ul li:nth-child(1)');
-const menuLigneTwo = document.querySelector('header nav ul li:nth-child(2)');
-const menuLigneThree = document.querySelector('header nav ul li:nth-child(3)');
-const menuLigneFour = document.querySelector('header nav ul li:nth-child(4)');
-const menuLigneFive = document.querySelector('header nav ul li:nth-child(5)');
+const menuLigneOne = document.querySelector('header nav ul .menuLigneOne');
+const menuLigneTwo = document.querySelector('header nav ul .menuLigneTwo');
+const menuLigneThree = document.querySelector('header nav ul .menuLigneThree');
+const menuLigneFour = document.querySelector('header nav ul .menuLigneFour');
+const menuLigneFive = document.querySelector('header nav ul .menuLigneFive');
 
 
 
@@ -113,7 +113,6 @@ function intiAnimationPresretation() {
     });
 
     animTimeligne
-
         .fromTo(titrePresentation, { autoAlpha: 0, x: '-50vw' }, { autoAlpha: 1, x: '0vw', ease: "power1.out", zIndex: 300 })
         //phase 1
         .to(imgPresentationThirteen, { autoAlpha: 0, x: '100vw' }, '+=1.6')

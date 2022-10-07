@@ -816,6 +816,7 @@
             height: 100vh;
             min-height: 660px;
             position: relative;
+            margin-top: -20px;
         }
         
         .bodyContact .ExplaneCantact {
@@ -825,6 +826,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+            position: relative;
         }
         
         .bodyContact .ExplaneCantact h2 {
@@ -937,11 +939,49 @@
             color: green;
         }
         
-        .errorsMesages {
+        .bodyContact .ExplaneCantact .errorsMesages {
             width: 90%;
+            max-width: 1100px;
+            min-height: 70px;
             font-size: 1.3rem;
+            position: absolute;
+            bottom: -5%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgb(255, 170, 170);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+        
+        .bodyContact .ExplaneCantact .errorsMesages p {
+            margin-top: 0;
             color: red;
-            text-align: center;
+        }
+        
+        .bodyContact .ExplaneCantact .successMesages {
+            width: 90%;
+            max-width: 1100px;
+            min-height: 70px;
+            font-size: 1.3rem;
+            margin-top: 50%;
+            position: absolute;
+            bottom: -5%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgb(177, 250, 193);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+        
+        .bodyContact .ExplaneCantact .successMesages p {
+            margin-top: 0;
+            color: green;
         }
         /*----------media querise--------------------------------*/
         /*-------height management--------------*/
@@ -1465,6 +1505,16 @@
                 padding-bottom: 0;
             }
             /*----------contact---------------------*/
+            .bodyContact {
+                background-image: url(../img/contact.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: initial;
+                width: 100vw;
+                height: 100vh;
+                min-height: 660px;
+                position: relative;
+            }
             .bodyContact .ExplaneCantact h2 {
                 font-size: 4rem;
             }
@@ -1717,16 +1767,6 @@
                 font-size: 1.15rem;
             }
             /*----------contact---------------------*/
-            .bodyContact {
-                background-image: url(../img/contact.png);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-                background-position: initial;
-                width: 100vw;
-                height: 100vh;
-                min-height: 660px;
-                position: relative;
-            }
         }
         
         @media screen and (min-width: 1800px) {

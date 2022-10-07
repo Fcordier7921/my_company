@@ -23,6 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if (empty($response) || is_null($response)) {
             header('Location: index.php#contact');
+            $_SESSION['errorsCapcha'] = 1;
         } else {
             $data = json_decode($response);
             if ($data->success) {
@@ -59,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     );
 
-                    $retour = mail('fredericcordierpro6@gmail.com', 'Madame ou Monsieur ' . strip_tags($_POST['name']) . ' ' . strip_tags($_POST['firstName']) . ' t\'as contacté depuis le site f-cordier.fr', $message, $headers);
+                    $retour = mail('fredericcordierpro6@gmail.com', 'Depuis le site f-cordier.fr => ' . strip_tags($_POST['name']) . ' ' . strip_tags($_POST['firstName']) .', demande d\'information', $message, $headers);
                     if ($retour) {
                         $_SESSION['success'] = 1;
                     } else {
@@ -69,6 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 }
             } else {
                 header('Location: index.php#contact');
+                $_SESSION['errorsCapcha'] = 2;
             }
         }
     }

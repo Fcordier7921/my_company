@@ -67,9 +67,9 @@
         </div>
         <div class="textImgAbout">
             <div class="txtAbout">
-                <p><span>Développeur web freelance,</span> je mets ma passion au service de votre visibilité. Je vous accompagne dans la création de votre site web et dans <span>la gestion de ce site.</span> <br> J’apporte mon expérience personnelle
+                <p><span>Développeur web freelance,</span> je mets ma passion au service de votre visibilité. Je vous accompagne dans la création de votre site web et dans <span>sa gestion.</span> <br> J’apporte mon expérience personnelle
                     et un regard aiguisé sur les outils du numérique à l’aide de <span>solutions adapté à vos besoins</span> . Je vous guide à travers la multitude de possibilités de création de sites web pour vous ouvrir de nouvelles perspectives
-                    sur le terrain du numérique et bien plus encore.
+                    sur le terrain du numérique.
                 </p>
                 <div class="findOutMore">
                     <a href="about.php">En savoir + </a>
@@ -104,7 +104,7 @@
     <div class="card">
         <div class="designWeb">
             <img src="assets/img/card1.png" alt="feuillage en haut de la premiére prestation">
-            <h4>conception de votre site vitrine où e-commerce</h4>
+            <h4>conception de votre site vitrine ou e-commerce</h4>
             <p>
                 <span>Je conçois, développe et anime vos sites.</span> <br>Avec votre regard, je crée le design de vos rêves. Je développe et mets en ligne votre site.
             </p>
@@ -129,7 +129,7 @@
             <img src="assets/img/card5.png" alt="feuillage en haut de la troisiéme prestation">
             <h4>J’offre mes compétences au service de votre équipe de développeurs</h4>
             <p>
-                Vous possédez d’une équipe de développeurs web et avez <span>besoin d’un renfort temporairement.</span> Je mets à votre service <span>mes compétences </span>dans le développement web.
+                Vous possédez d’une équipe de développeurs web et vous avez <span>besoin d’un renfort temporairement.</span> Je mets à votre service <span>mes compétences </span>dans le développement web.
 
             </p>
             <div class="findOutMore">
@@ -192,12 +192,11 @@
         <div class="explanationsExpertise">
             <div class="managementExpertise explanationsExpertiseActive">
                 <h3>Gestion de projet web et conseil</h3>
-                <p>Mon but est de vous éclairer et de vous guider dans le choix qui correspond le mieux à vos besoins. <span>Pour construire des expériences utilisateurs uniques et qui vous ressemblent.</span>
+                <p>Mon but est de vous éclairer et de vous guider dans le choix qui correspond le plus à vos besoins. <span>Pour construire des expériences utilisateurs uniques et qui vous ressemblent.</span>
                 </p>
                 <br>
                 <br>
-                <p><span> On voit plein de solution</span> apparaitre pour créer son site. Mais beaucoup d’entre elles ont de grosses contraintes. Par exemple, des fonctionnalités fermées et non modifiables, ou qui ne correspondent pas à vos besoins,
-                    etc.
+                <p><span> Beaucoup de solutions</span> de création de site ont d’importantes contraintes, telles des fonctionnalités fermées et standardiser, qui donne un impression de déja vue.
                 </p>
                 <br>
                 <br>
@@ -223,7 +222,7 @@
                 <p><span>Je donne vie au design</span> grâce à des animations et des interactions travaillées. Au-delà de l’esthétisme, je réalise l’intégration en respectant la qualité et l’accessibilité du code</p>
                 <br>
                 <br>
-                <p>Je vous <span> conseille dans les choix techniques adaptés à votre projet</span> : du standard WordPress, aux développements d’applications mobiles et métiers, tout en veillant à la sécurité et à l’interopérabilité de nos développements.
+                <p>Je vous <span> conseille dans les choix techniques adaptés à votre projet</span> : du standard WordPress, aux développements d’applications mobiles et métiers, tout en veillant à la sécurité et à l’interopérabilité de nes développements.
                 </p>
                 <br>
                 <br>
@@ -231,13 +230,13 @@
                     pour développer des outils de communication pour relever vos défis.</p>
             </div>
             <div class="performanceExpertise ">
-                <h3> Performance et entretient du site</h3>
+                <h3> Performance et entretien du site</h3>
                 <p>Je vous accompagne dans <span> la mise en ligne et l’entretien de votre site.</span> Les offres d’hébergements sont de plus en plus nombreuses et variées. Il est difficile de s’y retrouver. Laissait moi, m’occuper de vous conseiller
                     en ce domaine.
                 </p>
                 <br>
                 <br>
-                <p><span>La performance</span> d’un site joue énormément sur la visibilité de ce dernier. Les bonnes pratiques et l’optimisation pour le référencement naturel sur le moteur de recherche sont d'incontournables.
+                <p><span>La performance</span> d’un site joue énormément sur la visibilité . Les bonnes pratiques et l’optimisation pour le référencement naturel sur le moteur de recherche sont d'incontournables.
                 </p>
                 <br>
                 <br>
@@ -314,6 +313,16 @@
 
             <?php unset($_SESSION['errors']);
             endif; ?>
+            <?php
+            if (array_key_exists('errorsCapcha', $_SESSION)) : ?>
+                <div class="errorsMesages">
+                    <p>
+                        Vous avez été soupsonner d'étre un robo, si ce n'est pas le cas ressayer ultérieurement.
+                    </p>
+                </div>
+
+            <?php unset($_SESSION['errors']);
+            endif; ?>
         </div>
 
     </div>
@@ -327,5 +336,6 @@
 unset($_SESSION['inputs']);
 unset($_SESSION['success']);
 unset($_SESSION['errorsEmail']);
+unset($_SESSION['errorsCapcha']);
 unset($_SESSION['errors']);
 ?>

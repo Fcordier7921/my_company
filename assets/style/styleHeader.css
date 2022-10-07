@@ -208,6 +208,37 @@ nav ul li:nth-child(1) a {
     color: #ffffff;
 }
 
+nav ul li .imgServiceHeader {
+    width: 10%;
+    height: 10%;
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 60px;
+    max-height: 40px;
+    margin: 0;
+    margin-left: 19px;
+    cursor: pointer;
+    transform: rotate(-90deg);
+}
+
+nav ul .servicesNext {
+    opacity: 1;
+    color: #BFA76A;
+    visibility: visible;
+    font-size: 20px;
+    text-align: start;
+    padding-left: 70px;
+}
+
+nav ul .servicesNext a {
+    font-size: 20px;
+}
+
+nav ul .servicesNext img {
+    width: 10%;
+    height: 10%;
+}
+
 nav ul li div {
     width: 100%;
     max-width: 100vw;

@@ -10,7 +10,7 @@
 
             </h1>
 
-            <h2>Conception et gestion de sites web qui vous ressemble</h2>
+            <h2>Conception et gestion de sites web qui vous ressemblent</h2>
         </div>
         
 
@@ -74,13 +74,13 @@
             <div class="cardTowExplanationWebsiteCreation">
                 <img src="assets/img/web-design.png" alt="image d'un ecran sur lequel on peint avec un peinseau, représente le disgn ">
                 <h3>Customiser votre design</h3>
-                <p>Vous serez, avec mon aide, créé un design adapté à <span>votre identité graphique.</span> Tout en respectant, <span>une interface utilisateur lisible et fluide,</span> pour que votre clientèle reste coi.
+                <p>Vous saurez, avec mon aide, créer un design adapté à <span>votre identité graphique.</span> Tout en respectant, <span>une interface utilisateur lisible et fluide</span> .
                 </p>
             </div>
             <div class="cardThreeExplanationWebsiteCreation">
                 <img src="assets/img/maintenance.png" alt="image d'un engrenage avec un clé de mécanicien, pour représenter la maintenace des sitre web ">
                 <h3>Je donne vie à votre site</h3>
-                <p>Je vous propose une solution technique la <span>mieux adaptée à vos besoins.</span> Il y a une multitude de moyens de créer un site web. Laissez--moi vous aider à créer un site avec des solutions propres qui permettent <span>d’améliorer son référencement naturel (visibilité).</span>
+                <p>Je vous propose une solution technique a <span>adaptée à vos besoins.</span> Il y a une multitude de moyens de créer un site web. Confiez-moi sa réalisation avec des solutions propres qui permettent <span>d’améliorer son référencement naturel et donc sa visibilité !</span>
 
                 </p>
             </div>
@@ -180,61 +180,61 @@
                 <h2>Un formule pour les  petites  jungle avec peut d’entretient</h2>
                 <p><span>2 h/mois</span></p>
                 <p><strong>80€</strong>/mois </p>
-                <p class="detailsPackFormula">Heure non utilisée, <span>cumulable</span> sur plusieurs mois, <span>le temps de l’engagement.</span></p>
+                <p class="detailsPackFormula">Heures non utilisées, <span>cumulables</span>, <span>le temps de l’engagement.</span></p>
                 <div class="jsdetailscardPack" > 
                     <a href="#">en savoir plus</a> 
                 </div>
-                <div class="findOutMore">
+                <!-- <div class="findOutMore">
                     <a href="index.php#contact">Contactez-moi </a>
-                </div>
+                </div> -->
             </div>
             <div class="cardPackFormulaTow">
                 <h2>Un formule pour les petites   jungle avec beaucoup d’entretien</h2>
                 <p><span> 4 h/mois </span></p>
                 <p><strong>152€</strong>/mois </p>
-                <p class="detailsPackFormula">Heure non utilisée, <span>cumulable</span> sur plusieurs mois, <span>le temps de l’engagement.</span></p>
+                <p class="detailsPackFormula">Heures non utilisées, <span>cumulables</span>, <span>le temps de l’engagement.</span></p>
                 <div class="jsdetailscardPack" > 
                     <a href="#">en savoir plus</a> 
                 </div>
-                <div class="findOutMore">
+                <!-- <div class="findOutMore">
                     <a href="index.php#contact">Contactez-moi </a>
-                </div>
+                </div> -->
             </div>
             <div class="cardPackFormulaThee">
                 <h2>Un formule pour les grand   jungle avec peux d’entretien</h2>
                 <p><span> 7 h/mois  </span></p>
                 <p><strong>288€</strong>/mois </p>
-                <p class="detailsPackFormula">Heure non utilisée, <span>cumulable</span> sur plusieurs mois, <span>le temps de l’engagement.</span></p>
+                <p class="detailsPackFormula">Heures non utilisées, <span>cumulables</span>, <span>le temps de l’engagement.</span></p>
                 <div class="jsdetailscardPack" > 
                     <a href="#">en savoir plus</a> 
                 </div>
-                <div class="findOutMore">
+                <!-- <div class="findOutMore">
                     <a href="index.php#contact">Contactez-moi </a>
-                </div>
+                </div> -->
             </div>
             <div class="cardPackFormulaFour">
                 <h2>Un formule pour les grand   jungle avec beaucoup d’entretien</h2>
                 <p><span> 16 h/mois  </span></p>
                 <p><strong>544€</strong>/mois </p>
-                <p class="detailsPackFormula">Heure non utilisée, <span>cumulable</span> sur plusieurs mois, <span>le temps de l’engagement.</span></p>
+                <p class="detailsPackFormula">Heures non utilisées, <span>cumulables</span>, <span>le temps de l’engagement.</span></p>
                 <div class="jsdetailscardPack" > 
                     <a href="#">en savoir plus</a> 
                 </div>
-                <div class="findOutMore">
+                <!-- <div class="findOutMore">
                     <a href="index.php#contact">Contactez-moi </a>
-                </div>
+                </div> -->
             </div>
             <div class="cardPackFormulaFive">
                 <h2>Un formule qui s'adapte a la taille de la jungle</h2>
                 <p><span> N° d'heure en fonction de vos besoin  </span></p>
                 <p><strong>Sur devis</strong> </p>
-                <p class="detailsPackFormula">Heure non utilisée, <span>cumulable</span> sur plusieurs mois, <span>le temps de l’engagement.</span></p>
+                <p class="detailsPackFormula">Heures non utilisées, <span>cumulables</span>, <span>le temps de l’engagement.</span></p>
                 <div class="jsdetailscardPack" > 
                     <a href="#">en savoir plus</a> 
                 </div>
-                <div class="findOutMore">
+                <!-- <div class="findOutMore">
                     <a href="index.php#contact">Contactez-moi </a>
-                </div>
+                </div> -->
             </div>
             
 
@@ -268,7 +268,7 @@
 <section id="outsourcingoutsourcingSkill">
     <div class="skillOne">
         <h2>Compétences en développement</h2>
-        <p>Je me suis spécialisé dans le développement Front-end, ce qui me permet de vous apporter mes compétences dans les domaines suivants :</p>
+        <p>Je suis spécialisé dans le développement Front-end, ce qui me permet de vous apporter mes compétences dans les domaines suivants :</p>
         <ul>
             <li> Intégration web</li>
             <li>Vue (Vuex, Vue Router)</li>
@@ -277,7 +277,7 @@
             <li>GreenSock</li>
         </ul>
         <br>
-        <p>J’ai également des connaissances en  développement back-end :</p>
+        <p>En  développement back-end :</p>
         <ul>
             <li>PHP</li>
             <li>Symfony </li>
